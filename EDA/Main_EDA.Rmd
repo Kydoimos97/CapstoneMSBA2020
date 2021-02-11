@@ -365,6 +365,6 @@ grid.arrange(grobs=plot_list, widths = c(1,1), ncol=nCol, layout_matrix =  rbind
 
 ```{r}
 ggplot(na.omit(df[df$sales < 150,]), aes(x=date, y=sales)) + 
-  geom_line(size = 0.5)
-```
+  geom_line(size = 0.5) aaa
+```aaaa
 
