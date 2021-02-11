@@ -583,7 +583,7 @@ table2 <-data.frame(site_id = list_siteid, mpds = list_mpds)
 
 xtable(table2, caption = "Amount of Pumps per Site_ID")
 
-rm(table2, list_mpds, list_mpds, u, counter, df2)
+rm(table2, list_mpds, list_mpds, i, counter, df2)
 
 ```
 
