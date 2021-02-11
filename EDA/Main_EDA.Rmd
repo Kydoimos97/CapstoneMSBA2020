@@ -58,6 +58,8 @@ Maverik has provided 1.4 million rows of historical sales data beginning in Sept
 
 Maverik must have sound forecasting models for the different items they carry in the stores to generate accurate budgets and financial forecasts at their convenience store locations. In this project, the goal is to build a precise forecasting model of candy bar sales.
 
+[**!! Check if old!!**]{.ul}
+
 # Analytics Problem
 
 For the project, the capstone team will be building a forecasting model to predict candy bar  sales. The dataset provided contains data points from a subset of Maverik's convenience  stores. It includes several variables that will be analyzed to determine which variables  significantly influence candy bar sales. We know the data is separated by day per candy bar  sold from the initial meeting with the Maverik team. Maverick must forecast a point estimate for  candy sales to support inventory decisions. Within the dataset.
@@ -301,6 +303,7 @@ As shown the deployed strategies elimited all occurences of moderate to strong m
 
 ```{r, fig.height = 10, fig.width = 7, fig.cap='Relationships between Target and Numeric Variables'}
 num_list <- colnames(df[sapply(df, is.numeric)])
+num_list <- num_list[-7]
 plot_list <- list(1)
 
 counter = 0
@@ -317,7 +320,7 @@ for (i in num_list) {
   plot_list <- rlist::list.append(plot_list, x)
 }
 
-plot_list <- plot_list[-c(1,7)]
+plot_list <- plot_list[-1]
 
 nCol <- floor(sqrt(length(plot_list)))
 
@@ -329,18 +332,18 @@ grid.arrange(grobs=plot_list, widths = c(1,1), ncol=nCol, layout_matrix =  rbind
 #rm(plot_list, counter, num_list, x, i,, nCol)
 ```
 
-
 ```{r, fig.height = 10, fig.width = 7, fig.cap='Relationships between Target and Numeric Variables'}
-num_list <- colnames(df[sapply(df, is.factor)])
+fac_list <- colnames(df[sapply(df, is.factor)])
+fac_list <- fac_list[-c(1,2,3)]
 plot_list <- list(1)
 
 counter = 0
 
-for (i in num_list) {
+for (i in fac_list) {
   
   counter = counter+1
-  x = ggplot(data=df, aes_string(x = "sales", y = i)) +
-  geom_boxplot() + ggtitle(paste0("sales vs ", as.character(i), sep= " ")) +
+  x = ggplot(data=na.omit(df[df$sales < 150,]), aes_string(y = "sales", x = i)) +
+  geom_boxplot() + ggtitle(paste0("sales vs ", as.character(i), sep= " ")) + ylim(0,150) + coord_flip() + 
     theme_fivethirtyeight() + theme(plot.title = element_text(size=10)) 
   
   
@@ -353,11 +356,15 @@ plot_list <- plot_list[-1]
 n <- length(plot_list)
 nCol <- floor(sqrt(n))
 
-grid.arrange(grobs=plot_list, widths = c(1,1), ncol=nCol, layout_matrix =  rbind(c(1,1),
-                                                                                 c(2,3), 
-                                                                                 c(4,5)), 
-             top = "Relationships between Target and Numeric Variables")
+grid.arrange(grobs=plot_list, widths = c(1,1), ncol=nCol, layout_matrix =  rbind(c(1,2),
+                                                                                 c(3,4)), 
+             top = "Relationships between Target and Factor Variables")
 
-rm(plot_list, counter, num_list, x, i, n, nCol)
+#rm(plot_list, counter, fac_list, x, i, n, nCol)
+```
+
+```{r}
+ggplot(na.omit(df[df$sales < 150,]), aes(x=date, y=sales)) + 
+  geom_line(size = 0.5)
 ```
 
