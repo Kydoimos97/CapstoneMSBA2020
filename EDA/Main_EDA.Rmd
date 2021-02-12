@@ -3,6 +3,12 @@ title: "EDA Capstone"
 author: "Willem van der Schans"
 date: "2/3/2021"
 output:
+  pdf_document:
+    fig_height: 4
+    fig_width: 8
+    highlight: kate
+    toc: no
+    toc_depth: 4
   html_document:
     fig_height: 6
     fig_width: 10
@@ -11,12 +17,6 @@ output:
     theme: paper
     toc: yes
     toc_float: true
-    toc_depth: 4
-  pdf_document:
-    fig_height: 4
-    fig_width: 8
-    highlight: tango
-    toc: no
     toc_depth: 4
 ---
 
@@ -45,8 +45,23 @@ library(gridExtra) # Plot in Grids
 
 library(caret) # MachineLearning package
 library(doSNOW) # Parralel processing
-library(rminer) #Mmetric Function
+library(rminer) #Mmetric Function'
+
+
+library(tidyverse)
+library(ggplot2)
+library(reshape2)
+library(ggthemes) #General Theme Package
+library(gghighlight)
+
+library(xtable)
+library(papeR)
+library(reporttools)
+
+
 ```
+
+**Note to Team: We need to focus on everything above feature engineering and machine learning, the way we are predicting in this document makes no sense as we cannot predict anything right now. We need to transmute the data and see if we can find information to use through other statistical means.**
 
 # Project Introduction
 
@@ -117,8 +132,13 @@ For the project, the capstone team will be building a forecasting model to predi
 The data supplied comes in two data sets; A main data set and a supplemental data set in the form of a dictionary for the item_id's in the main data set. The supplemental dataset is provided to provide further understanding of sales number to allow for a proper assessment of data validity. The aim is to join the two data sets by mapping Item_description values with Item_ID values and to create a new variable in the main dataset named Item_Desc. After the value mapping has been completed the supplementary dataset will be discarded since all information will be extracted, due to Department_Desc being a one-leveled factor variable.
 
 ```{r}
-download.file("https://github.com/Kydoimos97/CapstoneMSBA2020/raw/main/Data/CapstoneProjectInfoRevised.rds", destfile = "CapstoneProjectInfoRevised.rds")
-download.file("https://github.com/Kydoimos97/CapstoneMSBA2020/raw/main/Data/CapstoneProjectProducts.rds", destfile= "CapstoneProjectProducts.rds")
+download.file(
+  "https://github.com/Kydoimos97/CapstoneMSBA2020/raw/main/Data/CapstoneProjectInfoRevised.rds", 
+  destfile = "CapstoneProjectInfoRevised.rds")
+
+download.file(
+  "https://github.com/Kydoimos97/CapstoneMSBA2020/raw/main/Data/CapstoneProjectProducts.rds", 
+  destfile= "CapstoneProjectProducts.rds")
 
 df <- readRDS("CapstoneProjectInfoRevised.rds")
 products <- readRDS("CapstoneProjectProducts.rds")
@@ -165,13 +185,23 @@ names(df) <- tolower(make.names(names(df)))
 rm(products, candy_vector, id_vector)
 ```
 
-```{r}
-summary(df)
+```{r, results="asis"}
+# summarize numeric variables
+tableContinuous(df[,sapply(df, is.numeric)], 
+                stats = c("n", "min", "q1", "median", "mean", "q3", "max", "na"),
+                cap = "Summary of Numeric variables")
 ```
 
-After mapping the Item_desc variables to the main dataset the dataset consists of 1352124 observations over 17 variables. Missing data is only shows in the temperature data where 11799 entries are missing. Since to locational data is available research need to be done on how to impute these missing values. Since only 10 site_id's exist it is possible to interpolate the location of these sites by matching historical temprature data with the given temprature data, and the knowledge that the area of operations lies around utah severely limiting the scope, however the problem is the cost of accessing relevant API's is over \$100 dollar per month. Webscraping is an option however a legal grey area especially since this project is conducted for a corperate sponsor. Further options for imputation have to be explored and will likely be based on a form of bootstrapping data based on timeseries and previous years.
+Table 1 shows that after mapping the Item_desc variables to the main dataset the dataset consists of 1352124 observations over 17 variables. Missing data is only shows in the temperature data where 11799 entries are missing. Since to locational data is available research need to be done on how to impute these missing values. Since only 10 site_id's exist it is possible to interpolate the location of these sites by matching historical temprature data with the given temprature data, and the knowledge that the area of operations lies around utah severely limiting the scope, however the problem is the cost of accessing relevant API's is over \$100 dollar per month. Webscraping is an option however a legal grey area especially since this project is conducted for a corperate sponsor. Further options for imputation have to be explored and will likely be based on a form of bootstrapping data based on timeseries and previous years or removal of temprature data overall.
 
-Looking at the summary it shows that Quantity sold and sales seem to have extremely long right tails. Since Sales is the target variable this needs to be further investigated and looked at to ensure optimal algorithm performance. The Project variable holds limited information since only 0.02% of the data entries deviate from the baseline of NONE.
+\newpage
+
+```{r, results="asis"}
+# summarize non-numeric variables
+tableNominal(df[c(12,13,14)], cap = "Summary of Numeric variables", cumsum = FALSE)
+```
+
+Looking at table 2 it shows that Quantity sold and sales seem to have extremely long right tails. Since Sales is the target variable this needs to be further investigated and looked at to ensure optimal algorithm performance. The Project variable holds limited information since only 0.02% of the data entries deviate from the baseline of NONE.
 
 \newpage
 
@@ -231,7 +261,7 @@ ggplot(data = melted_cormat, aes(x=Var1, y=Var2, fill=Correlation)) +
 rm(Integers, melted_cormat, nums, df2)
 ```
 
-As shown in the figure above, most multicollinearity shows between the max and min temperature variables. While the makes sense because min and max temp move closely together in any direction, we need to consider if retaining one variable would provide better model outcome since this data largely holds the same information. We can remedy this multicollinearity by making a temprature range variable by substracting mintemp from maxtemp, after which we remove mintemp. The reason is that mintemp is often a temprature reached during the night when the bulk of customers do not visit gasstations. A focus on maxtemp means a focus on what happens during the day, when if the weather is nice more people are out.
+As shown in figure , most multicollinearity shows between the max and min temperature variables. While the makes sense because min and max temp move closely together in any direction, we need to consider if retaining one variable would provide better model outcome since this data largely holds the same information. We can remedy this multicollinearity by making a temprature range variable by substracting mintemp from maxtemp, after which we remove mintemp. The reason is that mintemp is often a temprature reached during the night when the bulk of customers do not visit gasstations. A focus on maxtemp means a focus on what happens during the day, when if the weather is nice more people are out.
 
 Next we can see that the GBV variables heavily correlate with each other and sq_footage. This makes sense with GBV standing for gross book value it is logical that a large store has a larger Gross book value. this relationship can be eliminated by creating two new variables. The first variable being cgbv_sqf which stands for current gbv per square footage, this variable shows the valuation per store and removes the information inhereted for the sq_footage variable. After this a variable should be made that shows the difference between the current and periodic gbv by subtracting the latter from the first. This shows a difference and again removes the inhereted data from square footage. After this current and periodic_gbv will be removed.
 
@@ -297,23 +327,36 @@ ggplot(data = melted_cormat, aes(x=Var1, y=Var2, fill=Correlation)) +
 rm(Integers, melted_cormat, nums, df2)
 ```
 
-As shown the deployed strategies elimited all occurences of moderate to strong multicollinearity. only weak multicollinearity remains allowing algoritmhs to perform most optimally.
+As shown in figure 2 the deployed strategies elimited all occurences of moderate to strong multicollinearity. only weak multicollinearity remains allowing algoritmhs to perform most optimally.
 
-## Outlier Detection and Relationships: Numerical Variables
+\newpage
 
-```{r, fig.height = 10, fig.width = 7, fig.cap='Relationships between Target and Numeric Variables'}
+## Outlier Detection and Relationships
+
+### Outlier Detection and Relationships:Numerical Variables seperated by Site_ID
+
+```{r, fig.height = 9, fig.width = 7, fig.cap='Relationships between Target and Numeric Variables seperated by Site_ID', warning=FALSE, message=FALSE}
 num_list <- colnames(df[sapply(df, is.numeric)])
-num_list <- num_list[-7]
+num_list <- num_list[-c(4,5,6,7)]
 plot_list <- list(1)
 
 counter = 0
 
+resample <- caret::createDataPartition(y=df$sales, p = 0.01, list=FALSE) #This is due to a limitation on PDF's
+df2 <-df[resample,]
+
+mycolors <- grDevices::colorRampPalette(RColorBrewer::brewer.pal(8, "Set1"))(10)
+
 for (i in num_list) {
   
   counter = counter+1
-  x = ggplot(data=na.omit(df[df$sales < 150,]), aes_string(x = "sales", y = i)) +
-  geom_point() + geom_smooth(method = lm, color="red", size=0.5) + ggtitle(paste0("sales vs ", as.character(i), sep= " ")) + xlim(0,150) +
-    theme_fivethirtyeight() + theme(plot.title = element_text(size=10)) 
+  x = ggplot(data=na.omit(df2[df2$sales < 100,]), aes_string(x = "sales", y = i, color="site_id")) +
+      geom_point(position = "identity", stat = "identity", alpha = .35, size=1, stroke=.05) + 
+      theme_fivethirtyeight() + 
+      scale_color_manual(values = mycolors) +
+      scale_y_continuous(labels = comma) + scale_x_continuous(labels = dollar) + coord_flip() + 
+      ggtitle(paste0("sales vs ", as.character(i), sep= " ")) + theme(plot.title = element_text(size=10), legend.position = "right", legend.direction = "vertical") + 
+      guides(color = guide_legend(override.aes = list(size=2.5, alpha = 1) ,title = "Legend", title.position = "top"))
   
   
   assign(paste0("plt",i), x)
@@ -324,27 +367,51 @@ plot_list <- plot_list[-1]
 
 nCol <- floor(sqrt(length(plot_list)))
 
-grid.arrange(grobs=plot_list, widths = c(1,1), ncol=nCol, layout_matrix =  rbind(c(1,2),
-                                                                                 c(3,4), 
-                                                                                 c(5,6)), 
-             top = "Relationships between Target and Numeric Variables")
+grid.arrange(grobs=plot_list, widths = c(1,1), ncol=2, layout_matrix =  rbind(c(1,1),
+                                                                                 c(2,2), 
+                                                                                 c(3,3)), 
+             top = "Relationships between Target and Numeric Variables seperated by Site_ID")
 
-#rm(plot_list, counter, num_list, x, i,, nCol)
+for (i in num_list) {
+  rm(list = paste0("plt",i))
+}
+
+rm(plot_list, counter, num_list, x, i, nCol, df2, mycolors, resample)
 ```
 
-```{r, fig.height = 10, fig.width = 7, fig.cap='Relationships between Target and Numeric Variables'}
-fac_list <- colnames(df[sapply(df, is.factor)])
-fac_list <- fac_list[-c(1,2,3)]
+Figure 3 shows the relationships between the target variable sales and a number of numeric variables. ALl of these numeric variables are location bound and therefore Colored by Site_ID. When looking at days_open, a clear correlation is shown which Site_ID. This relationship is logical and obvious due to each location opening on a different day. No clear relationship is shown between sales and days_open.
+
+Sales vs current gross book value per square foot shows mostly that current book value per site does not seem to change at all in the data set. Apart from this no clear relationship is shown between sales and current gross book value per square foot
+
+Sales versus difference in gross book value between current and **Figure this one out**.
+
+**Figure 3 might need an overhaul, thinking of a bar chart however this data is near impossible to plot do I am not sure if it will get any better then this**
+
+\newpage
+
+### Outlier Detection and Relationships:Other Numerical Variables
+
+```{r, fig.height = 9, fig.width = 7, fig.cap='Relationships between Target and Numeric Variables'}
+num_list <- colnames(df[sapply(df, is.numeric)])
+num_list <- num_list[-c(1,2,3,7)]
 plot_list <- list(1)
 
 counter = 0
+colcounter = 0
 
-for (i in fac_list) {
+resample <- caret::createDataPartition(y=df$sales, p = 0.01, list=FALSE)
+df2 <-df[resample,]
+
+mycolors <- grDevices::colorRampPalette(RColorBrewer::brewer.pal(8, "Set1"))(10)
+
+for (i in num_list) {
   
   counter = counter+1
-  x = ggplot(data=na.omit(df[df$sales < 150,]), aes_string(y = "sales", x = i)) +
-  geom_boxplot() + ggtitle(paste0("sales vs ", as.character(i), sep= " ")) + ylim(0,150) + coord_flip() + 
-    theme_fivethirtyeight() + theme(plot.title = element_text(size=10)) 
+  colcounter = counter*3
+  x = ggplot(data=na.omit(df2[df2$sales < 150,]), aes_string(x = "sales", y = i)) +
+      geom_point(position = "identity", stat = "identity", alpha = .75, color="grey", size=0.75)  + scale_y_continuous(labels = comma) + scale_x_continuous(labels= dollar) + 
+      geom_smooth(method = lm, se=TRUE, color=mycolors[colcounter], size=1, fullrange = TRUE) + ggtitle(paste0("sales vs ", as.character(i), sep= " ")) +
+      theme_fivethirtyeight() + theme(plot.title = element_text(size=10)) 
   
   
   assign(paste0("plt",i), x)
@@ -353,18 +420,237 @@ for (i in fac_list) {
 
 plot_list <- plot_list[-1]
 
-n <- length(plot_list)
-nCol <- floor(sqrt(n))
+nCol <- floor(sqrt(length(plot_list)))
 
-grid.arrange(grobs=plot_list, widths = c(1,1), ncol=nCol, layout_matrix =  rbind(c(1,2),
-                                                                                 c(3,4)), 
-             top = "Relationships between Target and Factor Variables")
+grid.arrange(grobs=plot_list, widths = c(1,1), ncol=2, layout_matrix =  rbind(c(1,1),
+                                                                                 c(2,2), 
+                                                                                 c(3,3)), 
+             top = "Relationships between Target and Numeric Variables")
 
-#rm(plot_list, counter, fac_list, x, i, n, nCol)
+
+for (i in num_list) {
+  rm(list = paste0("plt",i))
+}
+
+rm(plot_list, counter, num_list, x, i, nCol, df2, resample, mycolors, colcounter)
 ```
+
+Figure 4 shows a slight positive relationship between maxtemp and sales. With higher tempratures causing more candy bar sales across locations. The temprature difference shows almost no relationship with sales showing the temprature range is not what drives customers to buy candy bars. Lastly sales and quantity sold show a clear relationship as expected, since more quantity sold results in a increase in sales.
+
+\newpage
+
+### Outlier Detection and Relationships: Categorical Variables
+
+In this section boxplot are created and accompanying tables to precisely read the data. These variables will need to be evaluated later down the line by aggregating all sales on a day and rerunning the code below to find differences between days instead of products and see if factor levels show different key_metrics then.
+
+#### Categorical Variables: Locale
+
+```{r, eval=TRUE, fig.height =3, fig.width =5, fig.align = "center", results="asis", fig.cap='Relationship between Sales and Locale'}
+i = "locale"
+o <- c(summary(df$locale))
+
+  x = ggplot(data=df, aes_string(x = "sales", y = paste0("`",as.character(i),"`", sep=""))) +
+  geom_boxplot() +   ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
+  coord_flip() + theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + scale_y_discrete(guide = guide_axis(n.dodge=2))+
+  theme(plot.title = element_text(size = 10, face = "bold")) + scale_x_continuous(labels = dollar, limits = c(0,15))
+  print(x)
+  
+  y <- as.data.frame(ggplot_build(x)$data)
+  y <- y[,c(1,2,3,4,5,6)]
+  y$xmax <- y$xmax-y$xmin
+  y$xmin <- levels(df[,which( colnames(df)==i)])
+  y$outliers <- ifelse(
+    lengths(regmatches(as.character(y$outliers), gregexpr(",", as.character(y$outliers)))) != 0, 
+    lengths(regmatches(as.character(y$outliers), gregexpr(",", as.character(y$outliers)))) + 1,
+    ifelse(regmatches(as.character(y$outliers), gregexpr("[0-9]", as.character(y$outliers))) == "0", 
+    NA, 1))
+  y$sample_size <- o
+  names(y) <- c("Factor Levels", "25Q", "Median", "75Q", "1.5XIQ", "# Outliers", "Ns")
+  y <- y[order(abs(y$Median), decreasing = TRUE),]
+
+print(xtable(y, caption="Relationship between Sales and Locale between different factor levels"), comment = FALSE)
+
+```
+
+Figure 5 and Table 3 Shows only slight differences between different factor levels of sales and locale. The sample size of each factor level is semi well distributed with only Suburban/residential only deviating a lot from the average sample size. With industrial having a higher sales median of 3.18 over 2.79 and lower for the rest of the factor levels, it warrants more research to figure out what products warrant these extra sales.
+
+\newpage
+
+#### Categorical Variables: MPDS
+
+```{r, eval=TRUE, fig.height =3, fig.width =5, fig.align = "center", results="asis", fig.cap='Relationship between Sales and MPDS'}
+i = "mpds"
+o <- c(summary(df$mpds))
+
+  x = ggplot(data=df, aes_string(x = "sales", y = paste0("`",as.character(i),"`", sep=""))) +
+  geom_boxplot() +   ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
+  coord_flip() + theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + scale_y_discrete(guide = guide_axis(n.dodge=1))+
+  theme(plot.title = element_text(size = 10, face = "bold")) + scale_x_continuous(labels = dollar, limits = c(0,15))
+  print(x)
+  
+  y <- as.data.frame(ggplot_build(x)$data)
+  y <- y[,c(1,2,3,4,5,6)]
+  y$xmax <- y$xmax-y$xmin
+  y$xmin <- levels(df[,which( colnames(df)==i)])
+  y$outliers <- ifelse(
+    lengths(regmatches(as.character(y$outliers), gregexpr(",", as.character(y$outliers)))) != 0, 
+    lengths(regmatches(as.character(y$outliers), gregexpr(",", as.character(y$outliers)))) + 1,
+    ifelse(regmatches(as.character(y$outliers), gregexpr("[0-9]", as.character(y$outliers))) == "0", 
+    NA, 1))
+  y$sample_size <- o
+  names(y) <- c("Factor Levels", "25Q", "Median", "75Q", "1.5XIQ", "# Outliers", "Ns")
+  y <- y[order(abs(y$Median), decreasing = TRUE),]
+
+print(xtable(y, caption="Relationship between Sales and MPDS between different factor levels"), comment = FALSE)
+
+```
+
+In figure 6 and table 4 no clear relationship can be found between the amount of mpds and sales. The lack of a relationship shows that sales of indiviual items are more site specific and not based on the amount of pumps present at the gas station. \newpage
+
+#### Categorical Variables: Project
+
+```{r, eval=TRUE, fig.height =3, fig.width =5, fig.align = "center", results="asis", fig.cap='Relationship between Sales and Project'}
+i = "project"
+o <- c(summary(df$project))
+
+  x = ggplot(data=df, aes_string(x = "sales", y = paste0("`",as.character(i),"`", sep=""))) +
+  geom_boxplot() +   ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
+  coord_flip() + theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + scale_y_discrete(guide = guide_axis(n.dodge=2))+
+  theme(plot.title = element_text(size = 10, face = "bold")) + scale_x_continuous(labels = dollar, limits = c(0,15))
+  print(x)
+  
+  y <- as.data.frame(ggplot_build(x)$data)
+  y <- y[,c(1,2,3,4,5,6)]
+  y$xmax <- y$xmax-y$xmin
+  y$xmin <- levels(df[,which( colnames(df)==i)])
+  y$outliers <- ifelse(
+    lengths(regmatches(as.character(y$outliers), gregexpr(",", as.character(y$outliers)))) != 0, 
+    lengths(regmatches(as.character(y$outliers), gregexpr(",", as.character(y$outliers)))) + 1,
+    ifelse(regmatches(as.character(y$outliers), gregexpr("[0-9]", as.character(y$outliers))) == "0", 
+    NA, 1))
+  y$sample_size <- o
+  names(y) <- c("Factor Levels", "25Q", "Median", "75Q", "1.5XIQ", "# Outliers", "Ns")
+  y <- y[order(abs(y$Median), decreasing = TRUE),]
+
+print(xtable(y, caption="Relationship between Project and MPDS between different factor levels"), comment = FALSE)
+
+  
+rm(i, o, y, x)
+```
+
+Table 5 and figure 7 show no clear relationship between factor levels of project. Both factor levels apart from NONE have an extremely small sample size and generalization should happen carefully. Program enhancement seems to result in a lower median sales, which can be explained due to the fact that enhancement likely means that existing parts of the building have had to close, as opposed to none and addition, interefering with the ability of a location to sell products.
+
+\newpage
+
+#### Outlier Detection and Relationships: Time Series of Sales per Site_ID aggregated per day
 
 ```{r}
-ggplot(na.omit(df[df$sales < 150,]), aes(x=date, y=sales)) + 
-  geom_line(size = 0.5)
+sum_sales <- aggregate(df$sales, by=list(df$date, df$site_id), FUN=sum)
+names(sum_sales) <- c("Date", "Site_ID", "Sum_of_Sales")
 ```
 
+```{r, fig.height = 9, fig.width = 7, fig.cap='Sales over time'}
+mycolors <- grDevices::colorRampPalette(RColorBrewer::brewer.pal(8, "Set1"))(10)
+
+ggplot(sum_sales, aes(x=Date, y=Sum_of_Sales, color=Site_ID)) +
+  facet_wrap(~Site_ID, scale="free_y", nrow = 5, ncol = 2) +
+  geom_point(position = "identity", stat = "identity", alpha = .8, color="grey", size=0.75) +
+  geom_smooth(se=F) +
+  theme_fivethirtyeight() +
+  scale_color_manual(values = mycolors) +
+  scale_y_continuous(labels = scales::dollar, limits = c(0,1500)) +
+  theme(legend.position = ("none"), strip.text = element_text(size=15), plot.title = element_text(size=22),axis.title.x = element_text(size = 15), axis.title.y =     element_text(size = 15)) +
+  labs(x = "Site_ID", y = "Occupation Growth in percentage", title = "Total Sales per Site_ID ")
+
+```
+
+```{r, results='asis'}
+counter = 0
+
+list_siteid <- NULL
+list_mpds <- NULL
+df2 <- NULL
+
+for (i in c(levels(df$site_id))) {
+   counter = counter+1
+   list_siteid[counter] <- i
+   df2 <- df %>% filter(site_id == i)
+   list_mpds[counter] <- mean(as.numeric(as.character(df2$mpds)))
+  
+}
+
+table2 <-data.frame(site_id = list_siteid, mpds = list_mpds)
+
+xtable(table2, caption = "Amount of Pumps per Site_ID")
+
+rm(table2, list_mpds, list_siteid, i, counter, df2)
+
+```
+
+Figure 8 shows the aggregate sum of sales per day seperated per site_id, or location. A clear difference can be seen between different sites in the amount of aggregated sales per day. Every location also shows differences in seasonality, e.g. 380 vs 280, and growth e.g. 280 vs 517. Table 6 shows the site_id and the matching amount of pumps. As of now no clear difference can be seen in the amount of pumps and the amount of sales in a given day. Seasonality also does not seem to depend on the amount of pumps available at the get station and neither does growth.
+
+\newpage
+
+# Feature Engineering [Possibly Needs to be removed]
+
+**We need to rethink the whole data set and aggregate per day to be able to predict anything, predicting on ITEM_ID level is impossible due to the extremely limited sample, size. Any suggestions would be welcome team**
+
+## Dummy Encoding
+
+```{r}
+df_bu <- df
+
+df_target_bu <- df$sales
+
+df <- df[-c(1,4)] # Variables removed for performance purposes
+
+df <- df[-c(4,6,10,11)] #variables removed due to singularities <- "explain" Days_open = Date, Locale and Mpds = Site_ID, why cgbv = same as Site (gbv never changes)
+
+df <- df[-c(1,9)] #removed because of extreme bias
+
+df <- na.omit(df)
+df_target_bu <- df$sales
+
+#df$item_id <- as.numeric(as.character(df$item_id)) #for performance
+df$fiscal_period <- as.numeric(as.character(df$fiscal_period)) #for performance
+
+
+df <- dummyVars(sales~., data=df, fullRank = TRUE) %>% 
+  predict(newdata = df)
+
+
+df <- as.data.frame(df)
+df$sales <- df_target_bu
+
+set.seed(500)
+inTrain <- createDataPartition(y=df$sales, p = 0.75, list=FALSE)
+train <-df[inTrain,-length(names(df))]
+train_target<-df[inTrain,length(names(df))]
+```
+
+\newpage
+
+# Machine Learning: Variable Selection [Possibly Needs to be removed]
+
+Why logistic regression
+
+1.  shows variable coefficients and can be used for variable selection etc etc.
+
+## Logistic Regression
+
+```{r}
+system.time(glm_model <- glm(train_target~., data=train))
+
+summary(glm_model)
+
+```
+
+Take away --\> it is not predicting anything at all, and it always wrong.
+
+#### Multicolinearity
+
+Below we can see the VIF scores of the logistic regression model's independent variables. The lower the VIF, the better as long as VIF is lower than 10, there is no cause for major concern (Glen, 2020). Given the VIF scores, the Logistic Regression model passes the multicolinearity assumption. \<\_ Oh no!
+
+```{r}
+xtable(as.data.frame(car::vif(glm_model)))
+```
