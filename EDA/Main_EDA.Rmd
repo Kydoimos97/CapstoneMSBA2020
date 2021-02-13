@@ -642,7 +642,7 @@ for (i in c(levels(df$site_id))) {
 
 table2 <-data.frame(site_id = list_siteid, mpds = list_mpds)
 
-xtable(table2, caption = "Amount of Pumps per Site_ID")
+xtable(table2, caption = "Amount of Pumps per Site_ID", comment=FALSE)
 
 rm(table2, list_mpds, list_siteid, i, counter, df2)
 
