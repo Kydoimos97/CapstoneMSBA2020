@@ -207,7 +207,8 @@ rm(products, candy_vector, id_vector)
 
 ```{r, results="asis"}
 # summarize numeric variables
-tableContinuous(df[,sapply(df, is.numeric)], 
+tableContinuous(df[,sapply(df, is.numeric)], , comment = FALSE,
+
                 stats = c("n", "min", "q1", "median", "mean", "q3", "max", "na"),
                 cap = "Summary of Numeric variables")
 ```
