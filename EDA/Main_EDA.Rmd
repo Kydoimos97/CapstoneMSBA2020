@@ -7,16 +7,7 @@ output:
     fig_height: 4
     fig_width: 8
     highlight: kate
-    toc: no
-    toc_depth: 4
-  html_document:
-    fig_height: 6
-    fig_width: 10
-    highlight: kate
-    number_sections: no
-    theme: paper
     toc: yes
-    toc_float: true
     toc_depth: 4
 ---
 
@@ -91,41 +82,41 @@ Do we need to adjust the Open_date variable so that it can be used in prediction
 
 ## CodeBook: Main Dataset
 
--   Variable_Name Data_Type Description 
+-   Variable_Name Data_Type Description 
 
--   SITE_ID INT = Unique Site Identifier (Maverik Store ID) 
+-   SITE_ID INT = Unique Site Identifier (Maverik Store ID) 
 
--   LOCATION_ID INT = Location Identifier, 1:1 with SITE_ID 
+-   LOCATION_ID INT = Location Identifier, 1:1 with SITE_ID 
 
--   SQ_FOOTAGE INT = Square Footage of Store (Indoor Footprint) 
+-   SQ_FOOTAGE INT = Square Footage of Store (Indoor Footprint) 
 
--   LOCALE CHR = Geospatial Descriptor 
+-   LOCALE CHR = Geospatial Descriptor 
 
--   MPDS INT = Count of Fueling Positions 
+-   MPDS INT = Count of Fueling Positions 
 
--   DATE DATE = Day Date 
+-   DATE DATE = Day Date 
 
--   DAY_OF_WEEK CHR = Day of Week Descriptor 
+-   DAY_OF_WEEK CHR = Day of Week Descriptor 
 
--   HOLIDAY CHR = Holiday Description, If Applicable 
+-   HOLIDAY CHR = Holiday Description, If Applicable 
 
--   HCA_GBV NUM = Gross Book Value of Site 
+-   HCA_GBV NUM = Gross Book Value of Site 
 
--   MAX_TEMP NUM = Daily Maximum Temperature 
+-   MAX_TEMP NUM = Daily Maximum Temperature 
 
--   MIN_TEMP NUM = Daily Minimum Temperature 
+-   MIN_TEMP NUM = Daily Minimum Temperature 
 
--   PROJECT CHR = If Day's Sales Was Impacted by a Project 
+-   PROJECT CHR = If Day's Sales Was Impacted by a Project 
 
--   ITEM_ID INT = Item Identifier 
+-   ITEM_ID INT = Item Identifier 
 
--   SALES INT = Sum of Sales 
+-   SALES INT = Sum of Sales 
 
 -   QUANTITY_SOLD = INT Sum of Units
 
 ### CodeBook: Products Mapping Subset
 
--   Item_ID = Item Identifier 
+-   Item_ID = Item Identifier 
 
 -   Item_Desc = Item Description per Identifier
 
@@ -302,6 +293,8 @@ rm(Integers, melted_cormat, nums, df2)
 As shown in Figure 1, most multicollinearity shows between the max and min temperature variables. We expected this result since min and max temp would move closely together in any direction.   We need to consider if retaining one variable would provide a better model outcome since they are redundant. We can remedy this multicollinearity by making a temperature range variable by subtracting mintemp from maxtemp.  The new variable temp_diff would show when large swings in temperature occurred, which could point to weather events. We assume that the minimum temperature occurs at night outside of regular customer hours, and therefore, we will remove mintemp as a variable. We will leave Maxtemp as a variable as we assume the maximum temperature occurs during the day during regular customer hours.  
 
 Next, the GBV variables are heavily correlated with each other and with sq_footage. GBV stands for gross book value. Logically, a large store would have a larger Gross book value. We will eliminate this correlation relationship by creating two new variables. The first variable is cgbv_sqf, which stands for current GBV per square footage. This variable shows the valuation per store and removes the information inherited for the sq_footage variable. A variable will then be made that shows the difference between the current and periodic GBV by subtracting the latter from the former. This difference again removes the inherited data from the square footage. After creating the new variables, we will remove current_gbv and periodic_gbv variables.
+
+\newpage
 
 ### Removal and Creation of variables
 
@@ -628,6 +621,8 @@ ggplot(sum_sales, aes(x=Date, y=Sum_of_Sales, color=Site_ID)) +
   labs(x = "Site_ID", y = "Occupation Growth in percentage", title = "Total Sales per Site_ID ")
 
 ```
+
+\newpage
 
 ```{r, results='asis'}
 counter = 0
