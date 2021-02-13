@@ -456,8 +456,14 @@ for (i in num_list) {
 
 rm(plot_list, counter, num_list, x, i, nCol, df2, resample, mycolors, colcounter)
 ```
-
 Figure 4 shows a slight positive relationship between maxtemp and sales. The graph shows more candy bar sales with higher temperatures across locations. However, the new variable, temperature difference, shows a weak relationship with sales. Lastly, sales and quantity sold show a strong positive relationship as expected; more quantity sold results in increased sales.
+
+```{r, results='asis'}
+table <- top_n(df[c(1,2,4,15,16)], 5)
+
+xtable(table, caption="Top 5 Sales values in the data set")
+```
+**Table 3 Text**
 
 \newpage
 
@@ -494,7 +500,7 @@ print(xtable(y, caption="Relationship between Sales and Locale between different
 
 ```
 
-Figure 5 and Table 3 show only slight differences between different factor levels of sales and locale. Each factor level's sample size is decently distributed, with only Suburban/residential only deviating a lot from the average sample size. With industrial having a higher sales median of 3.18 over 2.79 and lower for the rest of the factor levels, it warrants more research to determine what products warrant these extra sales.
+Figure 5 and Table 4 show only slight differences between different factor levels of sales and locale. Each factor level's sample size is decently distributed, with only Suburban/residential only deviating a lot from the average sample size. With industrial having a higher sales median of 3.18 over 2.79 and lower for the rest of the factor levels, it warrants more research to determine what products warrant these extra sales.
 
 \newpage
 
@@ -527,7 +533,7 @@ print(xtable(y, caption="Relationship between Sales and MPDS between different f
 
 ```
 
-Figure 6 and Table 4 show no clear relationship can be found between the amount of mpds and sales. The lack of a relationship shows that sales of indiviual items are more site specific and are not based on the amount of pumps present at the gas station. 
+Figure 6 and Table 5 show no clear relationship can be found between the amount of mpds and sales. The lack of a relationship shows that sales of indiviual items are more site specific and are not based on the amount of pumps present at the gas station. 
 
 \newpage
 
@@ -562,7 +568,7 @@ print(xtable(y, caption="Relationship between Project and MPDS between different
 rm(i, o, y, x)
 ```
 
-Table 5 and figure 7 show no clear relationship between factor levels of project. Both factor levels apart from NONE have a tiny sample size, and generalization should happen carefully. Program enhancement seems to result in lower median sales, where enhancement likely means that existing parts of the building have had to close, as opposed to none and interfering with a location's ability to sell products.
+Table 6 and figure 7 show no clear relationship between factor levels of project. Both factor levels apart from NONE have a tiny sample size, and generalization should happen carefully. Program enhancement seems to result in lower median sales, where enhancement likely means that existing parts of the building have had to close, as opposed to none and interfering with a location's ability to sell products.
 
 \newpage
 
@@ -611,7 +617,7 @@ rm(table2, list_mpds, list_siteid, i, counter, df2)
 
 ```
 
-Figure 8 shows the aggregate sum of sales per day seperated per site_id, or location.  There is a clear difference between various sites in the amount of aggregated sales per day. Every location shows differences in seasonality, e.g. 380 vs 280, and growth e.g. 280 vs 517. Table 6 shows the site_id and the matching amount of pumps. There is no apparent difference in the number of pumps and sales in a given day. Seasonality also does not appear to depend on the number of pumps available at the get station, and neither does growth.
+Figure 8 shows the aggregate sum of sales per day seperated per site_id, or location.  There is a clear difference between various sites in the amount of aggregated sales per day. Every location shows differences in seasonality, e.g. 380 vs 280, and growth e.g. 280 vs 517. Table 7 shows the site_id and the matching amount of pumps. There is no apparent difference in the number of pumps and sales in a given day. Seasonality also does not appear to depend on the number of pumps available at the get station, and neither does growth.
 
 # Results:
 
