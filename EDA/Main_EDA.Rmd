@@ -214,9 +214,9 @@ tableContinuous(df[,sapply(df, is.numeric)],
 
 Table 1 shows that after mapping the Item_desc variables to the main dataset the dataset consists of 1,352,124 observations over 17 variables. The temperature variables are the only variables with Missing data where 11,799 entries are missing.  Before data cleaning, the team needs to research whether the missing temperature data points can be imputed using the location data provided in the dataset. 
 
-**How do we know these are Utah based sites? Maverik has locations across 11 states?  I don’t think the location information provided in the dataset would give us enough information to be able to impute NAs.  We need to consider dropping the 11K or the temp variables.  Try models both ways? Site_Id and Location_Id provide the same information** 
-
-  Since only 10 site_id's exist it is possible to interpolate the location of these sites by matching historical temprature data with the given temprature data, and the knowledge that the area of operations lies around utah severely limiting the scope, however the problem is the cost of accessing relevant API's is over \$100 dollar per month. Webscraping is an option however a legal grey area especially since this project is conducted for a corperate sponsor. Further options for imputation have to be explored and will likely be based on a form of bootstrapping data based on timeseries and previous years or removal of temprature data overall.
+  Since only 10 site_id's exist it is possible to interpolate the location of these sites by matching historical temprature data with the given temprature data, however the problem is the cost of accessing relevant API's is over \$100 dollar per month. Webscraping is an option however a legal grey area especially since this project is conducted for a corperate sponsor. Further options for imputation have to be explored and will likely be based on a form of bootstrapping data based on timeseries and previous years or removal of temprature data overall.
+  
+  Table 1 also shows that Quantity sold and sales seem to have extremely long right tails. Since Sales is the target variable this needs to be further investigated and looked at to ensure optimal algorithm performance.
 
 ## Temprature NA's
 
@@ -234,12 +234,9 @@ levels(as.factor(new_df$date))
 
 ```{r, results="asis"}
 # summarize factorized variables
-tableNominal(df[c(12,13,14)], cap = "Summary of Factorized variables", cumsum = FALSE)
+tableNominal(df[c(12,13,14,15)], cap = "Summary of Factorized variables", cumsum = FALSE)
 ```
-
-**The table output I see has sq_footage, locale, and mpds no quantity sold or sales**
-
-Table 2 shows that Quantity sold and sales seem to have extremely long right tails. Since Sales is the target variable this needs to be further investigated and looked at to ensure optimal algorithm performance. The Project variable holds limited information since only 0.02% of the data entries deviate from the baseline of NONE.
+Table 2 shows that the Project variable holds limited information since only 0.02% of the data entries deviate from the baseline of NONE. MPDS and sq_footage seem to not change during the lifetime of the data set, the same for locale. We therefore have to decide what variable holds the most information to elimite multicollinearity and singularity when running algorithms.
 
 \newpage
 
