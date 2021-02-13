@@ -248,6 +248,8 @@ r \< 0.3 None or very weak
 
 r \> 0.7 Strong
 
+asdsada
+
 Note: that Na's are omitted however testing showed that this does not change results at all, but merely allows the correlation matrix to be complete instead of showing gaps for correlations regarding temprature data.
 
 ### Corelation Matrix: Pre-Engineering
