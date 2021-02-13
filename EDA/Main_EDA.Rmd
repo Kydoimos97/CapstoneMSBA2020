@@ -61,7 +61,6 @@ library(reporttools)
 
 ```
 
-**Note to Team: We need to focus on everything above feature engineering and machine learning, the way we are predicting in this document makes no sense as we cannot predict anything right now. We need to transmute the data and see if we can find information to use through other statistical means.**
 
 # EDA Assignment
 
