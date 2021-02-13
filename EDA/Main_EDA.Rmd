@@ -140,6 +140,8 @@ Do we need to adjust the Open_date variable so that it can be used in prediction
 
 The data supplied comes in two datasets; 1) Project Info Revised and 2) Products.  The Project Info Revised is our primary dataset for the project.   The Products dataset is a dictionary for the variable “item_id” in the primary dataset.  By combining the two data sets, we will be able to assess data validity properly. The aim is to join the two data sets by mapping Item_description values with Item_ID values and creating a new variable in the primary dataset named Item_Desc. The Products dataset will not be used after value mapping the variables.
 
+### Data Set-up
+
 ```{r}
 download.file(
   "https://github.com/Kydoimos97/CapstoneMSBA2020/raw/main/Data/CapstoneProjectInfoRevised.rds", 
@@ -151,11 +153,6 @@ download.file(
 
 df <- readRDS("CapstoneProjectInfoRevised.rds")
 products <- readRDS("CapstoneProjectProducts.rds")
-
-```{r}
-head(df)
-head(products) # shows we looked at the data types before factorization and numeration
-
 ```
 
 ```{r}
@@ -204,30 +201,45 @@ names(df) <- tolower(make.names(names(df)))
 rm(products, candy_vector, id_vector)
 ```
 
+### Summary Tables
+
+#### Numeric
+
 ```{r, results="asis"}
 # summarize numeric variables
-tableContinuous(df[,sapply(df, is.numeric)], 
+tableContinuous(df[,sapply(df, is.numeric)], , comment = FALSE,
+
                 stats = c("n", "min", "q1", "median", "mean", "q3", "max", "na"),
                 cap = "Summary of Numeric variables")
 ```
 
 Table 1 shows that after mapping the Item_desc variables to the main dataset the dataset consists of 1,352,124 observations over 17 variables. The temperature variables are the only variables with Missing data where 11,799 entries are missing.  Before data cleaning, the team needs to research whether the missing temperature data points can be imputed using the location data provided in the dataset. 
 
-**How do we know these are Utah based sites? Maverik has locations across 11 states?  I don’t think the location information provided in the dataset would give us enough information to be able to impute NAs.  We need to consider dropping the 11K or the temp variables.  Try models both ways? Site_Id and Location_Id provide the same information** 
+  Since only 10 site_id's exist it is possible to interpolate the location of these sites by matching historical temprature data with the given temprature data, however the problem is the cost of accessing relevant API's is over \$100 dollar per month. Webscraping is an option however a legal grey area especially since this project is conducted for a corperate sponsor. Further options for imputation have to be explored and will likely be based on a form of bootstrapping data based on timeseries and previous years or removal of temprature data overall.
+  
+  Table 1 also shows that Quantity sold and sales seem to have extremely long right tails. Since Sales is the target variable this needs to be further investigated and looked at to ensure optimal algorithm performance.
 
-  Since only 10 site_id's exist it is possible to interpolate the location of these sites by matching historical temprature data with the given temprature data, and the knowledge that the area of operations lies around utah severely limiting the scope, however the problem is the cost of accessing relevant API's is over \$100 dollar per month. Webscraping is an option however a legal grey area especially since this project is conducted for a corperate sponsor. Further options for imputation have to be explored and will likely be based on a form of bootstrapping data based on timeseries and previous years or removal of temprature data overall.
+## Temprature NA's
 
+```{r}
+new_df <- df[is.na(df$maxtemp),]
 
+levels(as.factor(new_df$site_id))
+
+levels(as.factor(new_df$date))
+```
+This deeper dive into the NAs show that the missing temperature data is randomly scattered across dates and sites, and we cannot point to a single factor for why the information is missing. We will need to perform further analysis during data cleaning to determine whether we will impute or remove the NAs.
 \newpage
 
+#### Factorized
+
 ```{r, results="asis"}
-# summarize non-numeric variables
-tableNominal(df[c(12,13,14)], cap = "Summary of Numeric variables", cumsum = FALSE)
+# summarize factorized variables
+tableNominal(df[c(12,13,14,15)], cap = "Summary of Factorized variables", cumsum = FALSE,
+             comment = FALSE)
+
 ```
-
-**The table output I see has sq_footage, locale, and mpds no quantity sold or sales**
-
-Table 2 shows that Quantity sold and sales seem to have extremely long right tails. Since Sales is the target variable this needs to be further investigated and looked at to ensure optimal algorithm performance. The Project variable holds limited information since only 0.02% of the data entries deviate from the baseline of NONE.
+Table 2 shows that the Project variable holds limited information since only 0.02% of the data entries deviate from the baseline of NONE. MPDS and sq_footage seem to not change during the lifetime of the data set, the same for locale. We therefore have to decide what variable holds the most information to elimite multicollinearity and singularity when running algorithms.
 
 \newpage
 
@@ -366,7 +378,8 @@ plot_list <- list(1)
 
 counter = 0
 
-resample <- caret::createDataPartition(y=df$sales, p = 0.01, list=FALSE) #This is due to a limitation on PDF's
+resample <- caret::createDataPartition(y=df$sales, p = 0.01, list=FALSE) 
+#This is due to a limitation on PDF's
 df2 <-df[resample,]
 
 mycolors <- grDevices::colorRampPalette(RColorBrewer::brewer.pal(8, "Set1"))(10)
@@ -379,7 +392,8 @@ for (i in num_list) {
       theme_fivethirtyeight() + 
       scale_color_manual(values = mycolors) +
       scale_y_continuous(labels = comma) + scale_x_continuous(labels = dollar) + coord_flip() + 
-      ggtitle(paste0("sales vs ", as.character(i), sep= " ")) + theme(plot.title = element_text(size=10), legend.position = "right", legend.direction = "vertical") + 
+      ggtitle(paste0("sales vs ", as.character(i), sep= " ")) + 
+      theme(plot.title = element_text(size=10), legend.position = "right", legend.direction = "vertical") + 
       guides(color = guide_legend(override.aes = list(size=2.5, alpha = 1) ,title = "Legend", title.position = "top"))
   
   
@@ -431,8 +445,10 @@ for (i in num_list) {
   counter = counter+1
   colcounter = counter*3
   x = ggplot(data=na.omit(df2[df2$sales < 150,]), aes_string(x = "sales", y = i)) +
-      geom_point(position = "identity", stat = "identity", alpha = .75, color="grey", size=0.75)  + scale_y_continuous(labels = comma) + scale_x_continuous(labels= dollar) + 
-      geom_smooth(method = lm, se=TRUE, color=mycolors[colcounter], size=1, fullrange = TRUE) + ggtitle(paste0("sales vs ", as.character(i), sep= " ")) +
+      geom_point(position = "identity", stat = "identity", alpha = .75, color="grey", size=0.75)  + 
+      scale_y_continuous(labels = comma) + scale_x_continuous(labels= dollar) + 
+      geom_smooth(method = lm, se=TRUE, color=mycolors[colcounter], size=1, fullrange = TRUE) + 
+      ggtitle(paste0("sales vs ", as.character(i), sep= " ")) +
       theme_fivethirtyeight() + theme(plot.title = element_text(size=10)) 
   
   
@@ -478,9 +494,13 @@ i = "locale"
 o <- c(summary(df$locale))
 
   x = ggplot(data=df, aes_string(x = "sales", y = paste0("`",as.character(i),"`", sep=""))) +
-  geom_boxplot() +   ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
-  coord_flip() + theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + scale_y_discrete(guide = guide_axis(n.dodge=2))+
-  theme(plot.title = element_text(size = 10, face = "bold")) + scale_x_continuous(labels = dollar, limits = c(0,15))
+  geom_boxplot() + 
+  ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
+  coord_flip() + 
+  theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + 
+  scale_y_discrete(guide = guide_axis(n.dodge=2))+
+  theme(plot.title = element_text(size = 10, face = "bold")) + 
+  scale_x_continuous(labels = dollar, limits = c(0,15))
   print(x)
   
   y <- as.data.frame(ggplot_build(x)$data)
@@ -496,7 +516,8 @@ o <- c(summary(df$locale))
   names(y) <- c("Factor Levels", "25Q", "Median", "75Q", "1.5XIQ", "# Outliers", "Ns")
   y <- y[order(abs(y$Median), decreasing = TRUE),]
 
-print(xtable(y, caption="Relationship between Sales and Locale between different factor levels"), comment = FALSE)
+print(xtable(y, caption="Relationship between Sales and Locale between different factor levels"), 
+      comment = FALSE)
 
 ```
 
@@ -512,8 +533,12 @@ o <- c(summary(df$mpds))
 
   x = ggplot(data=df, aes_string(x = "sales", y = paste0("`",as.character(i),"`", sep=""))) +
   geom_boxplot() +   ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
-  coord_flip() + theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + scale_y_discrete(guide = guide_axis(n.dodge=1))+
-  theme(plot.title = element_text(size = 10, face = "bold")) + scale_x_continuous(labels = dollar, limits = c(0,15))
+  coord_flip() + 
+  theme_fivethirtyeight() + 
+  theme(axis.text.x = element_text(angle =0)) + 
+  scale_y_discrete(guide = guide_axis(n.dodge=1))+
+  theme(plot.title = element_text(size = 10, face = "bold")) + 
+  scale_x_continuous(labels = dollar, limits = c(0,15))
   print(x)
   
   y <- as.data.frame(ggplot_build(x)$data)
@@ -544,9 +569,14 @@ i = "project"
 o <- c(summary(df$project))
 
   x = ggplot(data=df, aes_string(x = "sales", y = paste0("`",as.character(i),"`", sep=""))) +
-  geom_boxplot() +   ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
-  coord_flip() + theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + scale_y_discrete(guide = guide_axis(n.dodge=2))+
-  theme(plot.title = element_text(size = 10, face = "bold")) + scale_x_continuous(labels = dollar, limits = c(0,15))
+  geom_boxplot() + 
+  ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
+  coord_flip() + 
+  theme_fivethirtyeight() + 
+  theme(axis.text.x = element_text(angle =0)) + 
+  scale_y_discrete(guide = guide_axis(n.dodge=2)) +
+  theme(plot.title = element_text(size = 10, face = "bold")) + 
+  scale_x_continuous(labels = dollar, limits = c(0,15))
   print(x)
   
   y <- as.data.frame(ggplot_build(x)$data)
@@ -562,7 +592,8 @@ o <- c(summary(df$project))
   names(y) <- c("Factor Levels", "25Q", "Median", "75Q", "1.5XIQ", "# Outliers", "Ns")
   y <- y[order(abs(y$Median), decreasing = TRUE),]
 
-print(xtable(y, caption="Relationship between Project and MPDS between different factor levels"), comment = FALSE)
+print(xtable(y, caption="Relationship between Project and MPDS between different factor levels"),
+             comment = FALSE)
 
   
 rm(i, o, y, x)
@@ -611,7 +642,7 @@ for (i in c(levels(df$site_id))) {
 
 table2 <-data.frame(site_id = list_siteid, mpds = list_mpds)
 
-xtable(table2, caption = "Amount of Pumps per Site_ID")
+xtable(table2, caption = "Amount of Pumps per Site_ID", comment=FALSE)
 
 rm(table2, list_mpds, list_siteid, i, counter, df2)
 
