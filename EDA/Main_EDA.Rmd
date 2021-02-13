@@ -227,7 +227,7 @@ levels(as.factor(new_df$site_id))
 
 levels(as.factor(new_df$date))
 ```
-
+This deeper dive into the NAs show that the missing temperature data is randomly scattered across dates and sites, and we cannot point to a single factor for why the information is missing. We will need to perform further analysis during data cleaning to determine whether we will impute or remove the NAs.
 \newpage
 
 #### Factorized
