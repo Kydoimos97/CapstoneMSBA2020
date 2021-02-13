@@ -234,7 +234,8 @@ This deeper dive into the NAs show that the missing temperature data is randomly
 
 ```{r, results="asis"}
 # summarize factorized variables
-tableNominal(df[c(12,13,14,15)], cap = "Summary of Factorized variables", cumsum = FALSE)
+tableNominal(df[c(12,13,14,15)], cap = "Summary of Factorized variables", cumsum = FALSE, comment = FALSE)
+
 ```
 Table 2 shows that the Project variable holds limited information since only 0.02% of the data entries deviate from the baseline of NONE. MPDS and sq_footage seem to not change during the lifetime of the data set, the same for locale. We therefore have to decide what variable holds the most information to elimite multicollinearity and singularity when running algorithms.
 
