@@ -625,3 +625,7 @@ Through the exploratory analysis we performed on our data, we have discovered th
 
 
 Currently as the data stands, we cannot derive much insight into the overall predictability of our variables using a general linear model. However, we were able to find issues within the data that will help us be more prepared for when we perform the time-series analysis. This EDA has helped us understand the different approaches we need to take both in pre-processing as well as our time-series method. As it stands, dealing with multicollinnearity and the NA values will help us in our overall predictability of our model.
+
+
+# Team Member Contribution
+Sam, Willem, and Kelsey produced an intial EDA working together. Tim also produced an inital EDA which was compared to the group EDA.  We merged the initial documents where it made sense.  Willem proceeded to build out more of the substaintial code for the analysis and Kelsey and Sam provided written analysis and edits.  For the final collaboration, the whole team used GitHub to make final edits and adjustments to the EDA.
