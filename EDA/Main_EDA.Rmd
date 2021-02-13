@@ -1,21 +1,32 @@
 ---
 title: "EDA Capstone"
-author: "Willem van der Schans"
+author: "Willem van der Schans, Kelsey Metivier, Sam Erickson, Tim Gain"
 date: "2/3/2021"
 output:
   pdf_document:
     fig_height: 4
     fig_width: 8
     highlight: kate
-    toc: yes
+    toc: no
     toc_depth: 4
 ---
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = T, warning = FALSE)
 options(java.parameters = c("-XX:+UseConcMarkSweepGC", "-Xmx8192m"))
 #options(java.parameters = "-Xmx8g")
 ```
+
+ 
+
+\newpage
 
 ```{r, echo=F, message=FALSE, warning=FALSE}
 # Operational Packages
@@ -32,7 +43,7 @@ library(lsr) #Correlation Matrix
 library(e1071) #Skewness and other depreciated functions
 library(stats)
 library(lubridate) # For working with dates
-library(gridExtra) # Plot in Grids
+
 
 library(caret) # MachineLearning package
 library(doSNOW) # Parralel processing
@@ -44,14 +55,14 @@ library(ggplot2)
 library(reshape2)
 library(ggthemes) #General Theme Package
 library(gghighlight)
+library(gridExtra) # Plot in Grids
 
 library(xtable)
 library(papeR)
 library(reporttools)
-
-
 ```
 
+\newpage
 
 # EDA Assignment
 
@@ -651,7 +662,7 @@ Figure 8 shows the aggregate sum of sales per day seperated per site_id, or loca
 
 \newpage
 
-# Results:
+# Results
 
 Through the exploratory analysis we performed on our data, we have discovered the following:
 
