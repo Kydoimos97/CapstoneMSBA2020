@@ -140,6 +140,8 @@ Do we need to adjust the Open_date variable so that it can be used in prediction
 
 The data supplied comes in two datasets; 1) Project Info Revised and 2) Products.  The Project Info Revised is our primary dataset for the project.   The Products dataset is a dictionary for the variable “item_id” in the primary dataset.  By combining the two data sets, we will be able to assess data validity properly. The aim is to join the two data sets by mapping Item_description values with Item_ID values and creating a new variable in the primary dataset named Item_Desc. The Products dataset will not be used after value mapping the variables.
 
+### Data Set-up
+
 ```{r}
 download.file(
   "https://github.com/Kydoimos97/CapstoneMSBA2020/raw/main/Data/CapstoneProjectInfoRevised.rds", 
@@ -151,11 +153,6 @@ download.file(
 
 df <- readRDS("CapstoneProjectInfoRevised.rds")
 products <- readRDS("CapstoneProjectProducts.rds")
-
-```{r}
-head(df)
-head(products) # shows we looked at the data types before factorization and numeration
-
 ```
 
 ```{r}
@@ -204,6 +201,10 @@ names(df) <- tolower(make.names(names(df)))
 rm(products, candy_vector, id_vector)
 ```
 
+### Summary Tables
+
+#### Numeric
+
 ```{r, results="asis"}
 # summarize numeric variables
 tableContinuous(df[,sapply(df, is.numeric)], 
@@ -217,12 +218,23 @@ Table 1 shows that after mapping the Item_desc variables to the main dataset the
 
   Since only 10 site_id's exist it is possible to interpolate the location of these sites by matching historical temprature data with the given temprature data, and the knowledge that the area of operations lies around utah severely limiting the scope, however the problem is the cost of accessing relevant API's is over \$100 dollar per month. Webscraping is an option however a legal grey area especially since this project is conducted for a corperate sponsor. Further options for imputation have to be explored and will likely be based on a form of bootstrapping data based on timeseries and previous years or removal of temprature data overall.
 
+## Temprature NA's
+
+```{r}
+new_df <- df[is.na(df$maxtemp),]
+
+levels(as.factor(new_df$site_id))
+
+levels(as.factor(new_df$date))
+```
 
 \newpage
 
+#### Factorized
+
 ```{r, results="asis"}
-# summarize non-numeric variables
-tableNominal(df[c(12,13,14)], cap = "Summary of Numeric variables", cumsum = FALSE)
+# summarize factorized variables
+tableNominal(df[c(12,13,14)], cap = "Summary of Factorized variables", cumsum = FALSE)
 ```
 
 **The table output I see has sq_footage, locale, and mpds no quantity sold or sales**
