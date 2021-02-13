@@ -600,7 +600,7 @@ o <- c(summary(df$project))
   names(y) <- c("Factor Levels", "25Q", "Median", "75Q", "1.5XIQ", "# Outliers", "Ns")
   y <- y[order(abs(y$Median), decreasing = TRUE),]
 
-print(xtable(y, caption="Relationship between Project and MPDS between different factor levels"),
+print(xtable(y, caption="Relationship between Sales and Project between different factor levels"),
              comment = FALSE)
 
   
