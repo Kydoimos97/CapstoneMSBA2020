@@ -673,7 +673,7 @@ Currently, we cannot derive much insight into the overall predictability of our 
 
 # Team Member Contribution
 
-Sam, Willem, and Kelsey produced an initial EDA working together. Tim also created an initial EDA, which was compared to the group EDA. Tim initially worked due to scheduling issues. We merged the initial elements of both documents. Willem then started a master document by coding the full EDA and writing an initial write-up. Kelsey, Willem, Sam, and Tim then added more in-depth written analysis. Additionally, Kelsey, Sam, and Willem proofread to the document and added clarifying text. Finals editing was done by Willem. For collaboration, the whole team used [GitHub](https://github.com/Kydoimos97/CapstoneMSBA2020) to make final edits and adjustments to the EDA.
+Sam, Willem, and Kelsey produced an initial EDA working together. Tim also created an initial EDA, which was compared to the group EDA. Tim initially worked due to seperately due to scheduling issues. We merged the initial elements of both documents. Willem then started a master document by writing all the code for the final EDA and writing an initial write-up. Kelsey, Willem, Sam, and Tim then added more in-depth written analysis. Additionally, Kelsey, Sam, and Willem proofread to the document and added clarifying text. Finals editing was done by Willem. For collaboration, the whole team used [GitHub](https://github.com/Kydoimos97/CapstoneMSBA2020) to make final edits and adjustments to the EDA.
 
 \newpage
 
