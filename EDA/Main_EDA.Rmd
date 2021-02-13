@@ -173,7 +173,8 @@ df$SQ_Footage <- as.numeric(df$SQ_Footage)# Shows Factor like tendencies
 df$Periodic_GBV <- as.numeric(df$Periodic_GBV)
 df$Current_GBV <- as.numeric(df$Current_GBV)
 
-# Re-origin of Dates 
+# Re-origin of Dates  at 1/1/1980
+
 x <- min(df$Open_Date) 
 df$Open_Date <- as_date(df$Open_Date, origin = x)
 df$DATE <- as_date(df$DATE, origin = x)
@@ -611,6 +612,5 @@ rm(table2, list_mpds, list_siteid, i, counter, df2)
 ```
 
 Figure 8 shows the aggregate sum of sales per day seperated per site_id, or location.  There is a clear difference between various sites in the amount of aggregated sales per day. Every location shows differences in seasonality, e.g. 380 vs 280, and growth e.g. 280 vs 517. Table 6 shows the site_id and the matching amount of pumps. There is no apparent difference in the number of pumps and sales in a given day. Seasonality also does not appear to depend on the number of pumps available at the get station, and neither does growth.
-
 
 
