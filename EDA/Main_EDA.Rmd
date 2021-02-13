@@ -235,7 +235,8 @@ This deeper dive into the NAs show that the missing temperature data is randomly
 
 ```{r, results="asis"}
 # summarize factorized variables
-tableNominal(df[c(12,13,14,15)], cap = "Summary of Factorized variables", cumsum = FALSE, comment = FALSE)
+tableNominal(df[c(12,13,14,15)], cap = "Summary of Factorized variables", cumsum = FALSE,
+             comment = FALSE)
 
 ```
 Table 2 shows that the Project variable holds limited information since only 0.02% of the data entries deviate from the baseline of NONE. MPDS and sq_footage seem to not change during the lifetime of the data set, the same for locale. We therefore have to decide what variable holds the most information to elimite multicollinearity and singularity when running algorithms.
@@ -377,7 +378,8 @@ plot_list <- list(1)
 
 counter = 0
 
-resample <- caret::createDataPartition(y=df$sales, p = 0.01, list=FALSE) #This is due to a limitation on PDF's
+resample <- caret::createDataPartition(y=df$sales, p = 0.01, list=FALSE) 
+#This is due to a limitation on PDF's
 df2 <-df[resample,]
 
 mycolors <- grDevices::colorRampPalette(RColorBrewer::brewer.pal(8, "Set1"))(10)
@@ -390,7 +392,8 @@ for (i in num_list) {
       theme_fivethirtyeight() + 
       scale_color_manual(values = mycolors) +
       scale_y_continuous(labels = comma) + scale_x_continuous(labels = dollar) + coord_flip() + 
-      ggtitle(paste0("sales vs ", as.character(i), sep= " ")) + theme(plot.title = element_text(size=10), legend.position = "right", legend.direction = "vertical") + 
+      ggtitle(paste0("sales vs ", as.character(i), sep= " ")) + 
+      theme(plot.title = element_text(size=10), legend.position = "right", legend.direction = "vertical") + 
       guides(color = guide_legend(override.aes = list(size=2.5, alpha = 1) ,title = "Legend", title.position = "top"))
   
   
@@ -442,8 +445,10 @@ for (i in num_list) {
   counter = counter+1
   colcounter = counter*3
   x = ggplot(data=na.omit(df2[df2$sales < 150,]), aes_string(x = "sales", y = i)) +
-      geom_point(position = "identity", stat = "identity", alpha = .75, color="grey", size=0.75)  + scale_y_continuous(labels = comma) + scale_x_continuous(labels= dollar) + 
-      geom_smooth(method = lm, se=TRUE, color=mycolors[colcounter], size=1, fullrange = TRUE) + ggtitle(paste0("sales vs ", as.character(i), sep= " ")) +
+      geom_point(position = "identity", stat = "identity", alpha = .75, color="grey", size=0.75)  + 
+      scale_y_continuous(labels = comma) + scale_x_continuous(labels= dollar) + 
+      geom_smooth(method = lm, se=TRUE, color=mycolors[colcounter], size=1, fullrange = TRUE) + 
+      ggtitle(paste0("sales vs ", as.character(i), sep= " ")) +
       theme_fivethirtyeight() + theme(plot.title = element_text(size=10)) 
   
   
@@ -489,9 +494,13 @@ i = "locale"
 o <- c(summary(df$locale))
 
   x = ggplot(data=df, aes_string(x = "sales", y = paste0("`",as.character(i),"`", sep=""))) +
-  geom_boxplot() +   ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
-  coord_flip() + theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + scale_y_discrete(guide = guide_axis(n.dodge=2))+
-  theme(plot.title = element_text(size = 10, face = "bold")) + scale_x_continuous(labels = dollar, limits = c(0,15))
+  geom_boxplot() + 
+  ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
+  coord_flip() + 
+  theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + 
+  scale_y_discrete(guide = guide_axis(n.dodge=2))+
+  theme(plot.title = element_text(size = 10, face = "bold")) + 
+  scale_x_continuous(labels = dollar, limits = c(0,15))
   print(x)
   
   y <- as.data.frame(ggplot_build(x)$data)
@@ -507,7 +516,8 @@ o <- c(summary(df$locale))
   names(y) <- c("Factor Levels", "25Q", "Median", "75Q", "1.5XIQ", "# Outliers", "Ns")
   y <- y[order(abs(y$Median), decreasing = TRUE),]
 
-print(xtable(y, caption="Relationship between Sales and Locale between different factor levels"), comment = FALSE)
+print(xtable(y, caption="Relationship between Sales and Locale between different factor levels"), 
+      comment = FALSE)
 
 ```
 
@@ -523,8 +533,12 @@ o <- c(summary(df$mpds))
 
   x = ggplot(data=df, aes_string(x = "sales", y = paste0("`",as.character(i),"`", sep=""))) +
   geom_boxplot() +   ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
-  coord_flip() + theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + scale_y_discrete(guide = guide_axis(n.dodge=1))+
-  theme(plot.title = element_text(size = 10, face = "bold")) + scale_x_continuous(labels = dollar, limits = c(0,15))
+  coord_flip() + 
+  theme_fivethirtyeight() + 
+  theme(axis.text.x = element_text(angle =0)) + 
+  scale_y_discrete(guide = guide_axis(n.dodge=1))+
+  theme(plot.title = element_text(size = 10, face = "bold")) + 
+  scale_x_continuous(labels = dollar, limits = c(0,15))
   print(x)
   
   y <- as.data.frame(ggplot_build(x)$data)
@@ -555,9 +569,14 @@ i = "project"
 o <- c(summary(df$project))
 
   x = ggplot(data=df, aes_string(x = "sales", y = paste0("`",as.character(i),"`", sep=""))) +
-  geom_boxplot() +   ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
-  coord_flip() + theme_fivethirtyeight() + theme(axis.text.x = element_text(angle =0)) + scale_y_discrete(guide = guide_axis(n.dodge=2))+
-  theme(plot.title = element_text(size = 10, face = "bold")) + scale_x_continuous(labels = dollar, limits = c(0,15))
+  geom_boxplot() + 
+  ggtitle(paste0("Relationship of sales and ", as.character(i), sep= " ")) +
+  coord_flip() + 
+  theme_fivethirtyeight() + 
+  theme(axis.text.x = element_text(angle =0)) + 
+  scale_y_discrete(guide = guide_axis(n.dodge=2)) +
+  theme(plot.title = element_text(size = 10, face = "bold")) + 
+  scale_x_continuous(labels = dollar, limits = c(0,15))
   print(x)
   
   y <- as.data.frame(ggplot_build(x)$data)
@@ -573,7 +592,8 @@ o <- c(summary(df$project))
   names(y) <- c("Factor Levels", "25Q", "Median", "75Q", "1.5XIQ", "# Outliers", "Ns")
   y <- y[order(abs(y$Median), decreasing = TRUE),]
 
-print(xtable(y, caption="Relationship between Project and MPDS between different factor levels"), comment = FALSE)
+print(xtable(y, caption="Relationship between Project and MPDS between different factor levels"),
+             comment = FALSE)
 
   
 rm(i, o, y, x)
