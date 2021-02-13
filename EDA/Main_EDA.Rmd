@@ -628,4 +628,4 @@ Currently as the data stands, we cannot derive much insight into the overall pre
 
 
 # Team Member Contribution
-Sam, Willem, and Kelsey produced an intial EDA working together. Tim also produced an inital EDA which was compared to the group EDA.  We merged the initial documents where it made sense.  Willem proceeded to build out more of the substaintial code for the analysis and Kelsey and Sam provided written analysis and edits.  For the final collaboration, the whole team used GitHub to make final edits and adjustments to the EDA.
+Sam, Willem, and Kelsey produced an initial EDA working together. Tim also produced an initial EDA which was compared to the group EDA.  We merged the initial documents where it made sense.  Willem proceeded to build out more of the substantial code for the analysis. Kelsey, Willem, and Sam provided written analysis. Additionally, Kelsey and Sam proofread and provided final edits.  For the final collaboration, the whole team used GitHub to make final edits and adjustments to the EDA.
