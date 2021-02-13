@@ -480,7 +480,7 @@ Figure 4 shows a slight positive relationship between maxtemp and sales. The gra
 ```{r, results='asis'}
 table <- top_n(df[c(1,2,4,15,16)], 5)
 
-xtable(table, caption="Top 5 Sales values in the data set")
+xtable(table, caption="Top 5 Sales values in the data set", comment=FALSE)
 ```
 In reviewing the data, there appear to be some extreme outliers in Sales.  The median Sales value is just $2.79 which would generally be just one or two candy bars.  The interquartile range (IQR) from the 25th percentile to the 75th percentile spans just $2.98 from $1.79 to $4.77.  However, there was an extreme outlier of $96,994.40 in sales on 3/14/2020 from the sale of 2,000 Tootsie Rolls (Item_ID -12066).  We are concerned this might be inaccurate data since the product info indicates they sell for just $0.10 each.  Based on selling 2,000 Tootsie Rolls at $0.10 each would only come to $200.00, which is certainly quite a bit short of the $96,994.40 indicated in the data.  This is likely incorrect information and would be worth confirming with Site ID 380 since they would likely remember such an extreme sale.
 
