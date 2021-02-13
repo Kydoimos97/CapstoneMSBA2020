@@ -619,6 +619,8 @@ rm(table2, list_mpds, list_siteid, i, counter, df2)
 
 Figure 8 shows the aggregate sum of sales per day seperated per site_id, or location.  There is a clear difference between various sites in the amount of aggregated sales per day. Every location shows differences in seasonality, e.g. 380 vs 280, and growth e.g. 280 vs 517. Table 7 shows the site_id and the matching amount of pumps. There is no apparent difference in the number of pumps and sales in a given day. Seasonality also does not appear to depend on the number of pumps available at the get station, and neither does growth.
 
+/newpage
+
 # Results:
 
 Through the exploratory analysis we performed on our data, we have discovered the following:
