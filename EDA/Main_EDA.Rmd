@@ -1,7 +1,13 @@
 ---
 title: "EDA Capstone"
-author: "Willem van der Schans, Kelsey Metivier, Sam Erickson, Tim Gain"
-date: "2/3/2021"
+subtitle: "Capstone 2021: Exploratory Data Analysis | Maverick Group 1"
+author:
+- "Willem van der Schans"
+- "Kelsey Metivier"
+- "Sam Erickson"
+- "Tim Gain"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+abstract: "The sponsor of this paper, Maverik, wants to improve sales forecasting of candy bars. Maverick's convenience stores must have accurate sales models for the inventory held at each location to generate accurate budgets and financial forecasts. The data supplied comes in two datasets; 1) Project Info Revised and 2) Products. Project Info Revised is the primary dataset for the project. The Products dataset is a dictionary for the variable item_id to map into the primary dataset. This paper focuses on Exploratory data analysis to get a better grasp on the data provided. It explores the opportunities and problems the data provides for future analysis. Our main findings consist of first that we found that the temperature variable contained 11,799 NA values a which need to be either imputed or removed. That multicollinearity is present in this data set and will need to be resolved for our final analysis. Multicollinearity exists between the max temp and the min temp and the Gross Book Value, and the Square Footage. Singularities are also present, especially within the variables Site_ID, Days_open, and current GBV. Lastly, Aggregating sales data and displaying it overtime shows seasonality, which needs to be further explored to understand the effect of time on the target and independent variables."
 output:
   pdf_document:
     fig_height: 4
@@ -9,13 +15,16 @@ output:
     highlight: kate
     toc: no
     toc_depth: 4
+    number_sections: true
 ---
 
-\newpage
 
 \tableofcontents
 
+
 \newpage
+\thispagestyle{empty}
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = T, warning = FALSE)
@@ -23,47 +32,33 @@ options(java.parameters = c("-XX:+UseConcMarkSweepGC", "-Xmx8192m"))
 #options(java.parameters = "-Xmx8g")
 ```
 
- 
-
-\newpage
-
 ```{r, echo=F, message=FALSE, warning=FALSE}
-# Operational Packages
-library(dplyr) # Additional Base level functionality of R
-library(ggplot2) # Comprehensive Graphical Output Package
-library(ggthemes) # More themes for GGPLOT2
-library(Rfast) # Fast R Functions
-library(bestNormalize) # Automatic Optimal Normalization
-library(rlist) #list.append
-library(scales) # Control over Axis formatting
-library(kableExtra) # Output HTML Formatted Tables
+# Base Packages
+library(dplyr) # Additional Base level functionality of R 
+library(stats) # Base Statistic Funtionality
+
+# Extended Base Functionality
 library(reshape2) # Melt Function Correlation Matrix
-library(lsr) #Correlation Matrix
-library(e1071) #Skewness and other depreciated functions
-library(stats)
+library(rlist) #list.append
 library(lubridate) # For working with dates
+library(caret) # MachineLearning package used for createDataPartition
 
-
-library(caret) # MachineLearning package
-library(doSNOW) # Parralel processing
-library(rminer) #Mmetric Function'
-
-
-library(tidyverse)
-library(ggplot2)
-library(reshape2)
-library(ggthemes) #General Theme Package
-library(gghighlight)
+# Visualisation Packages
+library(ggplot2) # Comprehensive Graphical Output Package 
+library(ggthemes) # More themes for GGPLOT2
+library(scales) # Control over Axis formatting
+library(gghighlight) # GGplot Highlight function
 library(gridExtra) # Plot in Grids
 
-library(xtable)
-library(papeR)
-library(reporttools)
+# Latex Packages
+library(xtable) # Latex Tables
+library(papeR) # Paper Writing Module
+library(reporttools) # Latex Sumarry Tables
 ```
 
 \newpage
 
-# EDA Assignment
+# Introduction
 
 ## Business Problem
 
@@ -71,55 +66,27 @@ Maverik would like to improve sales forecasting of candy bars. The convenience s
 
 ## Analytic Objective
 
-The analytic objective is to build a model to predict the outcome variable "Sales" using historical candy bar sales data.
+The analytic objective is to build a model to predict the outcome variable: "Sales" using historical candy bar sales data.
 
 ## Questions Guiding EDA
 
-Will we be able to impute NA weather data using web scraping? Are the missing (NA) 11K weather data points related to the same date, location, etc, or are they isolated incidents? Should we remove the 11K NAs? What is the extreme outlier 96994.40 in Sales? Do we need to remove the outliers? Do we need to perform any standardization or normalization? Do we need to perform log transformations? Which variables need to be factorized? Do other data type changes need to be made? Are any of the variables strongly correlated? Multicollinearity? Do we need to adjust the Open_date variable so that it can be used in prediction models?
+1.  Where can we find the information in the data set? Do variables hold data in themselves, or is most data visible when variables are examined overtime?
 
-\newpage
+2.  Will we be able to impute NA weather data using web scraping, or should they be removed?
 
-## CodeBook: Main Dataset
+3.  Are the missing (NA) 11K weather data points related to the same date and location, or are the values missing randomly?
 
--   Variable_Name Data_Type Description
+4.  What is the extreme outlier 96994.40 in Sales, and what other significant outliers exist?
 
--   SITE_ID INT = Unique Site Identifier (Maverik Store ID)
+5.  Do we need to perform any standardization or normalization?
 
--   LOCATION_ID INT = Location Identifier, 1:1 with SITE_ID
+6.  Which variables need to be factorized? Do other data type changes need to be made?
 
--   SQ_FOOTAGE INT = Square Footage of Store (Indoor Footprint)
+7.  Are any of the variables strongly correlated, and do singularities and multicollinearity occur?
 
--   LOCALE CHR = Geospatial Descriptor
+8.  Do we need to adjust the date format variable so that we can use it in prediction models?
 
--   MPDS INT = Count of Fueling Positions
-
--   DATE DATE = Day Date
-
--   DAY_OF_WEEK CHR = Day of Week Descriptor
-
--   HOLIDAY CHR = Holiday Description, If Applicable
-
--   HCA_GBV NUM = Gross Book Value of Site
-
--   MAX_TEMP NUM = Daily Maximum Temperature
-
--   MIN_TEMP NUM = Daily Minimum Temperature
-
--   PROJECT CHR = If Day's Sales Was Impacted by a Project
-
--   ITEM_ID INT = Item Identifier
-
--   SALES INT = Sum of Sales
-
--   QUANTITY_SOLD = INT Sum of Units
-
-### CodeBook: Products Mapping Subset
-
--   Item_ID = Item Identifier
-
--   Item_Desc = Item Description per Identifier
-
--   Department_Decs = Product department description
+9.  Where can we find the information in the data set? Do variables hold data in themselves, or is most data visible when variables are examined overtime?
 
 \newpage
 
@@ -127,7 +94,7 @@ Will we be able to impute NA weather data using web scraping? Are the missing (N
 
 ## Preliminary Analysis
 
-The data supplied comes in two datasets; 1) Project Info Revised and 2) Products. The Project Info Revised is our primary dataset for the project. The Products dataset is a dictionary for the variable "item_id" in the primary dataset. By combining the two data sets, we will be able to assess data validity properly. The aim is to join the two data sets by mapping Item_description values with Item_ID values and creating a new variable in the primary dataset named Item_Desc. The Products dataset will not be used after value mapping the variables.
+The data supplied comes in two datasets; 1) Project Info Revised and 2) Products. Find the codebook in appendix A for both datasets. Project Info Revised is our primary dataset for the project. The Products dataset is a dictionary for the variable "item_id" in the primary dataset. By combining the two data sets, we will be able to assess data validity properly. The aim is to join the two data sets by mapping Item_description values with Item_ID values and creating a new variable in the primary dataset named Item_Desc. The Products dataset will not be used after value mapping the variables.
 
 ### Data Set-up
 
@@ -144,6 +111,8 @@ df <- readRDS("CapstoneProjectInfoRevised.rds")
 products <- readRDS("CapstoneProjectProducts.rds")
 ```
 
+## Setting Data Types
+
 ```{r}
 # Factorization
 df$Site_ID <- as.factor(df$Site_ID)
@@ -159,7 +128,7 @@ df$SQ_Footage <- as.numeric(df$SQ_Footage)# Shows Factor like tendencies
 df$Periodic_GBV <- as.numeric(df$Periodic_GBV)
 df$Current_GBV <- as.numeric(df$Current_GBV)
 
-# Re-origin of Dates  at 1/1/1980
+# Re-origin of Dates at 06/22/1998
 
 x <- min(df$Open_Date) 
 df$Open_Date <- as_date(df$Open_Date, origin = x)
@@ -170,6 +139,8 @@ rm(x)
 # enables DATE to be used in prediction algorithms
 
 ```
+
+A Date format in R is based on epoch time and thus easily convert to a number. The origin is reset to the earliest date present in the data set. Setting the origin allows us to work with an origin point that holds value [06/22/1998] instead of the arbitrary origin point of epoch [1/1/1970]
 
 ```{r, warning=FALSE, message=FALSE}
 candy_vector <- c(products$Item_Desc)
@@ -188,43 +159,51 @@ df <- df[, c(1,2,6,17,7,3,12,13,14,10,11,8,9,15,16,4,5)]
 names(df) <- tolower(make.names(names(df)))
 
 rm(products, candy_vector, id_vector)
+
 ```
 
-### Summary Tables
+\newpage
 
-#### Numeric
+## Summary Tables
+
+### Numeric
 
 ```{r, results="asis"}
 # summarize numeric variables
-tableContinuous(df[,sapply(df, is.numeric)], , comment = FALSE,
-
+tableContinuous(df[,sapply(df, is.numeric)], comment = FALSE,
                 stats = c("n", "min", "q1", "median", "mean", "q3", "max", "na"),
                 cap = "Summary of Numeric variables")
 ```
 
-Table 1 shows that after mapping the Item_desc variables to the main dataset the dataset consists of 1,352,124 observations over 17 variables. The temperature variables are the only variables with Missing data where 11,799 entries are missing. Before data cleaning, the team needs to research whether the missing temperature data points can be imputed using the location data provided in the dataset.
+Table 1 shows that after mapping the Item_desc variables to the primary dataset, the dataset consists of 1,352,124 observations over 17 variables. The temperature variables are the only variables with Missing data where 11,799 entries are missing. Before data cleaning, the team needs to research whether the missing temperature data points can be imputed using the location data provided in the dataset.
 
-Since only 10 site_id's exist it is possible to interpolate the location of these sites by matching historical temprature data with the given temprature data, however the problem is the cost of accessing relevant API's is over \$100 dollar per month. Webscraping is an option however a legal grey area especially since this project is conducted for a corperate sponsor. Further options for imputation have to be explored and will likely be based on a form of bootstrapping data based on timeseries and previous years or removal of temprature data overall.
+Since only ten site_id's exist, it is possible to interpolate these sites' location by matching historical temperature data with the given temperature data; however, the problem is the cost of accessing relevant API's is over \$100 per month. Web scraping is an option yet a legal grey area primarily since this project is conducted for a corporate sponsor. Further opportunities for imputation have to be explored and will likely be based on a form of bootstrapping data based on time-series and previous years or removal of temperature data overall.
 
-Table 1 also shows that Quantity sold and sales seem to have extremely long right tails. Since Sales is the target variable this needs to be further investigated and looked at to ensure optimal algorithm performance.
+Table 1 also shows that Quantity sold and sales seem to have a long right tail. Since Sales is the target variable, this needs to be further investigated and likely transformed to ensure optimal algorithm performance.
 
-\newpage
+#### Temprature NA's
 
-## Temprature NA's
+```{=tex}
+\vspace{12pt}
+```
+
+This deeper dive into the NA's show that the missing temperature data is randomly scattered across dates and sites, and we cannot point to a single factor for why the information is missing. We will need to perform further analysis during data cleaning to determine whether we will impute or remove the NA's. 
+
+*Refer to Appendix B and C for output.*
 
 ```{r}
 new_df <- df[is.na(df$maxtemp),]
+```
 
+```{r, eval=F}
 levels(as.factor(new_df$site_id))
 
 levels(as.factor(new_df$date))
 ```
 
-This deeper dive into the NAs show that the missing temperature data is randomly scattered across dates and sites, and we cannot point to a single factor for why the information is missing. We will need to perform further analysis during data cleaning to determine whether we will impute or remove the NAs.
-
 \newpage
 
-#### Factorized
+### Factorized
 
 ```{r, results="asis"}
 # summarize factorized variables
@@ -233,29 +212,29 @@ tableNominal(df[c(12,13,14,15)], cap = "Summary of Factorized variables", cumsum
 
 ```
 
-Table 2 shows that the Project variable holds limited information since only 0.02% of the data entries deviate from the baseline of NONE. MPDS and sq_footage seem to not change during the lifetime of the data set, the same for locale. We therefore have to decide what variable holds the most information to elimite multicollinearity and singularity when running algorithms.
+Table 2 shows that the Project variable holds limited information since only 0.02% of the data entries deviate from NONE's baseline. MPDS and sq_footage seem to not change during the data set's timeline, the same for locale. Therefore, we have to decide what variable holds the most information to eliminate multicollinearity and singularity when running algorithms.
 
 \newpage
 
 ## Multicolinnearity
 
-Multicolinnearity has a negative effect on model performance and therefore needs to be elimited. The negative impact on model performance originates from two main points. First, multicollinearity makes coefficients extremely sensitive, effectively eliminating the ability to generalize a model. Second, multicollinearity can misrepresent the P-value, making it hard to rely on model results to readjust or retain null-hypothesises. We will eliminate multicollinearity as the two underlying problems would have a detrimental effect on the model outcome's efficacy. In this current EDA, we will be looking at where multicollinearity exists and what engineering to consider for feature engineering.
+Multicollinearity harms model performance and therefore needs to be eliminated. The negative impact on model performance originates from two main points. First, multicollinearity makes coefficients extremely sensitive, virtually eliminating the ability to generalize a model. Second, multicollinearity can misrepresent the P-value, making it hard to rely on model results to readjust or retain null-hypothesizes. We will eliminate multicollinearity as the two previously discussed underlying problems would have a detrimental effect on the model outcome. In this current EDA, we will be looking at where multicollinearity exists and what engineering to consider for feature engineering.
 
 To eliminate multicollinearity, we will follow the correlation guidelines below and remove any strong relationship of an absolute r above 0.7. (Mindrila & Balentyne).
 
-**Absolute Value of r Strength of Relationship**
+Absolute Value of r Strength of Relationship
 
-r \< 0.3 None or very weak
+-   r \< 0.3 None or very weak
 
-0.3 \< r \< 0.5 Weak
+-   0.3 \< r \< 0.5 Weak
 
-0.5 \< r \< 0.7 Moderate
+-   0.5 \< r \< 0.7 Moderate
 
-r \> 0.7 Strong
+-   r \> 0.7 Strong
 
-Note: that Na's are omitted however testing showed that this does not change results at all, but merely allows the correlation matrix to be complete instead of showing gaps for correlations regarding temprature data.
+*Note:* Na's are omitted; however, testing showed that this does not change results at all but merely allows the correlation matrix to be complete instead of showing gaps for correlations regarding temperature data.
 
-### Corelation Matrix: Pre-Engineering
+### Correlation Matrix: Pre-Engineering
 
 ```{r, fig.cap='Pre-engineering, Correlation Matrix'}
 df2 <- df
@@ -293,9 +272,9 @@ ggplot(data = melted_cormat, aes(x=Var1, y=Var2, fill=Correlation)) +
 rm(Integers, melted_cormat, nums, df2)
 ```
 
-As shown in Figure 1, most multicollinearity shows between the max and min temperature variables. We expected this result since min and max temp would move closely together in any direction. We need to consider if retaining one variable would provide a better model outcome since they are redundant. We can remedy this multicollinearity by making a temperature range variable by subtracting mintemp from maxtemp. The new variable temp_diff would show when large swings in temperature occurred, which could point to weather events. We assume that the minimum temperature occurs at night outside of regular customer hours, and therefore, we will remove mintemp as a variable. We will leave Maxtemp as a variable as we assume the maximum temperature occurs during the day during regular customer hours.
+As shown in Figure 1, most multicollinearity shows between the max and min temperature variables. We expected this result since min and max temp would move closely together in any direction. We need to consider if retaining one variable would provide a better model outcome since they are redundant. We can remedy this multicollinearity by making a temperature range variable by subtracting min temp from max temp. The new variable temp_diff would show when large swings in temperature occurred, which could point to weather events. We assume that the minimum temperature occurs at night outside of regular customer hours, and therefore, we will remove min temp as a variable. We will leave Maxtemp as a variable as we assume the maximum temperature occurs during the day during regular customer hours.
 
-Next, the GBV variables are heavily correlated with each other and with sq_footage. GBV stands for gross book value. Logically, a large store would have a larger Gross book value. We will eliminate this correlation relationship by creating two new variables. The first variable is cgbv_sqf, which stands for current GBV per square footage. This variable shows the valuation per store and removes the information inherited for the sq_footage variable. A variable will then be made that shows the difference between the current and periodic GBV by subtracting the latter from the former. This difference again removes the inherited data from the square footage. After creating the new variables, we will remove current_gbv and periodic_gbv variables.
+Next, the GBV variables are heavily correlated with each other and with sq_footage. GBV stands for gross book value. Logically, a large store would have a more considerable Gross book value. We will eliminate this correlation relationship by creating two new variables. The first variable is cgbv_sqf, which stands for current GBV per square footage. This variable shows the valuation per store and removes the information inherited for the sq_footage variable. A variable will then be made that shows the difference between the current and periodic GBV by subtracting the latter from the former. This difference again removes the inherited data from the square footage. After creating the new variables, we will remove current_gbv and periodic_gbv variables.
 
 \newpage
 
@@ -359,13 +338,17 @@ ggplot(data = melted_cormat, aes(x=Var1, y=Var2, fill=Correlation)) +
 rm(Integers, melted_cormat, nums, df2)
 ```
 
-Figure 2 shows the deployed strategies elimited all occurences of moderate to strong multicollinearity. Only weak multicollinearity remains which will allow the algoritmhs to perform most optimally.
+Figure 2 shows the deployed strategies eliminated all occurrences of moderate to strong multicollinearity. Only weak multicollinearity remains, which will allow the algorithms to perform most optimally.
 
 \newpage
 
 ## Outlier Detection and Relationships
 
-### Outlier Detection and Relationships:Numerical Variables seperated by Site_ID
+**Note:** Geom_Point plots are limited to 1% of the data due to performance issues with PDF's. While using only 1% of the data removes most data points, it did not significantly affect the way plots look since most data points overlap. We chose 1% since rendering the plots below in a PDF becomes near impossible due to PDF's not saving an image but every data point as an object. When knitting finished, opening the document in any PDF viewer would crash due to the sheer amount of data in these plots alone. We are currently investigating rendering to PNG's and implementing them in PDF's to circumvent this problem.
+
+**Note:** For visualization purposes, the sales data axes have been limited to 0 to 150. This number shows most of the information and omits outliers that lay on the right tail of sales.
+
+### Numerical Variables seperated by Site_ID
 
 ```{r, fig.height = 9, fig.width = 7, fig.cap='Relationships between Target and Numeric Variables seperated by Site_ID', warning=FALSE, message=FALSE}
 num_list <- colnames(df[sapply(df, is.numeric)])
@@ -413,15 +396,15 @@ for (i in num_list) {
 rm(plot_list, counter, num_list, x, i, nCol, df2, mycolors, resample)
 ```
 
-Figure 3 shows the relationships between the target variable sales and a number of numeric variables. All of these numeric variables are location bound and therefore Colored by Site_ID. When looking at days_open, there is a clear correlation with Site_ID. This relationship is logical due to each location opening on a different day. There is no clear relationship between sales and days_open.
+Figure 3 shows the relationships between the target variable sales and several numeric variables. All of these numeric variables are location bound and therefore Colored by Site_ID. When looking at days_open, there is a clear correlation with Site_ID. This relationship is logical due to each location opening on a different day. There is no clear relationship between sales and days_open.
 
-Sales versus current gross book value per square foot show current book value per site does not seem to change at all in the data set. There are no other clear relationships between sales and current gross book value per square foot
+Sales versus current gross book value per square foot show current book value per site does not seem to change at all in the data set. There are no other clear relationships between sales and current gross book value per square foot.
 
 The Sales versus the difference in gross book value shows two cluster points. The larger cluster is around 0, and the smaller group is centered around 1,200,000.
 
 \newpage
 
-### Outlier Detection and Relationships:Other Numerical Variables
+### Other Numerical Variables
 
 ```{r, fig.height = 9, fig.width = 7, fig.cap='Relationships between Target and Numeric Variables', warning=FALSE, message=FALSE}
 num_list <- colnames(df[sapply(df, is.numeric)])
@@ -469,27 +452,31 @@ for (i in num_list) {
 rm(plot_list, counter, num_list, x, i, nCol, df2, resample, mycolors, colcounter)
 ```
 
-Figure 4 shows a slight positive relationship between maxtemp and sales. The graph shows more candy bar sales with higher temperatures across locations. However, the new variable, temperature difference, shows a weak relationship with sales. Lastly, sales and quantity sold show a strong positive relationship as expected; more quantity sold results in increased sales.
+Figure 4 shows a slight positive relationship between max temp and sales. The graph shows more candy bar sales with higher temperatures across locations. However, the new variable, temperature difference, shows a weak relationship with sales. Lastly, sales and quantity sold show a strong positive relationship as expected; more quantity sold results in increased sales.
 
-```{r, results='asis'}
+```{r, results='asis', warning=FALSE, message=FALSE}
 table <- top_n(df[c(1,2,4,15,16)], 5)
 
 xtable(table, caption="Top 5 Sales values in the data set", comment=FALSE)
 ```
 
-In reviewing the data, there appear to be some extreme outliers in Sales. The median Sales value is just \$2.79 which would generally be just one or two candy bars. The interquartile range (IQR) from the 25th percentile to the 75th percentile spans just \$2.98 from \$1.79 to \$4.77. However, there was an extreme outlier of \$96,994.40 in sales on 3/14/2020 from the sale of 2,000 Tootsie Rolls (Item_ID -12066). We are concerned this might be inaccurate data since the product info indicates they sell for just \$0.10 each. Based on selling 2,000 Tootsie Rolls at \$0.10 each would only come to \$200.00, which is certainly quite a bit short of the \$96,994.40 indicated in the data. This is likely incorrect information and would be worth confirming with Site ID 380 since they would likely remember such an extreme sale.
+In reviewing the data, there appear to be some extreme outliers in Sales. The median Sales value is just \$2.79, which would generally have a sales volume of one or two per candy bar. The interquartile range (IQR) from the 25th percentile to the 75th percentile spans just \$2.98 from \$1.79 to \$4.77. However, there was an extreme outlier of **\$96,994.40** in sales on 3/14/2020 from the sale of 2,000 Tootsie Rolls (Item_ID -12066). We are concerned this might be inaccurate data since the product info indicates they sell for just \$0.10 each. Based on selling 2,000 Tootsie Rolls at \$0.10 each would only come to \$200.00, which is certainly quite a bit short of the \$96,994.40 indicated in the data. The outlier is likely incorrect information and would be worth confirming with Site ID 380 since they would likely remember such an extreme sale.
 
-When looking at quantity sold, the IQR spans just 1 candy bar from just 1 to 2 candy bars sold. However, on 3/28/20, Site_ID 380 (Suburban/Residential) sold 10,048 of Item_ID -17,625 (I\*HER REESES EGG 1.2z LTO) at \$1.00 each for total sales of \$10,048.
+\
 
-There are other significant outliers as well, but these two were the most extreme. We will continue looking into the data as well as confirming with Maverik to see if these data points are correct.
+When looking at quantity sold, the IQR spans just one candy bar from just 1 to 2 candy bars. However, on 3/28/20, Site_ID 380 (Suburban/Residential) sold 10,048 of Item_ID -17,625 (I\*HER REESES EGG 1.2z LTO) at \$1.00 each for total sales of \$10,048.
+
+\
+
+There are other significant outliers as well, but these two were the most extreme. We will continue looking into the data and confirming with Maverik to see if these data points are correct.
 
 \newpage
 
-### Outlier Detection and Relationships: Categorical Variables
+### Categorical Variables
 
-In this section, boxplot are created with accompanying tables to precisely read the data. These variables will need to be evaluated later by aggregating all sales on a day and rerunning the code below to find differences between days instead of products and see if factor levels show different key_metrics.
+In this section, boxplots are created with accompanying tables to precisely read the data. These variables will need to be evaluated later by aggregating all sales on a day and rerunning the code below to find differences between days instead of products and see if factor levels show different key_metrics.
 
-#### Categorical Variables: Locale
+#### Locale
 
 Figure 5 and Table 4 show only slight differences between different factor levels of sales and locale. Each factor level's sample size is decently distributed, with only Suburban/residential only deviating a lot from the average sample size. With industrial having a higher sales median of 3.18 over 2.79 and lower for the rest of the factor levels, it warrants more research to determine what products warrant these extra sales.
 
@@ -529,9 +516,9 @@ print(xtable(y, caption="Relationship between Sales and Locale between different
 
 \newpage
 
-#### Categorical Variables: MPDS
+#### MPDS
 
-Figure 6 and Table 5 show no clear relationship can be found between the amount of mpds and sales. The lack of a relationship shows that sales of indiviual items are more site specific and are not based on the amount of pumps present at the gas station.
+Figure 6 and Table 5 show no clear relationship between the number of mpds and sales. The lack of a relationship indicates that sales of individual items are more site-specific and are not based on the number of pumps present at the gas station.
 
 ```{r, eval=TRUE, fig.height =3, fig.width =5, fig.align = "center", results="asis", fig.cap='Relationship between Sales and MPDS'}
 i = "mpds"
@@ -566,12 +553,9 @@ print(xtable(y, caption="Relationship between Sales and MPDS between different f
 
 ```
 
-
-
-
 \newpage
 
-#### Categorical Variables: Project
+#### Project
 
 Table 6 and figure 7 show no clear relationship between factor levels of project. Both factor levels apart from NONE have a tiny sample size, and generalization should happen carefully. Program enhancement seems to result in lower median sales, where enhancement likely means that existing parts of the building have had to close, as opposed to none and interfering with a location's ability to sell products.
 
@@ -612,11 +596,9 @@ print(xtable(y, caption="Relationship between Sales and Project between differen
 rm(i, o, y, x)
 ```
 
-
-
 \newpage
 
-#### Outlier Detection and Relationships: Time Series of Sales per Site_ID aggregated per day
+\#\#\#\#Outlier Detection and Relationships: Time Series of Sales per Site_ID aggregated per day
 
 ```{r}
 sum_sales <- aggregate(df$sales, by=list(df$date, df$site_id), FUN=sum)
@@ -661,14 +643,14 @@ table2 <-data.frame(SiteID = list_siteid, MPDS = list_mpds)
 
 ```
 
-
 ```{r, results='asis', warning=FALSE, message=FALSE}
 
 print.xtable(xtable(table2, caption = "Amount of Pumps per SiteID"), comment=FALSE)
 
 rm(table2, list_mpds, list_siteid, i, counter, df2)
 ```
-Figure 8 shows the aggregate sum of sales per day seperated per site_id, or location. There is a clear difference between various sites in the amount of aggregated sales per day. Every location shows differences in seasonality, e.g. 380 vs 280, and growth e.g. 280 vs 517. Table 7 shows the site_id and the matching amount of pumps. There is no apparent difference in the number of pumps and sales in a given day. Seasonality also does not appear to depend on the number of pumps available at the get station, and neither does growth.
+
+Figure 8 shows the aggregate sum of sales per day grouped by site_id, or location. There is a clear difference between various sites in the amount of aggregated sales per day. Every location shows differences in seasonality, e.g., 380 vs. 280, and growth, e.g., 280 vs. 517. Table 7 shows the site_id and the matching amount of pumps. There is no apparent difference in the number of pumps and sales in a given day. Seasonality also does not appear to depend on the number of pumps available at the get station, and neither does growth.
 
 \newpage
 
@@ -676,20 +658,107 @@ Figure 8 shows the aggregate sum of sales per day seperated per site_id, or loca
 
 Through the exploratory analysis we performed on our data, we have discovered the following:
 
-1.  We cannot currently predict any values correctly without running a time-series analysis. After trying to use a standard GLM algorithm we found that it was not very descriptive of what was going on in our data. With that in mind we will be researching the best method for performing a time-series analysis and which platform is best for this use case (ie. Python or R).
+1.  We cannot currently predict any values correctly without running a more complex analysis. After trying to use a standard GLM algorithm, we found that it could not accurately predict any Sales value. With that in mind, we will be researching the best method for performing other forms of analysis and which platform is best for this use case (i.e., Python or R). Additionally, we will explore different algorithms that can better handle the data provided.
 
-2.  After mapping the supplementary data set to the original we found that there were 11,799 NA values contained within the temperature variable. We have a few thoughts on how to go about this but want to do some more research to find best practices. Some of our insights are to possibly use historical temperature data by site_id to fill in the NA values.
+2.  After mapping the supplementary data set to the original, we found that the temperature variable contained 11,799 NA values. We have a few thoughts on how to go about this but want to do some more research to find best practices. Our insights are to possibly use historical temperature data by site_id to fill in the NA values.
 
-3.  Multicollinnearity is present in this data set and will need to be resolved for our final analysis. It exists between the max temp and the min temp, as well as the Gross Book Value and the Square Footage. For the temperature variables, our thoughts are to exclude Min Temp since that generally takes place during the middle of the night where Max Temp is a more accurate representation of the normal hours of operation. For GBV and sq_footage our thoughts are to create two separate variables to help standardize the data.
+3.  Multicollinearity is present in this data set and will need to be resolved for our final analysis. It exists between the max temp and the min temp and the Gross Book Value, and the Square Footage. For the temperature variables, our thoughts are to exclude Min Temp since that generally occurs during the middle of the night, where Max Temp is a more accurate representation of the regular hours of operation. For GBV and sq_footage, our thoughts are to create two separate variables to help standardize the data.
 
-Currently as the data stands, we cannot derive much insight into the overall predictability of our variables using a general linear model. However, we were able to find issues within the data that will help us be more prepared for when we perform the time-series analysis. This EDA has helped us understand the different approaches we need to take both in pre-processing as well as our time-series method. As it stands, dealing with multicollinearity and the NA values will help us in our overall predictability of our model.
+4.  This data set deals with Singularities, where two variables hold precisely the same or close to the same data. Especially Site_ID, Days_open, and current GBV show singularities as they all contain the same information. We need to thoroughly clean this data set and compare variables to show precisely what information it holds and where we can find information that we can predict so we can focus on the most critical information.
+
+5.  Aggregating sales data and displaying it overtime shows seasonality. It can be interesting to dive deeper into an aggregated data sets and learn more about the underlying causes of daily sales before we apply this knowledge to feature engineer the data set to work with candy bar specific sales. Additionally, trying to discover trends by creating visualizations of variables over time will allow us to see where predictive power lies within the data set. Finding trends, however, requires a large number of visualizations, and we did not have the time to go over everything yet by the time of handing in this paper.
+
+Currently, we cannot derive much insight into the overall predictability of our variables using a general linear model. However, we could find issues within the data that will help us be more prepared for when we perform more complex analyses. This EDA has helped us understand the different approaches we need to take both in pre-processing and our time-series method. As it stands, dealing with multicollinearity and the NA values and focussing on trends that show over time will help us predict our model.
 
 # Team Member Contribution
 
-Sam, Willem, and Kelsey produced an initial EDA working together. Tim also produced an initial EDA which was compared to the group EDA. We merged the initial documents where it made sense. Willem proceeded to code for the analysis. Kelsey, Willem, and Sam provided written analysis. Additionally, Kelsey and Sam proofread and provided final edits. For the final collaboration, the whole team used GitHub to make final edits and adjustments to the EDA.
+Sam, Willem, and Kelsey produced an initial EDA working together. Tim also created an initial EDA, which was compared to the group EDA. Tim initially worked due to scheduling issues. We merged the initial elements of both documents. Willem then started a master document by coding the full EDA and writing an initial write-up. Kelsey, Willem, Sam, and Tim then added more in-depth written analysis. Additionally, Kelsey, Sam, and Willem proofread to the document and added clarifying text. Finals editing was done by Willem. For collaboration, the whole team used [GitHub](https://github.com/Kydoimos97/CapstoneMSBA2020) to make final edits and adjustments to the EDA.
 
 \newpage
 
 # Bibilography
 
 Mindrila, D., & Balentyne, P. (n.d.). *Scatterplots and Correlation*. Retrieved November 20, 2020, from <https://www.westga.edu/academics/research/vrc/assets/docs/scatterplots_and_correlation_notes.pdf>
+
+\newpage
+
+# Appendix
+
+\newpage
+
+## Appendix: A
+
+**CodeBook: Main Dataset**
+
+-   Variable_Name Data_Type Description
+
+-   SITE_ID INT = Unique Site Identifier (Maverik Store ID)
+
+-   LOCATION_ID INT = Location Identifier, 1:1 with SITE_ID
+
+-   SQ_FOOTAGE INT = Square Footage of Store (Indoor Footprint)
+
+-   LOCALE CHR = Geospatial Descriptor
+
+-   MPDS INT = Count of Fueling Positions
+
+-   DATE DATE = Day Date
+
+-   DAY_OF_WEEK CHR = Day of Week Descriptor
+
+-   HOLIDAY CHR = Holiday Description, If Applicable
+
+-   HCA_GBV NUM = Gross Book Value of Site
+
+-   MAX_TEMP NUM = Daily Maximum Temperature
+
+-   MIN_TEMP NUM = Daily Minimum Temperature
+
+-   PROJECT CHR = If Day's Sales Was Impacted by a Project
+
+-   ITEM_ID INT = Item Identifier
+
+-   SALES INT = Sum of Sales
+
+-   QUANTITY_SOLD = INT Sum of Units
+
+**CodeBook: Products Mapping Subset**
+
+-   Item_ID = Item Identifier
+
+-   Item_Desc = Item Description per Identifier
+
+-   Department_Decs = Product department description
+
+\newpage
+
+## Appendix: B
+
+Site_ID's with missing Temperature Values
+
+```{=tex}
+\begin{itemize}
+```{r, results='asis', echo=FALSE}
+
+cat(paste("\\item", c(levels(as.factor(new_df$site_id))), sep = "\n"))
+
+```
+\end{itemize}
+```
+
+\newpage
+
+## Appendix: C
+
+Dates with missing Temperature Values
+
+```{=tex}
+\begin{itemize}
+```{r, results='asis', echo=FALSE}
+
+cat(paste("\\item", c(levels(as.factor(new_df$date))), sep = "\n"))
+
+```
+\end{itemize}
+```
+\newpage
