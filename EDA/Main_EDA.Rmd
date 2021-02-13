@@ -613,4 +613,12 @@ rm(table2, list_mpds, list_siteid, i, counter, df2)
 
 Figure 8 shows the aggregate sum of sales per day seperated per site_id, or location.  There is a clear difference between various sites in the amount of aggregated sales per day. Every location shows differences in seasonality, e.g. 380 vs 280, and growth e.g. 280 vs 517. Table 6 shows the site_id and the matching amount of pumps. There is no apparent difference in the number of pumps and sales in a given day. Seasonality also does not appear to depend on the number of pumps available at the get station, and neither does growth.
 
+# Results:
 
+Through the exploratory analysis we performed on our data, we have discovered the following:
+
+1.  We cannot currently predict any values correctly without running a time-series analysis. After trying to use a standard GLM algorithm we found that it was not very descriptive of what was going on in our data. With that in mind we will be researching the best method for performing a time-series analysis and which platform is best for this use case (ie. Python or R).
+2.  After mapping the supplementary data set to the original we found that there were 11,799 NA values contained within the temperature variable. We have a few thoughts on how to go about this but want to do some more research to find best practices. Some of our insights are to possibly use historical temperature data by site_id to fill in the NA values.
+3.  Multicollinnearity is present in this data set and will need to be resolved for our final analysis. It exists between the max temp and the min temp, as well as the Gross Book Value and the Square Footage. For the temperature variables, our thoughts are to exclude Min Temp since that generally takes place during the middle of the night where Max Temp is a more accurate representation of the normal hours of operation. For GBV and sq_footage our thoughts are to create two separate variables to help standardize the data.
+
+Currently as the data stands, we cannot derive much insight into the overall predictability of our variables using a general linear model. However, we were able to find issues within the data that will help us be more prepared for when we perform the time-series analysis. This EDA has helped us understand the different approaches we need to take both in pre-processing as well as our time-series method. As it stands, dealing with multicollinnearity and the NA values will help us in our overall predictability of our model.
