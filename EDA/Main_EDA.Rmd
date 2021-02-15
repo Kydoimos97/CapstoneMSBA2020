@@ -20,14 +20,12 @@ header-includes:
   - \usepackage{longtable}
 ---
 
-\newpage
-\thispagestyle{empty}
+\newpage\null\thispagestyle{empty}\newpage
 
 \tableofcontents
 
 
-\newpage
-\thispagestyle{empty}
+\newpage\null\thispagestyle{empty}\newpage
 
 
 ```{r setup, include=FALSE}
@@ -233,7 +231,7 @@ Absolute Value of r Strength of Relationship
 
 -   r \> 0.7 Strong
 
-*Note:* Na's are omitted; however, testing showed that this does not change results at all but merely allows the correlation matrix to be complete instead of showing gaps for correlations regarding temperature data.
+*Note:* Na's are omitted; however, testing showed that this does not change results at all but merely allows the correlation matrix to be complete instead of showing gaps for correlations regarding temperature data.
 
 ### Correlation Matrix: Pre-Engineering
 
@@ -345,7 +343,7 @@ Figure 2 shows the deployed strategies eliminated all occurrences of moderate to
 
 ## Outlier Detection and Relationships
 
-**Note:** Geom_Point plots are limited to 1% of the data due to performance issues with PDF's. While using only 1% of the data removes most data points, it did not significantly affect the way plots look since most data points overlap. We chose 1% since rendering the plots below in a PDF becomes near impossible due to PDF's not saving an image but every data point as an object. When knitting finished, opening the document in any PDF viewer would crash due to the sheer amount of data in these plots alone. We are currently investigating rendering to PNG's and implementing them in PDF's to circumvent this problem.
+**Note:** Geom_Point plots are limited to 1% of the data due to performance issues with PDF's. While using only 1% of the data removes most data points, it did not significantly affect the way plots look since most data points overlap. We chose 1% since rendering the plots below in a PDF becomes near impossible due to PDF's not saving an image but every data point as an object. When knitting finished, opening the document in any PDF viewer would crash due to the sheer amount of data in these plots alone. We are currently investigating rendering to PNG's and implementing them in PDF's to circumvent this problem.
 
 **Note:** For visualization purposes, the sales data axes have been limited to 0 to 150. This number shows most of the information and omits outliers that lay on the right tail of sales.
 
@@ -461,7 +459,7 @@ table <- top_n(df[c(1,2,4,15,16)], 5)
 xtable(table, caption="Top 5 Sales values in the data set", comment=FALSE)
 ```
 
-In reviewing the data, there appear to be some extreme outliers in Sales. The median Sales value is just \$2.79, which would generally have a sales volume of one or two per candy bar. The interquartile range (IQR) from the 25th percentile to the 75th percentile spans just \$2.98 from \$1.79 to \$4.77. However, there was an extreme outlier of **\$96,994.40** in sales on 3/14/2020 from the sale of 2,000 Tootsie Rolls (Item_ID -12066). We are concerned this might be inaccurate data since the product info indicates they sell for just \$0.10 each. Based on selling 2,000 Tootsie Rolls at \$0.10 each would only come to \$200.00, which is certainly quite a bit short of the \$96,994.40 indicated in the data. The outlier is likely incorrect information and would be worth confirming with Site ID 380 since they would likely remember such an extreme sale.
+In reviewing the data, there appear to be some extreme outliers in Sales. The median Sales value is just \$2.79, which would generally have a sales volume of one or two per candy bar. The interquartile range (IQR) from the 25th percentile to the 75th percentile spans just \$2.98 from \$1.79 to \$4.77. However, there was an extreme outlier of **\$96,994.40** in sales on 3/14/2020 from the sale of 2,000 Tootsie Rolls (Item_ID -12066). We are concerned this might be inaccurate data since the product info indicates they sell for just \$0.10 each. Based on selling 2,000 Tootsie Rolls at \$0.10 each would only come to \$200.00, which is certainly quite a bit short of the \$96,994.40 indicated in the data. The outlier is likely incorrect information and would be worth confirming with Site ID 380 since they would likely remember such an extreme sale.
 
 \
 
