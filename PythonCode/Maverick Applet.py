@@ -103,7 +103,7 @@ def check_item_id():
         
 def check_site_id():
     value = site_id_inp.get()
-    if value is "":
+    if value == "":
         site_id_text_box.delete(1.0, "end-1c")
         site_id_text_box.insert("end-1c", 'All_Sites \u2714')
     elif value.isdigit():
@@ -279,6 +279,7 @@ def getInput():
     date_list = list(df.sort_values("date").date.unique())
     __app_list = []
     prediction_dict = {}
+    insamp_prediction_dict={}
     test_dict = {}
     model_sum_dict = {}
 
@@ -416,6 +417,7 @@ def getInput():
                                 if __rmse < __best_score:
                                     __best_score = __rmse
                                     __best_cfg = __order
+                                    insamp_prediction_dict[__site_id_value,__item_id_value] = __output
                                 else:
                                     pass
                             except:
@@ -441,12 +443,16 @@ def getInput():
                 test_dict[__site_id_value,__item_id_value] = __test_temp.sales
                 score_dict[__site_id_value,__item_id_value,"cfg"] = __best_cfg
                 score_dict[__site_id_value,__item_id_value,"rmse"] = __best_score
+
                 
                 prediction_dict[__site_id_value,__item_id_value] = __output
             
   
     out_list = []
-    (pd.DataFrame.from_dict(data=prediction_dict, orient='index').to_csv('prediction_output.csv', header=False))
+    if save_inp.get() == "Yes":
+        (pd.DataFrame.from_dict(data=prediction_dict, orient='index').to_csv('prediction_output.csv', header=False))
+    else:
+        pass
     
     
 
@@ -455,12 +461,17 @@ def getInput():
         for x in site_list:
             sum_val = ceil(sum(prediction_dict[x,i]))
             sum_val2 = ceil(sum(__test_temp.sales))
+            val3 = ceil(sum(insamp_prediction_dict[x,i]))-sum_val2
             item_name = productdict[i]
-            string_output = "Item_ID = " + str(i) + " | Site = "+str(x)+ "\n" +  "Item_Name = " + str(item_name) + "\n" +"---Prediction---" + "\n" +prediction_dict[x,i].to_string() + "\n" + "----------------" + "\n" +"Sum of Sales predicted 10 days = " + str(sum_val) + "\n" + "Expected Sum of Sales based on previous 10 Days= " + str(sum_val2) + "\n" + "Best In-Sample CFG = " + str(score_dict[x,i,"cfg"]) + "\n" + "Best In-Sample RMSE =" + str(round(score_dict[x,i,"rmse"],2)) + "\n" + "\n" 
+            string_output = "Item_ID = " + str(i) + " | Site = "+str(x)+ "\n" +  "Item_Name = " + str(item_name) + "\n" +"---Prediction---" + "\n" +prediction_dict[x,i].to_string() + "\n" + "----------------" + "\n" +"Sum of Sales predicted 10 days = " + str(sum_val) + "\n" + "Expected Sum of Sales based on previous 10 Days = " + str(sum_val2) + "\n" + "Insample Total Error = " + str(val3) + "\n" + "Best In-Sample CFG = " + str(score_dict[x,i,"cfg"]) + "\n" + "Best In-Sample RMSE = " + str(round(score_dict[x,i,"rmse"],2)) + "\n" + "\n" 
             out_list.append(string_output)
-
-    message_string = "Predictions Saved at: " + str(os.getcwd()) + "/" +'prediction_output.csv'
-    tk.messagebox.showinfo(title = "Outcome", message = message_string)
+            
+    if save_inp.get() == "Yes":
+        message_string = "Predictions Saved at: " + str(os.getcwd()) + "/" +'prediction_output.csv'
+        tk.messagebox.showinfo(title = "Outcome", message = message_string)
+    else:
+        pass
+    
     if output_inp.get() == "Yes":
         if len(out_list) == 0:
             tk.messagebox.showwarning(title = 'Outcome',message = 'ARIMA FAILED')
@@ -488,7 +499,7 @@ def getInput():
 # In[4]:
 
 app = tk.Tk() 
-app.geometry('700x550')
+app.geometry('700x600')
 app.title('Maverik: Candy Bar prediction')
 
 s=ttk.Style()
@@ -500,7 +511,10 @@ sub_button_text.set("Submit and Run")
 #Explanation
 logo = tk.PhotoImage(file="C:/Users/wille/Documents/GitHub/CapstoneMSBA2020/Resources/logo_maverick.gif",master=app)
 
-w1 = tk.Label(app, image=logo).grid(column=2, row=0, columnspan = 2)
+label00 = tk.Label(app,text = "")
+label00.grid(column=0, row=0)
+
+w1 = tk.Label(app, image=logo).grid(column=2, row=1, columnspan = 2)
 
 explanation = """Fill in the requested inputs. 
 Use the buttons for free input to check if the data is correct.
@@ -508,154 +522,162 @@ The Program can be killed by using the X on the top right of the Dialogue box.""
 
 w2 = tk.Label(app, 
               justify=tk.LEFT,
-              padx = 5, 
-              text=explanation).grid(column=0, row=0, columnspan = 2)
+              padx = 20, 
+              text=explanation).grid(column=0, row=1, columnspan = 2)
 
 # Padding
 label0 = tk.Label(app,text = "")
-label0.grid(column=0, row=1)
+label0.grid(column=0, row=2)
 
 # Dataframe
-tk.Label(app, text="Input DataFrame .CSV Path").grid(row=1)
+tk.Label(app, text="Input DataFrame .CSV Path").grid(row=3)
 dataframe_path = tk.Entry(app)
-dataframe_path.grid(row=1, column=1)
+dataframe_path.grid(row=3, column=1)
 
 submit_btn1 = Button(app, text="Check", width=10, command=check_dataframe_path)
-submit_btn1.grid(row=1, column=2)
+submit_btn1.grid(row=3, column=2)
 
 dataframe_path_text_box = tk.Text(app, width = 15, height = 1)
-dataframe_path_text_box.grid(row = 1, column = 3)
+dataframe_path_text_box.grid(row = 3, column = 3)
 dataframe_path_text_box.insert("end-1c","waiting")
 
 #Product_df
-tk.Label(app, text="Input Productdf .CSV Path").grid(row=2)
+tk.Label(app, text="Input Productdf .CSV Path").grid(row=4)
 productdf_path = tk.Entry(app)
-productdf_path.grid(row=2, column=1)
+productdf_path.grid(row=4, column=1)
 
 submit_btn2 = Button(app, text="Check", width=10, command=check_productdf_path)
-submit_btn2.grid(row=2, column=2)
+submit_btn2.grid(row=4, column=2)
 
 productdf_path_text_box = tk.Text(app, width = 15, height = 1)
-productdf_path_text_box.grid(row = 2, column = 3)
+productdf_path_text_box.grid(row = 4, column = 3)
 productdf_path_text_box.insert("end-1c","waiting")
 
 # Padding
 label1 = tk.Label(app,text = "")
-label1.grid(column=0, row=3)
+label1.grid(column=0, row=5)
 
 # Cleaning_Std
-tk.Label(app, text="Input Outlier Std. Deviation").grid(row=4)
+tk.Label(app, text="Input Outlier Std. Deviation").grid(row=6)
 std_dev_cl = tk.Entry(app)
-std_dev_cl.grid(row=4, column=1)
+std_dev_cl.grid(row=6, column=1)
 
 submit_btn3 = Button(app, text="Check", width=10, command=check_standard_dev)
-submit_btn3.grid(row=4, column=2)
+submit_btn3.grid(row=6, column=2)
 
 std_dev_cl_text_box = tk.Text(app, width = 15, height = 1)
-std_dev_cl_text_box.grid(row = 4, column = 3, columnspan = 1)
+std_dev_cl_text_box.grid(row = 6, column = 3, columnspan = 1)
 std_dev_cl_text_box.insert("end-1c","waiting")
 
 # Item_id
-tk.Label(app, text="Input Top N or Item_ID").grid(row=5)
+tk.Label(app, text="Input Top N or Item_ID").grid(row=7)
 item_id_inp = tk.Entry(app)
-item_id_inp.grid(row=5, column=1)
+item_id_inp.grid(row=7, column=1)
 
 submit_btn4 = Button(app, text="Check", width=10, command=check_item_id)
-submit_btn4.grid(row=5, column=2)
+submit_btn4.grid(row=7, column=2)
 
 item_id_inp_text_box = tk.Text(app, width = 15, height = 1)
-item_id_inp_text_box.grid(row = 5, column = 3, columnspan = 1)
+item_id_inp_text_box.grid(row = 7, column = 3, columnspan = 1)
 item_id_inp_text_box.insert("end-1c","waiting")
 
 # Site_id
-tk.Label(app, text="Input Site_ID | Blank for All").grid(row=6)
+tk.Label(app, text="Input Site_ID | Blank for All").grid(row=8)
 site_id_inp = tk.Entry(app)
-site_id_inp.grid(row=6, column=1)
+site_id_inp.grid(row=8, column=1)
 
 submit_btn5 = Button(app, text="Check", width=10, command=check_site_id)
-submit_btn5.grid(row=6, column=2)
+submit_btn5.grid(row=8, column=2)
 
 site_id_text_box = tk.Text(app, width = 15, height = 1)
-site_id_text_box.grid(row = 6, column = 3, columnspan = 1)
+site_id_text_box.grid(row = 8, column = 3, columnspan = 1)
 site_id_text_box.insert("end-1c","waiting")
 
 
 # Padding
 label2 = tk.Label(app,text = "")
-label2.grid(column=0, row=7)
+label2.grid(column=0, row=9)
 
 # P
-tk.Label(app, text="Input starting P").grid(row=8)
+tk.Label(app, text="Input starting P").grid(row=10)
 p_inp = tk.Entry(app)
-p_inp.grid(row=8, column=1)
+p_inp.grid(row=10, column=1)
 
 submit_btn6 = Button(app, text="Check", width=10, command=check_p)
-submit_btn6.grid(row=8, column=2)
+submit_btn6.grid(row=10, column=2)
 
 p_inp_text_box = tk.Text(app, width = 15, height = 1)
-p_inp_text_box.grid(row = 8, column = 3, columnspan = 1)
+p_inp_text_box.grid(row = 10, column = 3, columnspan = 1)
 p_inp_text_box.insert("end-1c","waiting")
 
 # d
-tk.Label(app, text="Input starting D").grid(row=9)
+tk.Label(app, text="Input starting D").grid(row=11)
 d_inp = tk.Entry(app)
-d_inp.grid(row=9, column=1)
+d_inp.grid(row=11, column=1)
 
 submit_btn7 = Button(app, text="Check", width=10, command=check_d)
-submit_btn7.grid(row=9, column=2)
+submit_btn7.grid(row=11, column=2)
 
 d_inp_text_box = tk.Text(app, width = 15, height = 1)
-d_inp_text_box.grid(row = 9, column = 3, columnspan = 1)
+d_inp_text_box.grid(row = 11, column = 3, columnspan = 1)
 d_inp_text_box.insert("end-1c","waiting")
 
 # q
-tk.Label(app, text="Input starting Q").grid(row=10)
+tk.Label(app, text="Input starting Q").grid(row=12)
 q_inp = tk.Entry(app)
-q_inp.grid(row=10, column=1)
+q_inp.grid(row=12, column=1)
 
 submit_btn8 = Button(app, text="Check", width=10, command=check_q)
-submit_btn8.grid(row=10, column=2)
+submit_btn8.grid(row=12, column=2)
 
 q_inp_text_box = tk.Text(app, width = 15, height = 1)
-q_inp_text_box.grid(row = 10, column = 3, columnspan = 1)
+q_inp_text_box.grid(row = 12, column = 3, columnspan = 1)
 q_inp_text_box.insert("end-1c","waiting")
 
 # Time
-tk.Label(app, text="Input Prediction Time Frame").grid(row=11)
+tk.Label(app, text="Input Prediction Time Frame").grid(row=13)
 time_inp = tk.Entry(app)
-time_inp.grid(row=11, column=1)
+time_inp.grid(row=13, column=1)
 
 submit_btn9 = Button(app, text="Check", width=10, command=check_time)
-submit_btn9.grid(row=11, column=2)
+submit_btn9.grid(row=13, column=2)
 
 time_inp_text_box = tk.Text(app, width = 15, height = 1)
-time_inp_text_box.grid(row = 11, column = 3, columnspan = 1)
+time_inp_text_box.grid(row = 13, column = 3, columnspan = 1)
 time_inp_text_box.insert("end-1c","waiting")
 
 #Padding
 label5 = tk.Label(app,text = "")
-label5.grid(column=0, row=12)
+label5.grid(column=0, row=14)
 
 #Input
 label4 = tk.Label(app,text = "Gridsearch All?")
-label4.grid(column=0, row=13)
+label4.grid(column=0, row=15)
 
 gridsearch_inp = ttk.Combobox(app, values=["Yes", "No"])
-gridsearch_inp.grid(column=1, row=13)
+gridsearch_inp.grid(column=1, row=15)
 
 # Gridsearch 2
 label5 = tk.Label(app,text = "Gridsearch D only?")
-label5.grid(column=0, row=14)
+label5.grid(column=0, row=16)
 
 gridsearch_d_inp = ttk.Combobox(app, values=["Yes", "No"])
-gridsearch_d_inp.grid(column=1, row=14)
+gridsearch_d_inp.grid(column=1, row=16)
 
 # Ouput
 label5 = tk.Label(app,text = "See Output Promt?")
-label5.grid(column=0, row=15)
+label5.grid(column=0, row=17)
 
 output_inp = ttk.Combobox(app, values=["Yes", "No"])
-output_inp.grid(column=1, row=15)
+output_inp.grid(column=1, row=17)
+
+# Save
+label5 = tk.Label(app,text = "Save Prediction?")
+label5.grid(column=0, row=18)
+
+save_inp = ttk.Combobox(app, values=["Yes", "No"])
+save_inp.grid(column=1, row=18)
+
 
 ## Submit
 Submit_btn = tk.Button(app, textvariable=sub_button_text ,command = getInput, height=2, width=20,  bg='#cc0000', fg='white')
