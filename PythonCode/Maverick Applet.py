@@ -426,8 +426,9 @@ def getInput():
                 if __best_cfg == (0,0,0):
                     __best_cfg = __order
                 else: 
-                    pass                  
-                    
+                    pass     
+                
+                # In_sample Prep                    
                 __model = ARIMA(exog=__df_temp[['maxtemp', 'mintemp']],endog = __df_temp['sales'],order = __best_cfg)
                 __model_fit = __model.fit()
                 __output = __model_fit.predict(start=len(__df_temp), end = int(len(__df_temp)+__prediction_time_frame-1),dynamic=False, exog = __test_temp[['maxtemp', 'mintemp']])
@@ -435,14 +436,15 @@ def getInput():
                 test_dict[__site_id_value,__item_id_value] = __test_temp.sales
                 score_dict[__site_id_value,__item_id_value,"cfg"] = __best_cfg
                 score_dict[__site_id_value,__item_id_value,"rmse"] = __best_score
+                score_dict[__site_id_value,__item_id_value,"sum"] = ceil(sum(__test_temp.sales))
                 
+                # Out_of_Sample Prediction
                 __model = ARIMA(endog = __df_temp_bu['sales'],order = __best_cfg)
                 __model_fit = __model.fit()
                 __output = __model_fit.predict(start=len(__df_temp_bu), end = int(len(__df_temp_bu)+__prediction_time_frame-1),dynamic=False)
                 model_sum_dict[__site_id_value,__item_id_value] = __model_fit.summary()
                 test_dict[__site_id_value,__item_id_value] = __test_temp.sales
-                score_dict[__site_id_value,__item_id_value,"cfg"] = __best_cfg
-                score_dict[__site_id_value,__item_id_value,"rmse"] = __best_score
+
 
                 
                 prediction_dict[__site_id_value,__item_id_value] = __output
@@ -460,7 +462,7 @@ def getInput():
     for i in item_list:
         for x in site_list:
             sum_val = ceil(sum(prediction_dict[x,i]))
-            sum_val2 = ceil(sum(__test_temp.sales))
+            sum_val2 = score_dict[x,i,"sum"]
             val3 = ceil(sum(insamp_prediction_dict[x,i]))-sum_val2
             item_name = productdict[i]
             string_output = "Item_ID = " + str(i) + " | Site = "+str(x)+ "\n" +  "Item_Name = " + str(item_name) + "\n" +"---Prediction---" + "\n" +prediction_dict[x,i].to_string() + "\n" + "----------------" + "\n" +"Sum of Sales predicted 10 days = " + str(sum_val) + "\n" + "Expected Sum of Sales based on previous 10 Days = " + str(sum_val2) + "\n" + "Insample Total Error = " + str(val3) + "\n" + "Best In-Sample CFG = " + str(score_dict[x,i,"cfg"]) + "\n" + "Best In-Sample RMSE = " + str(round(score_dict[x,i,"rmse"],2)) + "\n" + "\n" 
