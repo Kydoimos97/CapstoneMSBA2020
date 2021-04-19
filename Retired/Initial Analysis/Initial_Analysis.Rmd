@@ -1,0 +1,408 @@
+---
+title: "Initial_Analysis"
+author: "Willem van der Schans"
+date: "11/17/2020"
+output:
+  html_document:
+    fig_height: 6
+    fig_width: 10
+    highlight: kate
+    number_sections: yes
+    theme: cosmo
+    toc: yes
+    toc_float: true
+    toc_depth: 4
+---
+
+```{r setup, include=FALSE}
+require(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+setwd("C:/Users/wille/OneDrive/MSF&MSBA/5. Spring 2021/IS 6496 MSBA Capstone 3")
+#options("expressions"=80000)
+options(max.print=1000000)
+```
+
+```{r load_packages, message=FALSE, warning=FALSE}
+# Base Libraries
+library(tidyverse)
+library(dplyr) # Additional Base level functionality of R
+library(ggplot2) # Comprehensive Graphical Output Package
+library(ggthemes) # More themes for GGPLOT2
+library(Rfast) # Fast R Functions
+library(bestNormalize) # Automatic Optimal Normalization
+library(rlist) #list.append
+library(scales) # Control over Axis formatting
+library(kableExtra) # Output HTML Formatted Tables
+library(reshape2) # Melt Function Correlation Matrix
+library(lsr) #Correlation Matrix
+library(e1071) #Skewness and other depreciated functions
+library(stats) # Basic Statistical Functions
+library(rlang) # Prepend Funciton
+library(tictoc) # Timing of Code
+library(bestNormalize) # Normalization Function with 0-heavy distribution
+library(lubridate) # Working with dates
+
+# Machine Learning Libraries
+library(caret) # MachineLearning package
+library(doSNOW) # Parralel processing
+library(rminer) #Mmetric Function
+library(MASS) # Stepwise LM
+
+
+# Text Analytics Libraries
+library(topicmodels)
+library(tidytext)
+library(tidyr)
+library(RTextTools)
+library(wordcloud)
+library(tm)
+library(stringr)
+library(quanteda)
+
+set.seed(123)
+```
+
+# Read Data
+
+```{r}
+df <- readRDS("C:/Users/wille/OneDrive/MSF&MSBA/5. Spring 2021/IS 6496 MSBA Capstone 3/Capstone_Project_Data.rds")
+```
+
+## Data Type
+
+```{r}
+factor_list <- c(names(df)[c(1,2,8,4,7,12,13)]) #13
+
+for (i in 1:length(factor_list)) {
+  df[,factor_list[i]] <- as.factor(df[,factor_list[i]])
+}
+
+numeric_list <- c(names(df)[c(3,5,9,10,11,13,14,15)]) #13
+
+for (i in 1:length(numeric_list)) {
+  df[,numeric_list[i]] <- as.numeric(df[,numeric_list[i]])
+}
+
+date_list <- c(names(df[c(6)]))
+
+df[,date_list] <- ymd(df[,date_list], quiet=TRUE)
+
+
+
+df <- df %>% mutate (priceperitem = SALES/QUANTITY_SOLD)
+```
+
+
+# Initial Analysis
+
+## Summary
+
+```{r}
+summary(df)
+```
+
+## NA Check
+
+```{r}
+sapply(df, function(x) sum(is.na(x)))
+nrow(df)
+
+df_NA <- df[!complete.cases(df), ]
+df <- df[complete.cases(df), ]
+
+sapply(df, function(x) sum(is.na(x)))
+nrow(df)
+```
+
+## Refactorize
+
+```{r}
+factor_list <- c(names(df)[c(1,2,8,4,7,12)]) #13
+
+for (i in 1:length(factor_list)) {
+  df[,factor_list[i]] <- as.factor(df[,factor_list[i]])
+}
+```
+
+## SummaryDF
+
+```{r}
+summary(df)
+```
+
+## SummaryNA
+
+```{r}
+summary(df_NA)
+```
+
+
+# Visualisations
+
+## Target Variable
+
+```{r}
+df %>% ggplot(aes(x=QUANTITY_SOLD)) +
+  geom_density()
+```
+
+## Remove Outliers
+
+```{r}
+nrow(df)
+df <- df[!(df$QUANTITY_SOLD>=500),]
+nrow(df)
+
+df %>% ggplot(aes(x=QUANTITY_SOLD)) +
+  geom_density()
+```
+
+
+### Scatter Plots
+
+```{r, fig.height = 3, fig.width = 5, fig.align = "center"}
+scatter_names <- numeric_list[-c(6,8)]
+
+
+for (i in scatter_names){
+  x = ggplot(data=df, aes_string(x = "QUANTITY_SOLD", y = i)) +
+  geom_point() + geom_smooth(method = lm, color="red") +
+  theme_fivethirtyeight() + theme(plot.title = element_text(size = 10, face = "bold")) +
+  ggtitle(paste0("Relationship of QUANTITY_SOLD and ", as.character(i), sep= " "))
+  print(x)
+}
+
+rm(scatter_names, x)
+```
+
+### BoxPlots
+
+```{r, fig.height =5, fig.width =7, fig.align = "center", results="asis"}
+boxplot_names <- colnames(df[sapply(df, is.factor)])
+boxplot_names <- boxplot_names[-7]
+
+for (i in boxplot_names){
+  x = ggplot(data=df, aes_string(x = "QUANTITY_SOLD", y = paste0("`",as.character(i),"`", sep=""))) +
+  geom_boxplot() +   ggtitle(paste0("Relationship of QUANTITY_SOLD and ", as.character(i), sep= " ")) +
+  coord_flip() + theme_fivethirtyeight() + theme(axis.text.x = element_text(angle = 45)) + 
+  theme(plot.title = element_text(size = 10, face = "bold")) + scale_x_continuous(limits=c(0, 100))
+  print(x)
+  o <- c(summary(df[,which( colnames(df)==i)]))
+  y <- as.data.frame(ggplot_build(x)$data)
+  y <- y[,c(1,2,3,4,5,6)]
+  y$xmax <- y$xmax-y$xmin
+  y$xmin <- levels(df[,which( colnames(df)==i)])
+  y$outliers <- ifelse(
+    lengths(regmatches(as.character(y$outliers), gregexpr(",", as.character(y$outliers)))) != 0, 
+    lengths(regmatches(as.character(y$outliers), gregexpr(",", as.character(y$outliers)))) + 1,
+    ifelse(regmatches(as.character(y$outliers), gregexpr("[0-9]", as.character(y$outliers))) == "0", 
+    NA, 1))
+  y$sample_size <- o
+  names(y) <- c("Factor Levels", "25th Quartile", "Median", "75th Quartile", "1.5XIQ Range", "# of Outliers", "Sample Size")
+  y <- y[order(abs(y$Median), decreasing = TRUE),]
+  print(kable(y, format.args = list(big.mark = ","), align = "lcccccc", format = "html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F, position = "center"))
+}
+
+rm(x,y,i,boxplot_names, o)
+```
+
+# Machine Learning Benchmarks
+
+```{r}
+df <- df[-12]
+```
+
+```{r}
+### Creation of Train and test data sets
+
+set.seed(500)
+inTrain <- createDataPartition(y=df$QUANTITY_SOLD, p = 1, list=FALSE)
+df <-df[inTrain,]
+df<- as.data.frame(df)
+```
+
+```{r}
+factor_list <- c(names(df)[c(1,2,4,7,8)]) #12
+
+for (i in 1:length(factor_list)) {
+  df[,factor_list[i]] <- as.factor(df[,factor_list[i]])
+}
+```
+
+## Learning
+
+```{r}
+system.time(model_lm <- lm(QUANTITY_SOLD~., data=df))
+
+#Extract Scores from Summary
+(scores_lm <- summary(model_lm))
+
+#Save Benchmark Scores
+bm_rsquared <- scores_lm$r.squared
+bm_sigma <- scores_lm$sigma
+```
+
+```{r, results="asis"}
+name_list <- names(df)
+name_list <- name_list[-9]
+sig_df <- data.frame(Variable=character(length(name_list)),
+                 Significance=as.numeric(8))
+sig_df$Variable <- name_list
+
+sig_list <- list()
+
+for (i in 1:length(name_list)){
+  x <- name_list[-i]
+  test_model <- lm(paste("QUANTITY_SOLD", paste(x, collapse = " + "), sep = "~"), data=df)
+  pscore <- anova(model_lm, test_model, test="LRT")
+  sig_listapp <- round(as.numeric(pscore$`Pr(>Chi)`[2]),3)
+  sig_list <- list.append(sig_list, sig_listapp)
+}
+ 
+sig_df$Significance <- unlist(sig_list)
+ 
+print(kable(sig_df, format.args = list(big.mark = ","), align = "lc", format = "html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F, position = "center"))
+
+
+rm(name_list, sig_df, sig_list, x, test_model, sig_listapp, i, pscore)
+```
+
+```{r, eval=F}
+#Show coefficient
+model_lm_nb <- lm(QUANTITY_SOLD~., data=df)
+summary(model_lm_nb)
+temp <- as.data.frame(model_lm_nb$coefficients)
+temp$variables <- row.names(temp)
+names(temp) <- c("Coefficient","Variable")
+rownames(temp) <- 1:nrow(temp)
+temp <- temp[complete.cases(temp), ]
+temp <- temp[-1,]
+temp$split <- factor(ifelse(temp$Coefficient >=0, "Positive", "Negative"), levels = c("Positive", "Negative"))
+
+temp %>% 
+  ggplot(aes(x = abs(Coefficient), y= reorder(Variable, abs(Coefficient)), label = round(Coefficient,2), fill= Coefficient)) +
+  geom_bar( position = "dodge", stat = "identity", alpha = 1, color="Black") +
+  geom_text(data=subset(temp, abs(Coefficient) > 0),  hjust = -0.5, size = 3, position = position_dodge(width = 1), color = "black", angle=0,  
+                  inherit.aes = T, check_overlap=T) +
+  facet_wrap(~split, scale="free", labeller = labeller(Education = label_wrap_gen(width = 25))) + 
+  guides(fill=FALSE) + theme_fivethirtyeight() + 
+    theme(text = element_text(size=7.5)) +
+  scale_fill_gradient2_tableau("Classic Orange-White-Blue Light") + 
+  scale_x_continuous(limits=c(0,round(max(abs(temp$Coefficient)/1),0)+1)*1,2) + 
+  labs(title = "Coefficient Size Regression Analysis", subtitle = "")
+
+#Remove temp variables from the global environment
+rm(temp, scores_lm)
+```
+
+## Initial Machine Learning
+
+# Train creation
+
+```{r}
+### Creation of Train and test data sets
+
+set.seed(500)
+inTrain <- createDataPartition(y=df$QUANTITY_SOLD, p = 0.80, list=FALSE)
+train <-df[inTrain,-14]
+train_target<-df[inTrain,14]
+test <-df[-inTrain,-14]
+test_target<-df[-inTrain,14]
+```
+
+### Create Metric DataFrame
+
+```{r}
+resultsregression <- data.frame(Model = as.character(),
+           Sample = as.character(),
+           R2 = numeric(),
+           RMSE = numeric(),
+           MAE = numeric(),
+           NMAE = numeric())
+           
+
+resultsregression <- rbind(resultsregression, c("Test", "Test", 1, 1, 1, 1))
+names(resultsregression) <- c("Model","Sample","R2","RMSE", "MAE", "NMAE")
+resultsregression$Model <- as.character(resultsregression$Model)
+resultsregression$Sample <- as.character(resultsregression$Sample)
+resultsregression[sapply(resultsregression, is.factor)] <- lapply(resultsregression[sapply(resultsregression, is.factor)], as.numeric)
+```
+
+## Machine Learning
+
+### LM 
+
+```{r}
+system.time(lm_model <- lm(train_target~., data=train))
+
+summary(lm_model)
+
+metric_list <- c("R2","RMSE", "MAE", "NMAE")
+
+#Train
+prediction_lm_train <- predict(lm_model, train)
+metrics_train <- round(mmetric(train_target, prediction_lm_train,metric_list),3)
+
+#Test
+prediction_lm_test <- predict(lm_model, test)
+metrics_test <- round(mmetric(test_target, prediction_lm_test,metric_list),3)
+
+trainset <- prepend(unname(metrics_train), c("LM","In-sample"))
+testset  <- prepend(unname(metrics_test), c("LM", "Out-of-sample"))
+
+resultsregression <- rbind(resultsregression, trainset)
+resultsregression <- rbind(resultsregression, testset)
+
+resultsregression <- resultsregression[-1,]
+```
+
+### Step-Wise Logistic Regression
+
+Since Logistic regression's performance is heavily dependent on the data that the model is fed, it is interesting to see how a step-wise regression would perform compared to the base model and if the MASS package will remove any variables.  
+
+```{r}
+step_model <- lm_model %>% stepAIC(trace = FALSE)
+
+coef(step_model)
+
+#Train
+prediction_step_train <- predict(step_model, train)
+metrics_train <- round(mmetric(train_target, prediction_step_train,metric_list),3)
+
+#Test
+prediction_step_test <- predict(step_model, test)
+metrics_test <- round(mmetric(test_target, prediction_step_test,metric_list),3)
+
+trainset <- prepend(unname(metrics_train), c("StepWiseLM","In-sample"))
+testset  <- prepend(unname(metrics_test), c("StepWiseLM", "Out-of-sample"))
+
+resultsregression <- rbind(resultsregression, trainset)
+resultsregression <- rbind(resultsregression, testset)
+```
+
+
+### Regression Performance
+
+#### Plot
+
+```{r}
+row.names(resultsregression) <- c(1:nrow(resultsregression))
+
+resultsregression %>% ggplot(aes(x=reorder(Model, as.numeric(RMSE)), y=as.numeric(RMSE), group=Sample, fill=Sample)) + 
+  geom_bar (stat="identity", position = position_dodge(width = 0.5)) +
+  theme_fivethirtyeight() + scale_color_gradient2_tableau("Classic Orange-White-Blue Light") + 
+  labs(title = "Regression Model Performance", subtitle = "Lower is better") +
+  theme(axis.title = element_text()) + ylab("RMSE Score") + xlab("Regression Models") + 
+  coord_cartesian(ylim=c((floor(min(as.numeric(resultsregression$RMSE)))-.5),(ceiling(max(as.numeric(resultsregression$RMSE)))+.5))) + scale_fill_tableau()
+```
+
+#### Table
+
+```{r}
+kable(resultsregression, format.args = list(big.mark = ","), align = "llccccccc", format = "html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F, position = "center")
+```
+
+

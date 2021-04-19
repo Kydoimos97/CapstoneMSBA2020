@@ -1,0 +1,309 @@
+---
+title: "EDA Capstone"
+subtitle: "Capstone 2021: Exploratory Time Series Forecasting"
+author:
+- "Willem van der Schans"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    fig_height: 4
+    fig_width: 8
+    highlight: kate
+    toc: no
+    toc_depth: 4
+    number_sections: true
+header-includes:
+  - \usepackage{longtable}
+---
+
+\newpage\null\thispagestyle{empty}\newpage
+
+\tableofcontents
+
+
+\newpage\null\thispagestyle{empty}\newpage
+
+
+```{r, include=FALSE}
+library(dplyr) # Additional Base level functionality of R 
+library(stats) # Base Statistic Funtionality
+
+# Extended Base Functionality
+library(reshape2) # Melt Function Correlation Matrix
+library(rlist) #list.append
+library(lubridate) # For working with dates
+library(caret) # MachineLearning package used for createDataPartition
+
+# Visualisation Packages
+library(ggplot2) # Comprehensive Graphical Output Package 
+library(ggthemes) # More themes for GGPLOT2
+library(scales) # Control over Axis formatting
+library(gghighlight) # GGplot Highlight function
+library(gridExtra) # Plot in Grids
+
+# Latex Packages
+library(xtable) # Latex Tables
+library(papeR) # Paper Writing Module
+library(reporttools) # Latex Sumarry Tables
+```
+
+
+# Data Set-up
+
+```{r}
+download.file(
+  "https://github.com/Kydoimos97/CapstoneMSBA2020/raw/main/Data/CapstoneProjectInfoRevised.rds", 
+  destfile = "CapstoneProjectInfoRevised.rds")
+
+download.file(
+  "https://github.com/Kydoimos97/CapstoneMSBA2020/raw/main/Data/CapstoneProjectProducts.rds", 
+  destfile= "CapstoneProjectProducts.rds")
+
+df <- readRDS("CapstoneProjectInfoRevised.rds")
+products <- readRDS("CapstoneProjectProducts.rds")
+```
+
+## Setting Data Types
+
+```{r}
+# Factorization
+df$Site_ID <- as.factor(df$Site_ID)
+df$Location_ID <- as.factor(df$Location_ID)
+df$Locale <- as.factor(df$Locale)
+df$Fiscal_Period <- as.factor(df$Fiscal_Period)
+df$MPDS <- as.factor(df$MPDS)
+df$Project <- as.factor(df$Project)
+
+# Numeration
+df$Quantity_Sold <- as.numeric(df$Quantity_Sold)
+df$SQ_Footage <- as.numeric(df$SQ_Footage)# Shows Factor like tendencies
+df$Periodic_GBV <- as.numeric(df$Periodic_GBV)
+df$Current_GBV <- as.numeric(df$Current_GBV)
+
+# Re-origin of Dates at 06/22/1998
+
+x <- min(df$Open_Date) 
+df$Open_Date <- as_date(df$Open_Date, origin = x)
+df$DATE <- as_date(df$DATE, origin = x)
+
+rm(x)
+
+# enables DATE to be used in prediction algorithms
+
+```
+
+A Date format in R is based on epoch time and thus easily convert to a number. The origin is reset to the earliest date present in the data set. Setting the origin allows us to work with an origin point that holds value [06/22/1998] instead of the arbitrary origin point of epoch [1/1/1970]
+
+```{r, warning=FALSE, message=FALSE}
+candy_vector <- c(products$Item_Desc)
+
+id_vector <- c(products$Item_ID)
+
+df$Item_desc <- df$Item_ID
+df$Item_desc <- plyr::mapvalues(df$Item_desc, id_vector, candy_vector)
+
+df$Item_ID <- as.factor(df$Item_ID)
+
+# Reodering Data
+df <- df[, c(1,2,6,17,7,3,12,13,14,10,11,8,9,15,16,4,5)]
+
+#Rename Variables
+names(df) <- tolower(make.names(names(df)))
+
+rm(products, candy_vector, id_vector)
+
+```
+
+\newpage
+
+
+### Removal and Creation of variables
+
+```{r}
+# creation of tempdiff
+df$temp_diff <- as.numeric(df$maxtemp-df$mintemp)
+
+# Creation of cgbv_sqf
+df$cgbv_sqf <- as.numeric(df$current_gbv/df$sq_footage)
+
+# creation of diff_gbv
+df$diff_gbv <- df$current_gbv - df$periodic_gbv
+
+#Days open
+x <- min(df$open_date) 
+df$days_open <- as.numeric(df$date-df$open_date)
+
+rm(x)
+
+df <- df[, c(1,2,3,4,21,6,7,19,20,10,18,12,13,14,15,16,17,8,9,11,5)]
+
+df <- df[,-c(12,18,19,20,21)]
+```
+
+
+# Time Series Model
+
+## Reshape Data Set
+
+```{r}
+sum_sales <- aggregate(ifelse(df$sales > 150, 150, df$sales)
+                       , by=list(df$date, df$site_id), FUN=sum)
+names(sum_sales) <- c("date", "site_id", "sum_of_sales")
+
+sum_sales <- dcast(sum_sales, date ~ site_id, value.var ="sum_of_sales")
+sum_sales <- sum_sales[-c(2,9,10,11)]
+
+daysdifference <- min(sum_sales$date) - as.Date("2017/01/01", format = "%Y/%m/%d")
+maxdate <- max(sum_sales$date)
+
+train <- subset(sum_sales, date <=  maxdate  - 10)[-1]
+  
+test <- subset(sum_sales, date >  maxdate  - 10)
+datelist <- test$date
+test <- test[-1]
+
+mymts = ts(train,
+           frequency = 365,
+           start = c(2017, daysdifference))
+```
+
+# Dickey Fuller Test
+
+```{r}
+apply(mymts, 2, tseries::adf.test)
+```
+
+## Stationary Time Series
+
+```{r}
+stnry <- MTS::diffM(mymts)
+
+plot.ts(stnry)
+apply(stnry, 2, tseries::adf.test)
+```
+
+## Variable Selection
+
+```{r}
+vars::VARselect(stnry, 
+          type = "none", #type of deterministic regressors to include. We use none becasue the time series was made stationary using differencing above. 
+          lag.max = 10) #highest lag order
+```
+
+## Time Series Regression
+
+
+```{r}
+# Creating a VAR model with vars
+var.a <- vars::VAR(stnry,
+                   lag.max = 25, #highest lag order for lag length selection according to the choosen ic
+                   ic = "AIC", #information criterion
+                   type = "none") #type of deterministic regressors to include
+summary(var.a)
+
+
+```
+
+## Serial Test
+
+```{r}
+vars::serial.test(var.a)
+```
+
+## Creating and preparing Predictions
+
+```{r}
+# selecting the variables
+# Granger test for causality
+ 
+vars::causality(var.a, #VAR model
+          cause = c("X380"))
+
+fcast = predict(var.a, n.ahead = 10)
+par(mar = c(2.5,2.5,2.5,2.5))
+
+X380 = fcast$fcst[1]; X380 
+x = X380$X380[,1]; x
+
+tail(mymts)
+
+
+x = cumsum(x) + 733.10
+par(mar = c(2.5,2.5,1,2.5)) #bottom, left, top, and right
+
+test380 <- test$`380`
+diff = test380-x
+
+result <- data.frame(test = c(test380), 
+                     difference = c(diff), 
+                     prediction =  c(x), 
+                     date = datelist)
+
+
+result %>% ggplot(aes(x = date, y = prediction)) +
+  geom_line() + geom_line(aes(y=test), color="red") + theme_bw() +
+  ggtitle(paste0("Relationship of sales and ", "380", sep= " ")) +  
+  theme(legend.position="right",legend.direction = "vertical", legend.text = element_text(size=7))
+
+test[,1]
+```
+
+## Calculate Mean Difference
+
+```{r, fig.height = 9, fig.width = 7, warning=FALSE, message=FALSE}
+listsites <- c(380,399, 459, 516, 517, 554)
+counter = 0
+plot_list <- list(1)
+g <- NULL
+result <- NULL
+
+for (i in listsites) {
+  g <- NULL
+  result <- NULL
+  counter = counter+1
+  x = fcast$fcst[counter]
+  x = as.data.frame(x)
+  x = unlist(x[1])
+  p = as.numeric(tail(mymts,2)[2,counter])
+  x =  cumsum(x) + p
+  par(mar = c(2.5,2.5,1,2.5))
+  
+  g <- test[,counter]
+  diff = g-x
+  
+  result <- data.frame(test = g, 
+                     difference = diff, 
+                     prediction =  x, 
+                     date = datelist)
+                     
+  o = ggplot(data=result, aes_string(x = "date", y="prediction")) +
+      geom_line() + geom_line(aes_string(y="test"), color="red") + geom_line(aes_string(y="diff"), color = "Grey") +
+      theme_fivethirtyeight() + ggtitle(paste0("Site = ", as.character(i), sep= " ")) + theme(plot.title = element_text(size=10)) 
+
+  assign(paste0("plt", i), o)
+  plot_list <- rlist::list.append(plot_list, o)
+  
+  print(paste0("mean error for ",i, " = ", mean(diff)))
+
+}
+```
+
+## Plot Results
+
+```{r, fig.height = 9, fig.width = 7, fig.cap='Predictions of Time Series', warning=FALSE, message=FALSE}
+plot_list <- plot_list[-1]
+
+nCol <- floor(sqrt(length(plot_list)))
+
+grid.arrange(grobs=plot_list, widths = c(1,1), ncol=2, layout_matrix =  rbind(c(1,2),
+                                                                                 c(3,4), 
+                                                                                 c(5,6)), 
+             top = "Predicted time series")
+
+
+```
+
+
+
+
+
