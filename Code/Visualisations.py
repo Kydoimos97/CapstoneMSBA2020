@@ -45,6 +45,7 @@ warnings.filterwarnings("ignore")
 import os
 import time
 import tkinter as tk
+import urllib
 from tkinter import *
 from tkinter import ttk
 
@@ -52,12 +53,10 @@ from tkinter import ttk
 # In[2]:
 
 df = pd.read_csv(
-    "C:/Users/wille/OneDrive/MSF&MSBA/5. Spring 2021/IS 6496 MSBA Capstone 3/CapstoneMainDF.csv",
-    index_col=0,
+    "https://www.dropbox.com/s/gy5n1dvzwoiepvz/CapstoneMainDF.csv?dl=1", index_col=0,
 )
 productsdf = pd.read_csv(
-    "C:/Users/wille/OneDrive/MSF&MSBA/5. Spring 2021/IS 6496 MSBA Capstone 3/ProductsDF.csv",
-    index_col=0,
+    "https://www.dropbox.com/s/pdgo1c2u3575pee/ProductsDF.csv?dl=1", index_col=0,
 )
 
 df.columns = map(str.lower, df.columns)
@@ -415,8 +414,8 @@ def plot_components(df):
 
 plot_components(input_df)
 
-from statsmodels.tsa.seasonal import seasonal_decompose
 
+# Change Period
 input_df = pd.DataFrame()
 dfx = df.loc[
     (df.product_name == "MAR KG 3.29z SNICKERS 2 PIECE") & (df.site_id == 280)
@@ -503,3 +502,15 @@ plot_components(input_df)
 model = ETSModel(dfx.sales)
 fit = model.fit(maxiter=10000)
 print(fit.summary())
+
+# In[16]
+df_aggregated = (
+    df.groupby(["item_id"])
+    .agg(
+        Total_sales=pd.NamedAgg(column="sales", aggfunc=sum),
+        Total_quantity=pd.NamedAgg(column="quantity_sold", aggfunc=sum),
+    )
+    .reset_index()
+)
+
+df_aggregated.to_csv("C:/Users/wille/Documents/Aggregated_Sales.csv", header=False)
