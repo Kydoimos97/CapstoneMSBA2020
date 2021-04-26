@@ -1,0 +1,177 @@
+,0
+"(-44763, 459)","Item_ID = -44763 | Site = 459
+Item_Name = D*REESES PB CUP WHITE CHOC
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-30755, 516)","Item_ID = -30755 | Site = 516
+Item_Name = D*HI CHEW GRAPE 1.76z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-30764, 280)","Item_ID = -30764 | Site = 280
+Item_Name = D*MON TRIDENT MINTY SWEET TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40507, 459)","Item_ID = -40507 | Site = 459
+Item_Name = D*TROLLI 4z SR BR BLUE RASP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40562, 280)","Item_ID = -40562 | Site = 280
+Item_Name = D*MAR SNICKERS 4.7z BITES PCH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40508, 459)","Item_ID = -40508 | Site = 459
+Item_Name = D*TROLLI 4z SR BR WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-34071, 459)","Item_ID = -34071 | Site = 459
+Item_Name = D*TTS CHILDS PLAY BAG 26z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-35452, 280)","Item_ID = -35452 | Site = 280
+Item_Name = D*MON TRIDENT BLACK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
