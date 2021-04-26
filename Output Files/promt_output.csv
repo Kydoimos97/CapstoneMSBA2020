@@ -1,0 +1,8493 @@
+,0
+"(-12172, 280)","Item_ID = -12172 | Site = 280
+Item_Name = HER KG 3z REESES STICKS
+---Prediction---
+2020-09-06    1.14
+2020-09-07    1.06
+2020-09-08    1.25
+2020-09-09    1.39
+2020-09-10    1.44
+2020-09-11    1.45
+2020-09-12    1.70
+2020-09-13    1.88
+2020-09-14    1.61
+2020-09-15    2.00
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 15
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = -1
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 0.98
+
+"
+"(-12172, 380)","Item_ID = -12172 | Site = 380
+Item_Name = HER KG 3z REESES STICKS
+---Prediction---
+2020-09-06    6.56
+2020-09-07    6.77
+2020-09-08    6.50
+2020-09-09    6.17
+2020-09-10    5.89
+2020-09-11    5.91
+2020-09-12    5.88
+2020-09-13    6.05
+2020-09-14    5.44
+2020-09-15    5.09
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 61
+Expected Sum of Quantity last 10 Days = 59
+OOS Total Error = -11
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 3.09
+
+"
+"(-12172, 554)","Item_ID = -12172 | Site = 554
+Item_Name = HER KG 3z REESES STICKS
+---Prediction---
+2020-09-06    1.73
+2020-09-07    1.73
+2020-09-08    1.72
+2020-09-09    1.72
+2020-09-10    1.72
+2020-09-11    1.72
+2020-09-12    1.72
+2020-09-13    1.72
+2020-09-14    1.72
+2020-09-15    1.72
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 18
+Expected Sum of Quantity last 10 Days = 17
+OOS Total Error = 2
+Best OOS Config = (0, 2, 2)
+Best OOS RMSE = 1.95
+
+"
+"(-12172, 516)","Item_ID = -12172 | Site = 516
+Item_Name = HER KG 3z REESES STICKS
+---Prediction---
+2020-09-06    1.0
+2020-09-07    1.0
+2020-09-08    1.0
+2020-09-09    1.0
+2020-09-10    1.0
+2020-09-11    1.0
+2020-09-12    1.0
+2020-09-13    1.0
+2020-09-14    1.0
+2020-09-15    1.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 10
+Expected Sum of Quantity last 10 Days = 29
+OOS Total Error = 1
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 1.52
+
+"
+"(-12172, 399)","Item_ID = -12172 | Site = 399
+Item_Name = HER KG 3z REESES STICKS
+---Prediction---
+2020-09-06    2.35
+2020-09-07    1.99
+2020-09-08    1.78
+2020-09-09    1.69
+2020-09-10    1.74
+2020-09-11    1.51
+2020-09-12    1.05
+2020-09-13    0.53
+2020-09-14    0.22
+2020-09-15    0.39
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 14
+Expected Sum of Quantity last 10 Days = 33
+OOS Total Error = -2
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 1.63
+
+"
+"(-12172, 459)","Item_ID = -12172 | Site = 459
+Item_Name = HER KG 3z REESES STICKS
+---Prediction---
+2020-09-06    3.87
+2020-09-07    3.80
+2020-09-08    3.80
+2020-09-09    3.80
+2020-09-10    3.80
+2020-09-11    3.80
+2020-09-12    3.80
+2020-09-13    3.80
+2020-09-14    3.80
+2020-09-15    3.80
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 39
+Expected Sum of Quantity last 10 Days = 39
+OOS Total Error = -10
+Best OOS Config = (0, 1, 2)
+Best OOS RMSE = 2.77
+
+"
+"(-12172, 517)","Item_ID = -12172 | Site = 517
+Item_Name = HER KG 3z REESES STICKS
+---Prediction---
+2020-09-06    4.57
+2020-09-07    5.32
+2020-09-08    5.32
+2020-09-09    5.32
+2020-09-10    5.32
+2020-09-11    5.32
+2020-09-12    5.32
+2020-09-13    5.32
+2020-09-14    5.32
+2020-09-15    5.32
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 53
+Expected Sum of Quantity last 10 Days = 47
+OOS Total Error = 7
+Best OOS Config = (0, 0, 1)
+Best OOS RMSE = 3.08
+
+"
+"(-12172, 580)","Item_ID = -12172 | Site = 580
+Item_Name = HER KG 3z REESES STICKS
+---Prediction---
+2020-09-06    3.72
+2020-09-07    3.28
+2020-09-08    3.03
+2020-09-09    3.03
+2020-09-10    3.03
+2020-09-11    3.03
+2020-09-12    3.03
+2020-09-13    3.03
+2020-09-14    3.03
+2020-09-15    3.03
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 32
+Expected Sum of Quantity last 10 Days = 41
+OOS Total Error = -11
+Best OOS Config = (0, 0, 2)
+Best OOS RMSE = 3.04
+
+"
+"(-12172, 589)","Item_ID = -12172 | Site = 589
+Item_Name = HER KG 3z REESES STICKS
+---Prediction---
+2020-09-06    7.01
+2020-09-07    7.01
+2020-09-08    7.02
+2020-09-09    7.03
+2020-09-10    7.03
+2020-09-11    7.04
+2020-09-12    7.05
+2020-09-13    7.05
+2020-09-14    7.06
+2020-09-15    7.07
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 71
+Expected Sum of Quantity last 10 Days = 63
+OOS Total Error = -12
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 2.37
+
+"
+"(-12172, 601)","Item_ID = -12172 | Site = 601
+Item_Name = HER KG 3z REESES STICKS
+---Prediction---
+2020-09-06    2.80
+2020-09-07    3.10
+2020-09-08    2.79
+2020-09-09    3.09
+2020-09-10    3.21
+2020-09-11    3.24
+2020-09-12    2.76
+2020-09-13    2.92
+2020-09-14    2.99
+2020-09-15    3.31
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 31
+Expected Sum of Quantity last 10 Days = 35
+OOS Total Error = 2
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 1.04
+
+"
+"(-29955, 280)","Item_ID = -29955 | Site = 280
+Item_Name = MAR SNICKERS 1.86z
+---Prediction---
+2020-09-06    1.03
+2020-09-07    1.09
+2020-09-08    0.84
+2020-09-09    1.01
+2020-09-10    1.14
+2020-09-11    1.14
+2020-09-12    0.55
+2020-09-13    0.98
+2020-09-14    0.92
+2020-09-15    0.83
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 10
+Expected Sum of Quantity last 10 Days = 9
+OOS Total Error = 2
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 1.22
+
+"
+"(-29955, 380)","Item_ID = -29955 | Site = 380
+Item_Name = MAR SNICKERS 1.86z
+---Prediction---
+2020-09-06    2.16
+2020-09-07    2.83
+2020-09-08    2.76
+2020-09-09    2.96
+2020-09-10    2.55
+2020-09-11    2.50
+2020-09-12    2.90
+2020-09-13    2.62
+2020-09-14    2.88
+2020-09-15    2.91
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 28
+Expected Sum of Quantity last 10 Days = 24
+OOS Total Error = 4
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 1.53
+
+"
+"(-29955, 554)","Item_ID = -29955 | Site = 554
+Item_Name = MAR SNICKERS 1.86z
+---Prediction---
+2020-09-06    0.57
+2020-09-07    0.98
+2020-09-08    1.14
+2020-09-09    1.66
+2020-09-10    1.25
+2020-09-11    0.50
+2020-09-12    2.32
+2020-09-13    0.60
+2020-09-14    0.97
+2020-09-15    0.55
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 11
+Expected Sum of Quantity last 10 Days = 12
+OOS Total Error = -1
+Best OOS Config = (14, 1, 1)
+Best OOS RMSE = 1.61
+
+"
+"(-29955, 516)","Item_ID = -29955 | Site = 516
+Item_Name = MAR SNICKERS 1.86z
+---Prediction---
+2020-09-06    1.41
+2020-09-07    1.73
+2020-09-08    2.53
+2020-09-09    1.83
+2020-09-10    1.83
+2020-09-11    2.12
+2020-09-12    1.90
+2020-09-13    2.14
+2020-09-14    1.94
+2020-09-15    1.76
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 20
+Expected Sum of Quantity last 10 Days = 22
+OOS Total Error = 6
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 1.23
+
+"
+"(-29955, 399)","Item_ID = -29955 | Site = 399
+Item_Name = MAR SNICKERS 1.86z
+---Prediction---
+2020-09-06    2.78
+2020-09-07    2.59
+2020-09-08    2.73
+2020-09-09    2.45
+2020-09-10    3.16
+2020-09-11    3.14
+2020-09-12    3.34
+2020-09-13    3.63
+2020-09-14    2.99
+2020-09-15    3.03
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 30
+Expected Sum of Quantity last 10 Days = 24
+OOS Total Error = 2
+Best OOS Config = (7, 1, 0)
+Best OOS RMSE = 2.33
+
+"
+"(-29955, 459)","Item_ID = -29955 | Site = 459
+Item_Name = MAR SNICKERS 1.86z
+---Prediction---
+2020-09-06    3.12
+2020-09-07    2.96
+2020-09-08    3.09
+2020-09-09    3.43
+2020-09-10    2.99
+2020-09-11    3.51
+2020-09-12    3.67
+2020-09-13    2.39
+2020-09-14    3.55
+2020-09-15    2.58
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 32
+Expected Sum of Quantity last 10 Days = 33
+OOS Total Error = -2
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 3.32
+
+"
+"(-29955, 517)","Item_ID = -29955 | Site = 517
+Item_Name = MAR SNICKERS 1.86z
+---Prediction---
+2020-09-06    4.71
+2020-09-07    5.56
+2020-09-08    5.34
+2020-09-09    5.34
+2020-09-10    5.34
+2020-09-11    5.34
+2020-09-12    5.34
+2020-09-13    5.34
+2020-09-14    5.34
+2020-09-15    5.34
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 53
+Expected Sum of Quantity last 10 Days = 43
+OOS Total Error = 14
+Best OOS Config = (0, 0, 2)
+Best OOS RMSE = 3.56
+
+"
+"(-29955, 580)","Item_ID = -29955 | Site = 580
+Item_Name = MAR SNICKERS 1.86z
+---Prediction---
+2020-09-06    3.88
+2020-09-07    3.91
+2020-09-08    4.09
+2020-09-09    4.32
+2020-09-10    4.10
+2020-09-11    3.71
+2020-09-12    3.38
+2020-09-13    3.41
+2020-09-14    3.44
+2020-09-15    3.69
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 38
+Expected Sum of Quantity last 10 Days = 30
+OOS Total Error = 2
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 2.1
+
+"
+"(-29955, 589)","Item_ID = -29955 | Site = 589
+Item_Name = MAR SNICKERS 1.86z
+---Prediction---
+2020-09-06    3.99
+2020-09-07    4.07
+2020-09-08    3.78
+2020-09-09    3.78
+2020-09-10    3.78
+2020-09-11    3.78
+2020-09-12    3.78
+2020-09-13    3.78
+2020-09-14    3.78
+2020-09-15    3.78
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 39
+Expected Sum of Quantity last 10 Days = 47
+OOS Total Error = -8
+Best OOS Config = (0, 0, 2)
+Best OOS RMSE = 2.54
+
+"
+"(-29955, 601)","Item_ID = -29955 | Site = 601
+Item_Name = MAR SNICKERS 1.86z
+---Prediction---
+2020-09-06    3.73
+2020-09-07    2.98
+2020-09-08    3.50
+2020-09-09    2.43
+2020-09-10    3.02
+2020-09-11    2.12
+2020-09-12    3.36
+2020-09-13    2.56
+2020-09-14    3.83
+2020-09-15    2.38
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 30
+Expected Sum of Quantity last 10 Days = 28
+OOS Total Error = -1
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 1.4
+
+"
+"(-21234, 280)","Item_ID = -21234 | Site = 280
+Item_Name = MAR KG 2.83z M&M PB
+---Prediction---
+2020-09-06    5.0
+2020-09-07    5.0
+2020-09-08    5.0
+2020-09-09    5.0
+2020-09-10    5.0
+2020-09-11    5.0
+2020-09-12    5.0
+2020-09-13    5.0
+2020-09-14    5.0
+2020-09-15    5.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 50
+Expected Sum of Quantity last 10 Days = 27
+OOS Total Error = 3
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 1.45
+
+"
+"(-21234, 380)","Item_ID = -21234 | Site = 380
+Item_Name = MAR KG 2.83z M&M PB
+---Prediction---
+2020-09-06    8.01
+2020-09-07    8.01
+2020-09-08    8.02
+2020-09-09    8.03
+2020-09-10    8.03
+2020-09-11    8.04
+2020-09-12    8.05
+2020-09-13    8.05
+2020-09-14    8.06
+2020-09-15    8.07
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 81
+Expected Sum of Quantity last 10 Days = 80
+OOS Total Error = -29
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 3.62
+
+"
+"(-21234, 554)","Item_ID = -21234 | Site = 554
+Item_Name = MAR KG 2.83z M&M PB
+---Prediction---
+2020-09-06    3.23
+2020-09-07    3.44
+2020-09-08    3.76
+2020-09-09    4.03
+2020-09-10    3.73
+2020-09-11    3.61
+2020-09-12    3.69
+2020-09-13    4.22
+2020-09-14    4.70
+2020-09-15    4.76
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 40
+Expected Sum of Quantity last 10 Days = 25
+OOS Total Error = 0
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 1.26
+
+"
+"(-21234, 516)","Item_ID = -21234 | Site = 516
+Item_Name = MAR KG 2.83z M&M PB
+---Prediction---
+2020-09-06    3.0
+2020-09-07    3.0
+2020-09-08    3.0
+2020-09-09    3.0
+2020-09-10    3.0
+2020-09-11    3.0
+2020-09-12    3.0
+2020-09-13    3.0
+2020-09-14    3.0
+2020-09-15    3.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 30
+Expected Sum of Quantity last 10 Days = 52
+OOS Total Error = -1
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 2.32
+
+"
+"(-21234, 399)","Item_ID = -21234 | Site = 399
+Item_Name = MAR KG 2.83z M&M PB
+---Prediction---
+2020-09-06    4.70
+2020-09-07    5.35
+2020-09-08    5.87
+2020-09-09    6.50
+2020-09-10    6.56
+2020-09-11    6.59
+2020-09-12    6.72
+2020-09-13    7.06
+2020-09-14    7.02
+2020-09-15    7.62
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 64
+Expected Sum of Quantity last 10 Days = 52
+OOS Total Error = -4
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 1.95
+
+"
+"(-21234, 459)","Item_ID = -21234 | Site = 459
+Item_Name = MAR KG 2.83z M&M PB
+---Prediction---
+2020-09-06    3.09
+2020-09-07    2.80
+2020-09-08    2.83
+2020-09-09    3.09
+2020-09-10    3.20
+2020-09-11    3.25
+2020-09-12    3.26
+2020-09-13    3.06
+2020-09-14    2.84
+2020-09-15    2.79
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 31
+Expected Sum of Quantity last 10 Days = 30
+OOS Total Error = -1
+Best OOS Config = (14, 2, 1)
+Best OOS RMSE = 1.44
+
+"
+"(-21234, 517)","Item_ID = -21234 | Site = 517
+Item_Name = MAR KG 2.83z M&M PB
+---Prediction---
+2020-09-06    12.00
+2020-09-07    12.01
+2020-09-08    12.01
+2020-09-09    12.02
+2020-09-10    12.02
+2020-09-11    12.02
+2020-09-12    12.03
+2020-09-13    12.03
+2020-09-14    12.04
+2020-09-15    12.04
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 121
+Expected Sum of Quantity last 10 Days = 88
+OOS Total Error = 3
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 3.58
+
+"
+"(-21234, 580)","Item_ID = -21234 | Site = 580
+Item_Name = MAR KG 2.83z M&M PB
+---Prediction---
+2020-09-06    5.24
+2020-09-07    3.93
+2020-09-08    4.72
+2020-09-09    4.37
+2020-09-10    6.08
+2020-09-11    6.08
+2020-09-12    5.70
+2020-09-13    4.90
+2020-09-14    4.03
+2020-09-15    5.22
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 51
+Expected Sum of Quantity last 10 Days = 56
+OOS Total Error = -15
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 3.84
+
+"
+"(-21234, 589)","Item_ID = -21234 | Site = 589
+Item_Name = MAR KG 2.83z M&M PB
+---Prediction---
+2020-09-06    13.02
+2020-09-07    13.03
+2020-09-08    13.05
+2020-09-09    13.06
+2020-09-10    13.08
+2020-09-11    13.10
+2020-09-12    13.11
+2020-09-13    13.13
+2020-09-14    13.14
+2020-09-15    13.16
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 131
+Expected Sum of Quantity last 10 Days = 79
+OOS Total Error = -8
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 3.23
+
+"
+"(-21234, 601)","Item_ID = -21234 | Site = 601
+Item_Name = MAR KG 2.83z M&M PB
+---Prediction---
+2020-09-06    4.35
+2020-09-07    3.67
+2020-09-08    3.67
+2020-09-09    3.67
+2020-09-10    3.67
+2020-09-11    3.67
+2020-09-12    3.67
+2020-09-13    3.67
+2020-09-14    3.67
+2020-09-15    3.67
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 38
+Expected Sum of Quantity last 10 Days = 85
+OOS Total Error = -49
+Best OOS Config = (0, 0, 1)
+Best OOS RMSE = 6.25
+
+"
+"(-12165, 280)","Item_ID = -12165 | Site = 280
+Item_Name = MAR KG 3.27z M&M PEANUT
+---Prediction---
+2020-09-06    2.21
+2020-09-07    2.28
+2020-09-08    2.36
+2020-09-09    2.15
+2020-09-10    2.26
+2020-09-11    2.35
+2020-09-12    2.30
+2020-09-13    2.23
+2020-09-14    2.42
+2020-09-15    2.26
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 23
+Expected Sum of Quantity last 10 Days = 22
+OOS Total Error = -6
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 1.24
+
+"
+"(-12165, 380)","Item_ID = -12165 | Site = 380
+Item_Name = MAR KG 3.27z M&M PEANUT
+---Prediction---
+2020-09-06    4.00
+2020-09-07    4.01
+2020-09-08    4.01
+2020-09-09    4.01
+2020-09-10    4.01
+2020-09-11    4.02
+2020-09-12    4.02
+2020-09-13    4.02
+2020-09-14    4.02
+2020-09-15    4.03
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 41
+Expected Sum of Quantity last 10 Days = 72
+OOS Total Error = -31
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 4.11
+
+"
+"(-12165, 554)","Item_ID = -12165 | Site = 554
+Item_Name = MAR KG 3.27z M&M PEANUT
+---Prediction---
+2020-09-06    4.17
+2020-09-07    4.07
+2020-09-08    3.90
+2020-09-09    3.39
+2020-09-10    2.11
+2020-09-11    2.89
+2020-09-12    2.72
+2020-09-13    3.06
+2020-09-14    2.80
+2020-09-15    2.28
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 32
+Expected Sum of Quantity last 10 Days = 36
+OOS Total Error = -2
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 2.58
+
+"
+"(-12165, 516)","Item_ID = -12165 | Site = 516
+Item_Name = MAR KG 3.27z M&M PEANUT
+---Prediction---
+2020-09-06    6.0
+2020-09-07    6.0
+2020-09-08    6.0
+2020-09-09    6.0
+2020-09-10    6.0
+2020-09-11    6.0
+2020-09-12    6.0
+2020-09-13    6.0
+2020-09-14    6.0
+2020-09-15    6.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 60
+Expected Sum of Quantity last 10 Days = 70
+OOS Total Error = 20
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 3.44
+
+"
+"(-12165, 399)","Item_ID = -12165 | Site = 399
+Item_Name = MAR KG 3.27z M&M PEANUT
+---Prediction---
+2020-09-06    5.62
+2020-09-07    5.36
+2020-09-08    5.77
+2020-09-09    5.82
+2020-09-10    5.84
+2020-09-11    5.91
+2020-09-12    5.85
+2020-09-13    5.86
+2020-09-14    5.69
+2020-09-15    5.90
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 58
+Expected Sum of Quantity last 10 Days = 55
+OOS Total Error = -9
+Best OOS Config = (7, 2, 2)
+Best OOS RMSE = 1.69
+
+"
+"(-12165, 459)","Item_ID = -12165 | Site = 459
+Item_Name = MAR KG 3.27z M&M PEANUT
+---Prediction---
+2020-09-06    6.20
+2020-09-07    6.02
+2020-09-08    5.80
+2020-09-09    6.50
+2020-09-10    6.80
+2020-09-11    6.89
+2020-09-12    6.57
+2020-09-13    6.72
+2020-09-14    7.08
+2020-09-15    7.05
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 66
+Expected Sum of Quantity last 10 Days = 52
+OOS Total Error = -22
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 2.52
+
+"
+"(-12165, 517)","Item_ID = -12165 | Site = 517
+Item_Name = MAR KG 3.27z M&M PEANUT
+---Prediction---
+2020-09-06    10.70
+2020-09-07    10.41
+2020-09-08    11.90
+2020-09-09    12.25
+2020-09-10    12.35
+2020-09-11    11.46
+2020-09-12    10.97
+2020-09-13    10.77
+2020-09-14    10.99
+2020-09-15    10.71
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 113
+Expected Sum of Quantity last 10 Days = 103
+OOS Total Error = -48
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 6.31
+
+"
+"(-12165, 580)","Item_ID = -12165 | Site = 580
+Item_Name = MAR KG 3.27z M&M PEANUT
+---Prediction---
+2020-09-06    9.0
+2020-09-07    9.0
+2020-09-08    9.0
+2020-09-09    9.0
+2020-09-10    9.0
+2020-09-11    9.0
+2020-09-12    9.0
+2020-09-13    9.0
+2020-09-14    9.0
+2020-09-15    9.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 90
+Expected Sum of Quantity last 10 Days = 51
+OOS Total Error = -1
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 3.3
+
+"
+"(-12165, 589)","Item_ID = -12165 | Site = 589
+Item_Name = MAR KG 3.27z M&M PEANUT
+---Prediction---
+2020-09-06     9.83
+2020-09-07     8.33
+2020-09-08     9.76
+2020-09-09     8.25
+2020-09-10     7.88
+2020-09-11     9.87
+2020-09-12    10.32
+2020-09-13     8.52
+2020-09-14     9.75
+2020-09-15    10.32
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 93
+Expected Sum of Quantity last 10 Days = 89
+OOS Total Error = -49
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 6.17
+
+"
+"(-12165, 601)","Item_ID = -12165 | Site = 601
+Item_Name = MAR KG 3.27z M&M PEANUT
+---Prediction---
+2020-09-06    5.99
+2020-09-07    6.06
+2020-09-08    6.10
+2020-09-09    6.05
+2020-09-10    7.53
+2020-09-11    6.78
+2020-09-12    7.45
+2020-09-13    6.19
+2020-09-14    7.30
+2020-09-15    6.48
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 66
+Expected Sum of Quantity last 10 Days = 77
+OOS Total Error = -45
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 4.87
+
+"
+"(-12152, 280)","Item_ID = -12152 | Site = 280
+Item_Name = HER KG 3z KIT KAT
+---Prediction---
+2020-09-06    1.11
+2020-09-07    1.16
+2020-09-08    1.49
+2020-09-09    1.37
+2020-09-10    1.53
+2020-09-11    1.39
+2020-09-12    1.41
+2020-09-13    1.44
+2020-09-14    1.46
+2020-09-15    1.52
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 14
+Expected Sum of Quantity last 10 Days = 8
+OOS Total Error = 1
+Best OOS Config = (7, 0, 0)
+Best OOS RMSE = 0.68
+
+"
+"(-12152, 380)","Item_ID = -12152 | Site = 380
+Item_Name = HER KG 3z KIT KAT
+---Prediction---
+2020-09-06    4.27
+2020-09-07    4.72
+2020-09-08    4.72
+2020-09-09    4.72
+2020-09-10    4.72
+2020-09-11    4.72
+2020-09-12    4.72
+2020-09-13    4.72
+2020-09-14    4.72
+2020-09-15    4.72
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 47
+Expected Sum of Quantity last 10 Days = 37
+OOS Total Error = 9
+Best OOS Config = (0, 0, 1)
+Best OOS RMSE = 3.62
+
+"
+"(-12152, 554)","Item_ID = -12152 | Site = 554
+Item_Name = HER KG 3z KIT KAT
+---Prediction---
+2020-09-06   -0.07
+2020-09-07   -0.76
+2020-09-08   -1.20
+2020-09-09   -0.88
+2020-09-10   -1.09
+2020-09-11   -1.40
+2020-09-12   -1.80
+2020-09-13   -1.92
+2020-09-14   -2.17
+2020-09-15   -2.41
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = -13
+Expected Sum of Quantity last 10 Days = 8
+OOS Total Error = -3
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 1.23
+
+"
+"(-12152, 516)","Item_ID = -12152 | Site = 516
+Item_Name = HER KG 3z KIT KAT
+---Prediction---
+2020-09-06    1.91
+2020-09-07    1.91
+2020-09-08    1.91
+2020-09-09    1.91
+2020-09-10    1.91
+2020-09-11    1.91
+2020-09-12    1.91
+2020-09-13    1.91
+2020-09-14    1.91
+2020-09-15    1.91
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 20
+Expected Sum of Quantity last 10 Days = 17
+OOS Total Error = 0
+Best OOS Config = (0, 1, 1)
+Best OOS RMSE = 1.62
+
+"
+"(-12152, 399)","Item_ID = -12152 | Site = 399
+Item_Name = HER KG 3z KIT KAT
+---Prediction---
+2020-09-06    2.1
+2020-09-07    2.1
+2020-09-08    2.1
+2020-09-09    2.1
+2020-09-10    2.1
+2020-09-11    2.1
+2020-09-12    2.1
+2020-09-13    2.1
+2020-09-14    2.1
+2020-09-15    2.1
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 22
+Expected Sum of Quantity last 10 Days = 23
+OOS Total Error = 0
+Best OOS Config = (0, 2, 2)
+Best OOS RMSE = 1.27
+
+"
+"(-12152, 459)","Item_ID = -12152 | Site = 459
+Item_Name = HER KG 3z KIT KAT
+---Prediction---
+2020-09-06    2.48
+2020-09-07    2.40
+2020-09-08    3.13
+2020-09-09    3.24
+2020-09-10    3.50
+2020-09-11    3.88
+2020-09-12    3.83
+2020-09-13    4.00
+2020-09-14    4.03
+2020-09-15    4.44
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 35
+Expected Sum of Quantity last 10 Days = 27
+OOS Total Error = 2
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 1.37
+
+"
+"(-12152, 517)","Item_ID = -12152 | Site = 517
+Item_Name = HER KG 3z KIT KAT
+---Prediction---
+2020-09-06    4.65
+2020-09-07    4.78
+2020-09-08    4.91
+2020-09-09    4.91
+2020-09-10    4.99
+2020-09-11    4.89
+2020-09-12    4.99
+2020-09-13    5.18
+2020-09-14    5.27
+2020-09-15    5.33
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 50
+Expected Sum of Quantity last 10 Days = 49
+OOS Total Error = -2
+Best OOS Config = (7, 0, 0)
+Best OOS RMSE = 1.94
+
+"
+"(-12152, 580)","Item_ID = -12152 | Site = 580
+Item_Name = HER KG 3z KIT KAT
+---Prediction---
+2020-09-06    1.88
+2020-09-07    1.76
+2020-09-08    1.83
+2020-09-09    1.54
+2020-09-10    1.70
+2020-09-11    1.80
+2020-09-12    1.76
+2020-09-13    1.85
+2020-09-14    1.87
+2020-09-15    1.89
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 18
+Expected Sum of Quantity last 10 Days = 16
+OOS Total Error = 0
+Best OOS Config = (7, 1, 1)
+Best OOS RMSE = 1.22
+
+"
+"(-12152, 589)","Item_ID = -12152 | Site = 589
+Item_Name = HER KG 3z KIT KAT
+---Prediction---
+2020-09-06    2.91
+2020-09-07    3.80
+2020-09-08    4.36
+2020-09-09    3.69
+2020-09-10    3.81
+2020-09-11    3.81
+2020-09-12    2.99
+2020-09-13    2.74
+2020-09-14    3.26
+2020-09-15    3.50
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 35
+Expected Sum of Quantity last 10 Days = 27
+OOS Total Error = 14
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 2.78
+
+"
+"(-12152, 601)","Item_ID = -12152 | Site = 601
+Item_Name = HER KG 3z KIT KAT
+---Prediction---
+2020-09-06    1.0
+2020-09-07    1.0
+2020-09-08    1.0
+2020-09-09    1.0
+2020-09-10    1.0
+2020-09-11    1.0
+2020-09-12    1.0
+2020-09-13    1.0
+2020-09-14    1.0
+2020-09-15    1.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 10
+Expected Sum of Quantity last 10 Days = 27
+OOS Total Error = 3
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 1.87
+
+"
+"(-12151, 280)","Item_ID = -12151 | Site = 280
+Item_Name = HER KG 3.5z REESES FAST BREAK
+---Prediction---
+2020-09-06    2.75
+2020-09-07    2.12
+2020-09-08    2.89
+2020-09-09    2.91
+2020-09-10    2.62
+2020-09-11    3.15
+2020-09-12    2.60
+2020-09-13    2.54
+2020-09-14    2.89
+2020-09-15    2.45
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 27
+Expected Sum of Quantity last 10 Days = 28
+OOS Total Error = -11
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 2.34
+
+"
+"(-12151, 380)","Item_ID = -12151 | Site = 380
+Item_Name = HER KG 3.5z REESES FAST BREAK
+---Prediction---
+2020-09-06    6.00
+2020-09-07    6.01
+2020-09-08    6.01
+2020-09-09    6.02
+2020-09-10    6.02
+2020-09-11    6.02
+2020-09-12    6.03
+2020-09-13    6.03
+2020-09-14    6.03
+2020-09-15    6.04
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 61
+Expected Sum of Quantity last 10 Days = 92
+OOS Total Error = -11
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 5.58
+
+"
+"(-12151, 554)","Item_ID = -12151 | Site = 554
+Item_Name = HER KG 3.5z REESES FAST BREAK
+---Prediction---
+2020-09-06    2.11
+2020-09-07    2.51
+2020-09-08    3.30
+2020-09-09    3.53
+2020-09-10    3.19
+2020-09-11    2.68
+2020-09-12    2.22
+2020-09-13    2.12
+2020-09-14    2.45
+2020-09-15    2.97
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 28
+Expected Sum of Quantity last 10 Days = 22
+OOS Total Error = 4
+Best OOS Config = (7, 0, 2)
+Best OOS RMSE = 1.64
+
+"
+"(-12151, 516)","Item_ID = -12151 | Site = 516
+Item_Name = HER KG 3.5z REESES FAST BREAK
+---Prediction---
+2020-09-06    10.01
+2020-09-07    10.02
+2020-09-08    10.03
+2020-09-09    10.04
+2020-09-10    10.04
+2020-09-11    10.05
+2020-09-12    10.06
+2020-09-13    10.07
+2020-09-14    10.08
+2020-09-15    10.09
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 101
+Expected Sum of Quantity last 10 Days = 97
+OOS Total Error = -46
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 5.99
+
+"
+"(-12151, 399)","Item_ID = -12151 | Site = 399
+Item_Name = HER KG 3.5z REESES FAST BREAK
+---Prediction---
+2020-09-06    11.0
+2020-09-07    11.0
+2020-09-08    11.0
+2020-09-09    11.0
+2020-09-10    11.0
+2020-09-11    11.0
+2020-09-12    11.0
+2020-09-13    11.0
+2020-09-14    11.0
+2020-09-15    11.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 110
+Expected Sum of Quantity last 10 Days = 95
+OOS Total Error = 5
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 3.18
+
+"
+"(-12151, 459)","Item_ID = -12151 | Site = 459
+Item_Name = HER KG 3.5z REESES FAST BREAK
+---Prediction---
+2020-09-06    5.45
+2020-09-07    4.85
+2020-09-08    5.92
+2020-09-09    5.48
+2020-09-10    5.59
+2020-09-11    6.04
+2020-09-12    4.90
+2020-09-13    4.35
+2020-09-14    4.41
+2020-09-15    5.10
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 53
+Expected Sum of Quantity last 10 Days = 62
+OOS Total Error = -2
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 2.85
+
+"
+"(-12151, 517)","Item_ID = -12151 | Site = 517
+Item_Name = HER KG 3.5z REESES FAST BREAK
+---Prediction---
+2020-09-06    13.84
+2020-09-07    13.09
+2020-09-08    13.10
+2020-09-09    11.38
+2020-09-10    10.62
+2020-09-11    10.41
+2020-09-12     9.93
+2020-09-13    10.89
+2020-09-14    10.45
+2020-09-15     9.41
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 114
+Expected Sum of Quantity last 10 Days = 124
+OOS Total Error = 23
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 4.34
+
+"
+"(-12151, 580)","Item_ID = -12151 | Site = 580
+Item_Name = HER KG 3.5z REESES FAST BREAK
+---Prediction---
+2020-09-06    9.36
+2020-09-07    9.56
+2020-09-08    9.00
+2020-09-09    8.82
+2020-09-10    8.69
+2020-09-11    8.24
+2020-09-12    8.19
+2020-09-13    8.13
+2020-09-14    8.03
+2020-09-15    7.96
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 86
+Expected Sum of Quantity last 10 Days = 108
+OOS Total Error = -59
+Best OOS Config = (7, 1, 2)
+Best OOS RMSE = 6.86
+
+"
+"(-12151, 589)","Item_ID = -12151 | Site = 589
+Item_Name = HER KG 3.5z REESES FAST BREAK
+---Prediction---
+2020-09-06    13.02
+2020-09-07    13.03
+2020-09-08    13.05
+2020-09-09    13.06
+2020-09-10    13.08
+2020-09-11    13.10
+2020-09-12    13.11
+2020-09-13    13.13
+2020-09-14    13.14
+2020-09-15    13.16
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 131
+Expected Sum of Quantity last 10 Days = 142
+OOS Total Error = -61
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 8.74
+
+"
+"(-12151, 601)","Item_ID = -12151 | Site = 601
+Item_Name = HER KG 3.5z REESES FAST BREAK
+---Prediction---
+2020-09-06    7.01
+2020-09-07    4.31
+2020-09-08    4.58
+2020-09-09    4.58
+2020-09-10    4.58
+2020-09-11    4.58
+2020-09-12    4.58
+2020-09-13    4.58
+2020-09-14    4.58
+2020-09-15    4.58
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 48
+Expected Sum of Quantity last 10 Days = 83
+OOS Total Error = -38
+Best OOS Config = (0, 0, 2)
+Best OOS RMSE = 6.03
+
+"
+"(-12171, 280)","Item_ID = -12171 | Site = 280
+Item_Name = HER KG 2.8z REESES PB CUP
+---Prediction---
+2020-09-06    2.86
+2020-09-07    2.62
+2020-09-08    1.98
+2020-09-09    1.98
+2020-09-10    1.98
+2020-09-11    1.98
+2020-09-12    1.98
+2020-09-13    1.98
+2020-09-14    1.98
+2020-09-15    1.98
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 22
+Expected Sum of Quantity last 10 Days = 27
+OOS Total Error = -8
+Best OOS Config = (0, 0, 2)
+Best OOS RMSE = 1.59
+
+"
+"(-12171, 380)","Item_ID = -12171 | Site = 380
+Item_Name = HER KG 2.8z REESES PB CUP
+---Prediction---
+2020-09-06    11.01
+2020-09-07    11.02
+2020-09-08    11.03
+2020-09-09    11.04
+2020-09-10    11.05
+2020-09-11    11.06
+2020-09-12    11.07
+2020-09-13    11.08
+2020-09-14    11.09
+2020-09-15    11.10
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 111
+Expected Sum of Quantity last 10 Days = 107
+OOS Total Error = -16
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 3.09
+
+"
+"(-12171, 554)","Item_ID = -12171 | Site = 554
+Item_Name = HER KG 2.8z REESES PB CUP
+---Prediction---
+2020-09-06    1.66
+2020-09-07    2.09
+2020-09-08    2.23
+2020-09-09    2.54
+2020-09-10    2.68
+2020-09-11    2.62
+2020-09-12    2.58
+2020-09-13    2.57
+2020-09-14    2.56
+2020-09-15    2.57
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 25
+Expected Sum of Quantity last 10 Days = 25
+OOS Total Error = 3
+Best OOS Config = (7, 0, 0)
+Best OOS RMSE = 1.42
+
+"
+"(-12171, 516)","Item_ID = -12171 | Site = 516
+Item_Name = HER KG 2.8z REESES PB CUP
+---Prediction---
+2020-09-06    14.49
+2020-09-07    15.25
+2020-09-08    14.34
+2020-09-09    15.29
+2020-09-10    15.68
+2020-09-11    15.17
+2020-09-12    16.47
+2020-09-13    16.58
+2020-09-14    17.30
+2020-09-15    17.17
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 158
+Expected Sum of Quantity last 10 Days = 116
+OOS Total Error = -25
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 4.12
+
+"
+"(-12171, 399)","Item_ID = -12171 | Site = 399
+Item_Name = HER KG 2.8z REESES PB CUP
+---Prediction---
+2020-09-06    6.09
+2020-09-07    5.92
+2020-09-08    4.71
+2020-09-09    5.85
+2020-09-10    5.95
+2020-09-11    5.46
+2020-09-12    6.58
+2020-09-13    5.91
+2020-09-14    5.80
+2020-09-15    5.65
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 58
+Expected Sum of Quantity last 10 Days = 61
+OOS Total Error = -16
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 3.12
+
+"
+"(-12171, 459)","Item_ID = -12171 | Site = 459
+Item_Name = HER KG 2.8z REESES PB CUP
+---Prediction---
+2020-09-06    4.61
+2020-09-07    4.50
+2020-09-08    3.64
+2020-09-09    3.64
+2020-09-10    3.64
+2020-09-11    3.64
+2020-09-12    3.64
+2020-09-13    3.64
+2020-09-14    3.64
+2020-09-15    3.64
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 39
+Expected Sum of Quantity last 10 Days = 54
+OOS Total Error = -18
+Best OOS Config = (0, 0, 2)
+Best OOS RMSE = 3.0
+
+"
+"(-12171, 517)","Item_ID = -12171 | Site = 517
+Item_Name = HER KG 2.8z REESES PB CUP
+---Prediction---
+2020-09-06    14.0
+2020-09-07    14.0
+2020-09-08    14.0
+2020-09-09    14.0
+2020-09-10    14.0
+2020-09-11    14.0
+2020-09-12    14.0
+2020-09-13    14.0
+2020-09-14    14.0
+2020-09-15    14.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 140
+Expected Sum of Quantity last 10 Days = 147
+OOS Total Error = 13
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 4.62
+
+"
+"(-12171, 580)","Item_ID = -12171 | Site = 580
+Item_Name = HER KG 2.8z REESES PB CUP
+---Prediction---
+2020-09-06    4.00
+2020-09-07    4.01
+2020-09-08    4.01
+2020-09-09    4.01
+2020-09-10    4.02
+2020-09-11    4.02
+2020-09-12    4.02
+2020-09-13    4.02
+2020-09-14    4.03
+2020-09-15    4.03
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 41
+Expected Sum of Quantity last 10 Days = 72
+OOS Total Error = -11
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 2.64
+
+"
+"(-12171, 589)","Item_ID = -12171 | Site = 589
+Item_Name = HER KG 2.8z REESES PB CUP
+---Prediction---
+2020-09-06    15.70
+2020-09-07    15.17
+2020-09-08    16.15
+2020-09-09    16.72
+2020-09-10    18.70
+2020-09-11    19.72
+2020-09-12    19.23
+2020-09-13    19.96
+2020-09-14    20.23
+2020-09-15    20.92
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 183
+Expected Sum of Quantity last 10 Days = 131
+OOS Total Error = -6
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 4.4
+
+"
+"(-12171, 601)","Item_ID = -12171 | Site = 601
+Item_Name = HER KG 2.8z REESES PB CUP
+---Prediction---
+2020-09-06    7.69
+2020-09-07    8.96
+2020-09-08    8.66
+2020-09-09    8.44
+2020-09-10    8.49
+2020-09-11    8.32
+2020-09-12    8.11
+2020-09-13    7.93
+2020-09-14    7.65
+2020-09-15    8.08
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 83
+Expected Sum of Quantity last 10 Days = 76
+OOS Total Error = -1
+Best OOS Config = (14, 1, 0)
+Best OOS RMSE = 3.18
+
+"
+"(-12066, 280)","Item_ID = -12066 | Site = 280
+Item_Name = TTS TOOTSIE ROLL $.10
+---Prediction---
+2020-09-06    2.24
+2020-09-07    2.46
+2020-09-08    2.57
+2020-09-09    2.77
+2020-09-10    2.90
+2020-09-11    1.54
+2020-09-12    1.65
+2020-09-13    1.72
+2020-09-14    1.20
+2020-09-15    1.27
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 21
+Expected Sum of Quantity last 10 Days = 10
+OOS Total Error = 20
+Best OOS Config = (14, 1, 0)
+Best OOS RMSE = 3.65
+
+"
+"(-12066, 380)","Item_ID = -12066 | Site = 380
+Item_Name = TTS TOOTSIE ROLL $.10
+---Prediction---
+2020-09-06    9.95
+2020-09-07    3.22
+2020-09-08    5.91
+2020-09-09    8.51
+2020-09-10    4.38
+2020-09-11    7.04
+2020-09-12    6.02
+2020-09-13    6.54
+2020-09-14    6.66
+2020-09-15    6.10
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 65
+Expected Sum of Quantity last 10 Days = 86
+OOS Total Error = -35
+Best OOS Config = (7, 1, 1)
+Best OOS RMSE = 16.2
+
+"
+"(-12066, 554)","Item_ID = -12066 | Site = 554
+Item_Name = TTS TOOTSIE ROLL $.10
+---Prediction---
+2020-09-06    0.84
+2020-09-07    1.47
+2020-09-08    1.64
+2020-09-09    0.52
+2020-09-10    1.21
+2020-09-11    0.88
+2020-09-12    0.88
+2020-09-13    0.97
+2020-09-14    0.56
+2020-09-15    0.68
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 10
+Expected Sum of Quantity last 10 Days = 10
+OOS Total Error = -1
+Best OOS Config = (14, 1, 2)
+Best OOS RMSE = 2.97
+
+"
+"(-12066, 516)","Item_ID = -12066 | Site = 516
+Item_Name = TTS TOOTSIE ROLL $.10
+---Prediction---
+2020-09-06    1.21
+2020-09-07    1.45
+2020-09-08    2.27
+2020-09-09    1.84
+2020-09-10    1.99
+2020-09-11    2.21
+2020-09-12    2.43
+2020-09-13    1.74
+2020-09-14    1.91
+2020-09-15    2.00
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 20
+Expected Sum of Quantity last 10 Days = 10
+OOS Total Error = 6
+Best OOS Config = (7, 2, 1)
+Best OOS RMSE = 3.05
+
+"
+"(-12066, 399)","Item_ID = -12066 | Site = 399
+Item_Name = TTS TOOTSIE ROLL $.10
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 9
+OOS Total Error = -8
+Best OOS Config = (0, 2, 0)
+Best OOS RMSE = 2.85
+
+"
+"(-12066, 459)","Item_ID = -12066 | Site = 459
+Item_Name = TTS TOOTSIE ROLL $.10
+---Prediction---
+2020-09-06    7.20
+2020-09-07    7.20
+2020-09-08    7.21
+2020-09-09    7.21
+2020-09-10    7.21
+2020-09-11    7.21
+2020-09-12    7.21
+2020-09-13    7.22
+2020-09-14    7.22
+2020-09-15    7.22
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 73
+Expected Sum of Quantity last 10 Days = 75
+OOS Total Error = -5
+Best OOS Config = (0, 2, 2)
+Best OOS RMSE = 7.14
+
+"
+"(-12066, 517)","Item_ID = -12066 | Site = 517
+Item_Name = TTS TOOTSIE ROLL $.10
+---Prediction---
+2020-09-06    11.76
+2020-09-07     7.52
+2020-09-08    11.30
+2020-09-09    14.73
+2020-09-10    18.71
+2020-09-11    21.50
+2020-09-12    23.17
+2020-09-13    24.17
+2020-09-14    19.21
+2020-09-15    25.39
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 178
+Expected Sum of Quantity last 10 Days = 75
+OOS Total Error = -5
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 11.96
+
+"
+"(-12066, 580)","Item_ID = -12066 | Site = 580
+Item_Name = TTS TOOTSIE ROLL $.10
+---Prediction---
+2020-09-06    0.59
+2020-09-07    0.56
+2020-09-08    1.40
+2020-09-09    0.32
+2020-09-10    0.53
+2020-09-11    1.10
+2020-09-12    2.07
+2020-09-13    1.44
+2020-09-14    0.56
+2020-09-15    1.19
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 10
+Expected Sum of Quantity last 10 Days = 10
+OOS Total Error = -2
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 2.81
+
+"
+"(-12066, 589)","Item_ID = -12066 | Site = 589
+Item_Name = TTS TOOTSIE ROLL $.10
+---Prediction---
+2020-09-06    4.88
+2020-09-07    4.62
+2020-09-08    4.90
+2020-09-09    4.90
+2020-09-10    4.90
+2020-09-11    4.90
+2020-09-12    4.90
+2020-09-13    4.90
+2020-09-14    4.90
+2020-09-15    4.90
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 49
+Expected Sum of Quantity last 10 Days = 50
+OOS Total Error = 1
+Best OOS Config = (0, 0, 2)
+Best OOS RMSE = 5.85
+
+"
+"(-12066, 601)","Item_ID = -12066 | Site = 601
+Item_Name = TTS TOOTSIE ROLL $.10
+---Prediction---
+2020-09-06   -0.06
+2020-09-07   -0.00
+2020-09-08   -0.07
+2020-09-09   -0.02
+2020-09-10   -0.07
+2020-09-11   -0.03
+2020-09-12   -0.08
+2020-09-13   -0.05
+2020-09-14   -0.09
+2020-09-15   -0.07
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 18
+OOS Total Error = 9
+Best OOS Config = (7, 2, 2)
+Best OOS RMSE = 3.13
+
+"
+"(-16893, 280)","Item_ID = -16893 | Site = 280
+Item_Name = MAR KG 3z TWIX CARM 4 TO GO
+---Prediction---
+2020-09-06    5.25
+2020-09-07    5.26
+2020-09-08    5.36
+2020-09-09    5.76
+2020-09-10    5.34
+2020-09-11    5.95
+2020-09-12    6.62
+2020-09-13    6.46
+2020-09-14    7.08
+2020-09-15    7.66
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 61
+Expected Sum of Quantity last 10 Days = 34
+OOS Total Error = -9
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 2.19
+
+"
+"(-16893, 380)","Item_ID = -16893 | Site = 380
+Item_Name = MAR KG 3z TWIX CARM 4 TO GO
+---Prediction---
+2020-09-06    9.01
+2020-09-07    9.02
+2020-09-08    9.02
+2020-09-09    9.03
+2020-09-10    9.04
+2020-09-11    9.05
+2020-09-12    9.05
+2020-09-13    9.06
+2020-09-14    9.07
+2020-09-15    9.08
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 91
+Expected Sum of Quantity last 10 Days = 107
+OOS Total Error = -16
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 3.87
+
+"
+"(-16893, 554)","Item_ID = -16893 | Site = 554
+Item_Name = MAR KG 3z TWIX CARM 4 TO GO
+---Prediction---
+2020-09-06    1.69
+2020-09-07    2.15
+2020-09-08    1.97
+2020-09-09    2.13
+2020-09-10    2.03
+2020-09-11    2.00
+2020-09-12    1.94
+2020-09-13    2.06
+2020-09-14    2.00
+2020-09-15    2.04
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 21
+Expected Sum of Quantity last 10 Days = 22
+OOS Total Error = -1
+Best OOS Config = (7, 1, 2)
+Best OOS RMSE = 1.42
+
+"
+"(-16893, 516)","Item_ID = -16893 | Site = 516
+Item_Name = MAR KG 3z TWIX CARM 4 TO GO
+---Prediction---
+2020-09-06    7.0
+2020-09-07    7.0
+2020-09-08    7.0
+2020-09-09    7.0
+2020-09-10    7.0
+2020-09-11    7.0
+2020-09-12    7.0
+2020-09-13    7.0
+2020-09-14    7.0
+2020-09-15    7.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 70
+Expected Sum of Quantity last 10 Days = 73
+OOS Total Error = 7
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 3.73
+
+"
+"(-16893, 399)","Item_ID = -16893 | Site = 399
+Item_Name = MAR KG 3z TWIX CARM 4 TO GO
+---Prediction---
+2020-09-06    4.47
+2020-09-07    4.15
+2020-09-08    4.15
+2020-09-09    4.15
+2020-09-10    4.15
+2020-09-11    4.15
+2020-09-12    4.15
+2020-09-13    4.15
+2020-09-14    4.15
+2020-09-15    4.15
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 42
+Expected Sum of Quantity last 10 Days = 52
+OOS Total Error = -10
+Best OOS Config = (0, 0, 1)
+Best OOS RMSE = 2.5
+
+"
+"(-16893, 459)","Item_ID = -16893 | Site = 459
+Item_Name = MAR KG 3z TWIX CARM 4 TO GO
+---Prediction---
+2020-09-06    3.93
+2020-09-07    3.54
+2020-09-08    3.98
+2020-09-09    4.83
+2020-09-10    5.18
+2020-09-11    4.55
+2020-09-12    4.13
+2020-09-13    3.95
+2020-09-14    4.19
+2020-09-15    4.42
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 43
+Expected Sum of Quantity last 10 Days = 47
+OOS Total Error = -7
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 2.68
+
+"
+"(-16893, 517)","Item_ID = -16893 | Site = 517
+Item_Name = MAR KG 3z TWIX CARM 4 TO GO
+---Prediction---
+2020-09-06     8.44
+2020-09-07    10.62
+2020-09-08    11.34
+2020-09-09     9.86
+2020-09-10    10.26
+2020-09-11     8.96
+2020-09-12     8.79
+2020-09-13     9.42
+2020-09-14    10.07
+2020-09-15    10.05
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 98
+Expected Sum of Quantity last 10 Days = 111
+OOS Total Error = -17
+Best OOS Config = (7, 2, 1)
+Best OOS RMSE = 4.07
+
+"
+"(-16893, 580)","Item_ID = -16893 | Site = 580
+Item_Name = MAR KG 3z TWIX CARM 4 TO GO
+---Prediction---
+2020-09-06    6.90
+2020-09-07    7.01
+2020-09-08    8.00
+2020-09-09    8.15
+2020-09-10    9.16
+2020-09-11    7.18
+2020-09-12    6.77
+2020-09-13    6.67
+2020-09-14    7.43
+2020-09-15    7.18
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 75
+Expected Sum of Quantity last 10 Days = 74
+OOS Total Error = -25
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 4.36
+
+"
+"(-16893, 589)","Item_ID = -16893 | Site = 589
+Item_Name = MAR KG 3z TWIX CARM 4 TO GO
+---Prediction---
+2020-09-06    15.01
+2020-09-07    15.03
+2020-09-08    15.04
+2020-09-09    15.05
+2020-09-10    15.07
+2020-09-11    15.08
+2020-09-12    15.09
+2020-09-13    15.11
+2020-09-14    15.12
+2020-09-15    15.14
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 151
+Expected Sum of Quantity last 10 Days = 110
+OOS Total Error = -29
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 4.82
+
+"
+"(-16893, 601)","Item_ID = -16893 | Site = 601
+Item_Name = MAR KG 3z TWIX CARM 4 TO GO
+---Prediction---
+2020-09-06    6.01
+2020-09-07    6.02
+2020-09-08    6.03
+2020-09-09    6.05
+2020-09-10    6.06
+2020-09-11    6.07
+2020-09-12    6.08
+2020-09-13    6.09
+2020-09-14    6.10
+2020-09-15    6.11
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 61
+Expected Sum of Quantity last 10 Days = 77
+OOS Total Error = -16
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 3.22
+
+"
+"(-14148, 280)","Item_ID = -14148 | Site = 280
+Item_Name = MAR KG 3.29z SNICKERS 2 PIECE
+---Prediction---
+2020-09-06    1.87
+2020-09-07    2.16
+2020-09-08    1.59
+2020-09-09    1.36
+2020-09-10    1.49
+2020-09-11    1.93
+2020-09-12    1.70
+2020-09-13    1.29
+2020-09-14    1.65
+2020-09-15    1.40
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 17
+Expected Sum of Quantity last 10 Days = 18
+OOS Total Error = -4
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 1.21
+
+"
+"(-14148, 380)","Item_ID = -14148 | Site = 380
+Item_Name = MAR KG 3.29z SNICKERS 2 PIECE
+---Prediction---
+2020-09-06    6.59
+2020-09-07    5.77
+2020-09-08    6.38
+2020-09-09    6.05
+2020-09-10    6.74
+2020-09-11    7.93
+2020-09-12    7.45
+2020-09-13    6.51
+2020-09-14    6.57
+2020-09-15    6.44
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 67
+Expected Sum of Quantity last 10 Days = 72
+OOS Total Error = -11
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 3.1
+
+"
+"(-14148, 554)","Item_ID = -14148 | Site = 554
+Item_Name = MAR KG 3.29z SNICKERS 2 PIECE
+---Prediction---
+2020-09-06    3.22
+2020-09-07    2.89
+2020-09-08    3.06
+2020-09-09    2.99
+2020-09-10    3.18
+2020-09-11    3.28
+2020-09-12    3.06
+2020-09-13    3.04
+2020-09-14    3.00
+2020-09-15    3.02
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 31
+Expected Sum of Quantity last 10 Days = 23
+OOS Total Error = 1
+Best OOS Config = (7, 0, 0)
+Best OOS RMSE = 1.68
+
+"
+"(-14148, 516)","Item_ID = -14148 | Site = 516
+Item_Name = MAR KG 3.29z SNICKERS 2 PIECE
+---Prediction---
+2020-09-06    2.58
+2020-09-07    3.57
+2020-09-08    3.77
+2020-09-09    3.82
+2020-09-10    4.44
+2020-09-11    4.19
+2020-09-12    4.31
+2020-09-13    4.89
+2020-09-14    5.08
+2020-09-15    5.40
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 43
+Expected Sum of Quantity last 10 Days = 27
+OOS Total Error = 6
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 1.8
+
+"
+"(-14148, 399)","Item_ID = -14148 | Site = 399
+Item_Name = MAR KG 3.29z SNICKERS 2 PIECE
+---Prediction---
+2020-09-06    4.90
+2020-09-07    4.74
+2020-09-08    4.45
+2020-09-09    5.18
+2020-09-10    5.00
+2020-09-11    5.00
+2020-09-12    4.62
+2020-09-13    4.77
+2020-09-14    4.91
+2020-09-15    4.72
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 49
+Expected Sum of Quantity last 10 Days = 46
+OOS Total Error = 3
+Best OOS Config = (7, 2, 2)
+Best OOS RMSE = 2.2
+
+"
+"(-14148, 459)","Item_ID = -14148 | Site = 459
+Item_Name = MAR KG 3.29z SNICKERS 2 PIECE
+---Prediction---
+2020-09-06    3.06
+2020-09-07    4.19
+2020-09-08    4.10
+2020-09-09    4.86
+2020-09-10    3.64
+2020-09-11    3.41
+2020-09-12    4.48
+2020-09-13    4.06
+2020-09-14    4.12
+2020-09-15    5.15
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 42
+Expected Sum of Quantity last 10 Days = 38
+OOS Total Error = 5
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 3.06
+
+"
+"(-14148, 517)","Item_ID = -14148 | Site = 517
+Item_Name = MAR KG 3.29z SNICKERS 2 PIECE
+---Prediction---
+2020-09-06    6.11
+2020-09-07    6.09
+2020-09-08    6.36
+2020-09-09    6.89
+2020-09-10    7.36
+2020-09-11    7.66
+2020-09-12    5.94
+2020-09-13    5.88
+2020-09-14    5.57
+2020-09-15    6.46
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 65
+Expected Sum of Quantity last 10 Days = 53
+OOS Total Error = 5
+Best OOS Config = (14, 1, 1)
+Best OOS RMSE = 3.86
+
+"
+"(-14148, 580)","Item_ID = -14148 | Site = 580
+Item_Name = MAR KG 3.29z SNICKERS 2 PIECE
+---Prediction---
+2020-09-06    4.71
+2020-09-07    4.84
+2020-09-08    4.84
+2020-09-09    4.84
+2020-09-10    4.84
+2020-09-11    4.84
+2020-09-12    4.84
+2020-09-13    4.84
+2020-09-14    4.84
+2020-09-15    4.84
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 49
+Expected Sum of Quantity last 10 Days = 46
+OOS Total Error = 3
+Best OOS Config = (0, 0, 1)
+Best OOS RMSE = 3.05
+
+"
+"(-14148, 589)","Item_ID = -14148 | Site = 589
+Item_Name = MAR KG 3.29z SNICKERS 2 PIECE
+---Prediction---
+2020-09-06     6.78
+2020-09-07     7.77
+2020-09-08     9.67
+2020-09-09     7.23
+2020-09-10     7.63
+2020-09-11    10.31
+2020-09-12     9.41
+2020-09-13     8.18
+2020-09-14    10.16
+2020-09-15    10.69
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 88
+Expected Sum of Quantity last 10 Days = 62
+OOS Total Error = 7
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 3.16
+
+"
+"(-14148, 601)","Item_ID = -14148 | Site = 601
+Item_Name = MAR KG 3.29z SNICKERS 2 PIECE
+---Prediction---
+2020-09-06    6.89
+2020-09-07    6.86
+2020-09-08    7.76
+2020-09-09    7.84
+2020-09-10    8.12
+2020-09-11    7.80
+2020-09-12    7.58
+2020-09-13    7.42
+2020-09-14    7.54
+2020-09-15    7.66
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 76
+Expected Sum of Quantity last 10 Days = 68
+OOS Total Error = -12
+Best OOS Config = (7, 2, 1)
+Best OOS RMSE = 2.91
+
+"
+"(-26802, 280)","Item_ID = -26802 | Site = 280
+Item_Name = WRI KG EXTRA SMOOTH MINT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-26802, 380)","Item_ID = -26802 | Site = 380
+Item_Name = WRI KG EXTRA SMOOTH MINT
+---Prediction---
+2020-09-06    0.51
+2020-09-07    0.55
+2020-09-08    0.52
+2020-09-09    0.58
+2020-09-10    0.58
+2020-09-11    0.53
+2020-09-12    0.59
+2020-09-13    0.52
+2020-09-14    0.64
+2020-09-15    0.51
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 6
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = 0
+Best OOS Config = (14, 1, 2)
+Best OOS RMSE = 0.9
+
+"
+"(-26802, 554)","Item_ID = -26802 | Site = 554
+Item_Name = WRI KG EXTRA SMOOTH MINT
+---Prediction---
+2020-09-06    0.31
+2020-09-07    0.31
+2020-09-08    0.31
+2020-09-09    0.31
+2020-09-10    0.31
+2020-09-11    0.31
+2020-09-12    0.31
+2020-09-13    0.31
+2020-09-14    0.31
+2020-09-15    0.31
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 4
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 2
+Best OOS Config = (0, 1, 2)
+Best OOS RMSE = 0.43
+
+"
+"(-26802, 516)","Item_ID = -26802 | Site = 516
+Item_Name = WRI KG EXTRA SMOOTH MINT
+---Prediction---
+2020-09-06    0.45
+2020-09-07    0.45
+2020-09-08    0.45
+2020-09-09    0.45
+2020-09-10    0.45
+2020-09-11    0.45
+2020-09-12    0.45
+2020-09-13    0.45
+2020-09-14    0.45
+2020-09-15    0.45
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 5
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = -1
+Best OOS Config = (0, 1, 1)
+Best OOS RMSE = 0.93
+
+"
+"(-26802, 399)","Item_ID = -26802 | Site = 399
+Item_Name = WRI KG EXTRA SMOOTH MINT
+---Prediction---
+2020-09-06    0.65
+2020-09-07    0.93
+2020-09-08    0.59
+2020-09-09    0.98
+2020-09-10    0.60
+2020-09-11    0.93
+2020-09-12    0.47
+2020-09-13    0.78
+2020-09-14    0.58
+2020-09-15    0.74
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 8
+Expected Sum of Quantity last 10 Days = 10
+OOS Total Error = -2
+Best OOS Config = (14, 1, 2)
+Best OOS RMSE = 1.15
+
+"
+"(-26802, 459)","Item_ID = -26802 | Site = 459
+Item_Name = WRI KG EXTRA SMOOTH MINT
+---Prediction---
+2020-09-06    1.01
+2020-09-07    1.01
+2020-09-08    1.01
+2020-09-09    1.01
+2020-09-10    1.01
+2020-09-11    1.01
+2020-09-12    1.01
+2020-09-13    1.01
+2020-09-14    1.01
+2020-09-15    1.01
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 11
+Expected Sum of Quantity last 10 Days = 13
+OOS Total Error = -4
+Best OOS Config = (0, 2, 2)
+Best OOS RMSE = 1.35
+
+"
+"(-26802, 517)","Item_ID = -26802 | Site = 517
+Item_Name = WRI KG EXTRA SMOOTH MINT
+---Prediction---
+2020-09-06    0.47
+2020-09-07    0.47
+2020-09-08    0.47
+2020-09-09    0.47
+2020-09-10    0.46
+2020-09-11    0.46
+2020-09-12    0.46
+2020-09-13    0.46
+2020-09-14    0.46
+2020-09-15    0.46
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 5
+Expected Sum of Quantity last 10 Days = 4
+OOS Total Error = 1
+Best OOS Config = (0, 2, 2)
+Best OOS RMSE = 0.5
+
+"
+"(-26802, 580)","Item_ID = -26802 | Site = 580
+Item_Name = WRI KG EXTRA SMOOTH MINT
+---Prediction---
+2020-09-06    1.38
+2020-09-07    1.41
+2020-09-08    1.50
+2020-09-09    1.61
+2020-09-10    1.47
+2020-09-11    1.88
+2020-09-12    2.15
+2020-09-13    1.96
+2020-09-14    2.09
+2020-09-15    2.15
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 18
+Expected Sum of Quantity last 10 Days = 8
+OOS Total Error = 0
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 0.96
+
+"
+"(-26802, 589)","Item_ID = -26802 | Site = 589
+Item_Name = WRI KG EXTRA SMOOTH MINT
+---Prediction---
+2020-09-06    0.55
+2020-09-07    0.48
+2020-09-08    0.48
+2020-09-09    0.49
+2020-09-10    0.44
+2020-09-11    0.48
+2020-09-12    0.55
+2020-09-13    0.49
+2020-09-14    0.49
+2020-09-15    0.49
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 5
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = 1
+Best OOS Config = (7, 2, 2)
+Best OOS RMSE = 0.48
+
+"
+"(-26802, 601)","Item_ID = -26802 | Site = 601
+Item_Name = WRI KG EXTRA SMOOTH MINT
+---Prediction---
+2020-09-06    0.49
+2020-09-07    0.62
+2020-09-08    0.68
+2020-09-09    0.60
+2020-09-10    0.52
+2020-09-11    0.39
+2020-09-12    0.47
+2020-09-13    0.52
+2020-09-14    0.55
+2020-09-15    0.43
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 6
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = 0
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 0.47
+
+"
+"(-12248, 280)","Item_ID = -12248 | Site = 280
+Item_Name = NES CRUNCH 1.55z
+---Prediction---
+2020-09-06    0.1
+2020-09-07    0.1
+2020-09-08    0.1
+2020-09-09    0.1
+2020-09-10    0.1
+2020-09-11    0.1
+2020-09-12    0.1
+2020-09-13    0.1
+2020-09-14    0.1
+2020-09-15    0.1
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 1
+Expected Sum of Quantity last 10 Days = 1
+OOS Total Error = 1
+Best OOS Config = (0, 1, 1)
+Best OOS RMSE = 0.3
+
+"
+"(-12248, 380)","Item_ID = -12248 | Site = 380
+Item_Name = NES CRUNCH 1.55z
+---Prediction---
+2020-09-06    0.28
+2020-09-07    0.28
+2020-09-08    0.23
+2020-09-09    0.24
+2020-09-10    0.23
+2020-09-11    0.21
+2020-09-12    0.15
+2020-09-13    0.24
+2020-09-14    0.17
+2020-09-15    0.19
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 3
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 1
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 0.4
+
+"
+"(-12248, 554)","Item_ID = -12248 | Site = 554
+Item_Name = NES CRUNCH 1.55z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 1
+OOS Total Error = -1
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.32
+
+"
+"(-12248, 516)","Item_ID = -12248 | Site = 516
+Item_Name = NES CRUNCH 1.55z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12248, 399)","Item_ID = -12248 | Site = 399
+Item_Name = NES CRUNCH 1.55z
+---Prediction---
+2020-09-06    0.27
+2020-09-07    0.23
+2020-09-08    0.15
+2020-09-09    0.27
+2020-09-10    0.26
+2020-09-11    0.32
+2020-09-12    0.21
+2020-09-13    0.24
+2020-09-14    0.23
+2020-09-15    0.24
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 3
+Expected Sum of Quantity last 10 Days = 3
+OOS Total Error = 2
+Best OOS Config = (7, 2, 2)
+Best OOS RMSE = 0.46
+
+"
+"(-12248, 459)","Item_ID = -12248 | Site = 459
+Item_Name = NES CRUNCH 1.55z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12248, 517)","Item_ID = -12248 | Site = 517
+Item_Name = NES CRUNCH 1.55z
+---Prediction---
+2020-09-06    0.14
+2020-09-07    0.15
+2020-09-08    0.16
+2020-09-09    0.11
+2020-09-10    0.09
+2020-09-11    0.07
+2020-09-12    0.08
+2020-09-13    0.08
+2020-09-14    0.09
+2020-09-15    0.10
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 1
+OOS Total Error = 5
+Best OOS Config = (7, 2, 2)
+Best OOS RMSE = 0.56
+
+"
+"(-12248, 580)","Item_ID = -12248 | Site = 580
+Item_Name = NES CRUNCH 1.55z
+---Prediction---
+2020-09-06    1.12
+2020-09-07    1.68
+2020-09-08    1.76
+2020-09-09    1.93
+2020-09-10    2.57
+2020-09-11    2.66
+2020-09-12    2.94
+2020-09-13    3.10
+2020-09-14    3.04
+2020-09-15    3.58
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 25
+Expected Sum of Quantity last 10 Days = 8
+OOS Total Error = 3
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 0.99
+
+"
+"(-12248, 589)","Item_ID = -12248 | Site = 589
+Item_Name = NES CRUNCH 1.55z
+---Prediction---
+2020-09-06    2.09
+2020-09-07    1.89
+2020-09-08    2.10
+2020-09-09    2.45
+2020-09-10    2.45
+2020-09-11    2.49
+2020-09-12    2.40
+2020-09-13    2.94
+2020-09-14    2.99
+2020-09-15    3.04
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 25
+Expected Sum of Quantity last 10 Days = 9
+OOS Total Error = 4
+Best OOS Config = (7, 2, 0)
+Best OOS RMSE = 1.21
+
+"
+"(-12248, 601)","Item_ID = -12248 | Site = 601
+Item_Name = NES CRUNCH 1.55z
+---Prediction---
+2020-09-06    0.36
+2020-09-07    0.39
+2020-09-08    0.39
+2020-09-09    0.39
+2020-09-10    0.39
+2020-09-11    0.39
+2020-09-12    0.39
+2020-09-13    0.39
+2020-09-14    0.39
+2020-09-15    0.39
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 4
+Expected Sum of Quantity last 10 Days = 9
+OOS Total Error = -5
+Best OOS Config = (0, 0, 1)
+Best OOS RMSE = 0.98
+
+"
+"(-45240, 280)","Item_ID = -45240 | Site = 280
+Item_Name = HER REG 1.5z REESES PB LVR LTO
+---Prediction---
+2020-09-06    4.30
+2020-09-07   -0.73
+2020-09-08   -1.53
+2020-09-09    7.37
+2020-09-10    9.39
+2020-09-11    5.03
+2020-09-12    4.54
+2020-09-13   -6.36
+2020-09-14    6.09
+2020-09-15    3.18
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 32
+Expected Sum of Quantity last 10 Days = 12
+OOS Total Error = -7
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 3.68
+
+"
+"(-45240, 380)","Item_ID = -45240 | Site = 380
+Item_Name = HER REG 1.5z REESES PB LVR LTO
+---Prediction---
+2020-09-06    0.99
+2020-09-07    1.49
+2020-09-08    1.49
+2020-09-09    1.49
+2020-09-10    1.49
+2020-09-11    1.49
+2020-09-12    1.49
+2020-09-13    1.49
+2020-09-14    1.49
+2020-09-15    1.49
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 15
+Expected Sum of Quantity last 10 Days = 4
+OOS Total Error = 10
+Best OOS Config = (0, 0, 1)
+Best OOS RMSE = 1.36
+
+"
+"(-45240, 554)","Item_ID = -45240 | Site = 554
+Item_Name = HER REG 1.5z REESES PB LVR LTO
+---Prediction---
+2020-09-06   -0.0
+2020-09-07   -0.0
+2020-09-08   -0.0
+2020-09-09   -0.0
+2020-09-10   -0.0
+2020-09-11   -0.0
+2020-09-12   -0.0
+2020-09-13   -0.0
+2020-09-14   -0.0
+2020-09-15   -0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45240, 516)","Item_ID = -45240 | Site = 516
+Item_Name = HER REG 1.5z REESES PB LVR LTO
+---Prediction---
+2020-09-06    18.04
+2020-09-07    18.07
+2020-09-08    18.11
+2020-09-09    18.14
+2020-09-10    18.18
+2020-09-11    18.21
+2020-09-12    18.25
+2020-09-13    18.28
+2020-09-14    18.32
+2020-09-15    18.35
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 182
+Expected Sum of Quantity last 10 Days = 53
+OOS Total Error = -12
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 5.82
+
+"
+"(-45240, 399)","Item_ID = -45240 | Site = 399
+Item_Name = HER REG 1.5z REESES PB LVR LTO
+---Prediction---
+2020-09-06   -0.32
+2020-09-07    0.79
+2020-09-08   -0.13
+2020-09-09    1.04
+2020-09-10    2.87
+2020-09-11    4.58
+2020-09-12    4.18
+2020-09-13    3.77
+2020-09-14    3.48
+2020-09-15    1.56
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 22
+Expected Sum of Quantity last 10 Days = 31
+OOS Total Error = -2
+Best OOS Config = (7, 0, 0)
+Best OOS RMSE = 1.5
+
+"
+"(-45240, 459)","Item_ID = -45240 | Site = 459
+Item_Name = HER REG 1.5z REESES PB LVR LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 1
+OOS Total Error = 1
+Best OOS Config = (0, 1, 1)
+Best OOS RMSE = 0.3
+
+"
+"(-45240, 517)","Item_ID = -45240 | Site = 517
+Item_Name = HER REG 1.5z REESES PB LVR LTO
+---Prediction---
+2020-09-06    0.51
+2020-09-07    0.43
+2020-09-08    0.76
+2020-09-09    0.96
+2020-09-10    1.00
+2020-09-11    1.18
+2020-09-12    1.19
+2020-09-13    1.22
+2020-09-14    1.15
+2020-09-15    1.26
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 10
+Expected Sum of Quantity last 10 Days = 4
+OOS Total Error = 10
+Best OOS Config = (14, 0, 2)
+Best OOS RMSE = 1.66
+
+"
+"(-45240, 580)","Item_ID = -45240 | Site = 580
+Item_Name = HER REG 1.5z REESES PB LVR LTO
+---Prediction---
+2020-09-06   -0.01
+2020-09-07   -0.04
+2020-09-08   -0.08
+2020-09-09   -0.11
+2020-09-10   -0.15
+2020-09-11   -0.18
+2020-09-12   -0.22
+2020-09-13   -0.25
+2020-09-14   -0.29
+2020-09-15   -0.32
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = -1
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 0
+Best OOS Config = (0, 2, 2)
+Best OOS RMSE = 0.41
+
+"
+"(-45240, 589)","Item_ID = -45240 | Site = 589
+Item_Name = HER REG 1.5z REESES PB LVR LTO
+---Prediction---
+2020-09-06    5.37
+2020-09-07    5.20
+2020-09-08    3.78
+2020-09-09    3.41
+2020-09-10    2.28
+2020-09-11    3.63
+2020-09-12    3.08
+2020-09-13    3.69
+2020-09-14    3.08
+2020-09-15    3.38
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 37
+Expected Sum of Quantity last 10 Days = 9
+OOS Total Error = -2
+Best OOS Config = (7, 0, 0)
+Best OOS RMSE = 2.06
+
+"
+"(-45240, 601)","Item_ID = -45240 | Site = 601
+Item_Name = HER REG 1.5z REESES PB LVR LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-27618, 280)","Item_ID = -27618 | Site = 280
+Item_Name = D*MAR KG 2.83z M&M ALMD
+---Prediction---
+2020-09-06    0.42
+2020-09-07    0.20
+2020-09-08    0.43
+2020-09-09    0.32
+2020-09-10    0.28
+2020-09-11    0.40
+2020-09-12    0.31
+2020-09-13    0.28
+2020-09-14    0.32
+2020-09-15    0.37
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 4
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = -4
+Best OOS Config = (14, 0, 2)
+Best OOS RMSE = 0.75
+
+"
+"(-27618, 380)","Item_ID = -27618 | Site = 380
+Item_Name = D*MAR KG 2.83z M&M ALMD
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-27618, 554)","Item_ID = -27618 | Site = 554
+Item_Name = D*MAR KG 2.83z M&M ALMD
+---Prediction---
+2020-09-06   -0.17
+2020-09-07   -0.07
+2020-09-08   -0.25
+2020-09-09   -0.32
+2020-09-10   -0.56
+2020-09-11   -0.55
+2020-09-12   -0.77
+2020-09-13   -0.66
+2020-09-14   -0.81
+2020-09-15   -0.84
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = -5
+Expected Sum of Quantity last 10 Days = 5
+OOS Total Error = 1
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 0.81
+
+"
+"(-27618, 516)","Item_ID = -27618 | Site = 516
+Item_Name = D*MAR KG 2.83z M&M ALMD
+---Prediction---
+2020-09-06    0.24
+2020-09-07    0.43
+2020-09-08    0.72
+2020-09-09    0.40
+2020-09-10    0.33
+2020-09-11    0.54
+2020-09-12    0.54
+2020-09-13    0.42
+2020-09-14    0.45
+2020-09-15    0.62
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 5
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = -1
+Best OOS Config = (14, 0, 2)
+Best OOS RMSE = 0.9
+
+"
+"(-27618, 399)","Item_ID = -27618 | Site = 399
+Item_Name = D*MAR KG 2.83z M&M ALMD
+---Prediction---
+2020-09-06   -0.07
+2020-09-07   -0.18
+2020-09-08   -0.14
+2020-09-09   -0.19
+2020-09-10   -0.24
+2020-09-11   -0.36
+2020-09-12   -0.43
+2020-09-13   -0.56
+2020-09-14   -0.39
+2020-09-15   -0.46
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = -3
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = -1
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 0.55
+
+"
+"(-27618, 459)","Item_ID = -27618 | Site = 459
+Item_Name = D*MAR KG 2.83z M&M ALMD
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-27618, 517)","Item_ID = -27618 | Site = 517
+Item_Name = D*MAR KG 2.83z M&M ALMD
+---Prediction---
+2020-09-06    0.09
+2020-09-07   -0.06
+2020-09-08   -0.28
+2020-09-09   -0.36
+2020-09-10   -0.72
+2020-09-11   -0.77
+2020-09-12   -1.09
+2020-09-13   -1.07
+2020-09-14   -1.09
+2020-09-15   -1.13
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = -6
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = 3
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 0.89
+
+"
+"(-27618, 580)","Item_ID = -27618 | Site = 580
+Item_Name = D*MAR KG 2.83z M&M ALMD
+---Prediction---
+2020-09-06    0.52
+2020-09-07    0.52
+2020-09-08    0.52
+2020-09-09    0.52
+2020-09-10    0.52
+2020-09-11    0.52
+2020-09-12    0.52
+2020-09-13    0.52
+2020-09-14    0.52
+2020-09-15    0.52
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 6
+Expected Sum of Quantity last 10 Days = 5
+OOS Total Error = 0
+Best OOS Config = (0, 2, 2)
+Best OOS RMSE = 0.5
+
+"
+"(-27618, 589)","Item_ID = -27618 | Site = 589
+Item_Name = D*MAR KG 2.83z M&M ALMD
+---Prediction---
+2020-09-06    0.66
+2020-09-07    0.62
+2020-09-08    0.53
+2020-09-09    0.36
+2020-09-10    0.42
+2020-09-11    0.40
+2020-09-12    0.36
+2020-09-13    0.50
+2020-09-14    0.57
+2020-09-15    0.55
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 5
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = 2
+Best OOS Config = (14, 0, 2)
+Best OOS RMSE = 0.76
+
+"
+"(-27618, 601)","Item_ID = -27618 | Site = 601
+Item_Name = D*MAR KG 2.83z M&M ALMD
+---Prediction---
+2020-09-06    0.83
+2020-09-07    0.51
+2020-09-08    0.80
+2020-09-09    0.51
+2020-09-10    0.41
+2020-09-11    0.44
+2020-09-12    0.43
+2020-09-13    0.61
+2020-09-14    0.37
+2020-09-15    0.35
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 6
+Expected Sum of Quantity last 10 Days = 7
+OOS Total Error = -1
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 1.11
+
+"
+"(-46720, 280)","Item_ID = -46720 | Site = 280
+Item_Name = HER REG KIT KAT DUOS MINT 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-46720, 380)","Item_ID = -46720 | Site = 380
+Item_Name = HER REG KIT KAT DUOS MINT 1.5z
+---Prediction---
+2020-09-06    0.62
+2020-09-07    0.54
+2020-09-08    0.54
+2020-09-09    0.54
+2020-09-10    0.54
+2020-09-11    0.54
+2020-09-12    0.54
+2020-09-13    0.54
+2020-09-14    0.54
+2020-09-15    0.54
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 6
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 7
+Best OOS Config = (0, 1, 2)
+Best OOS RMSE = 0.73
+
+"
+"(-46720, 554)","Item_ID = -46720 | Site = 554
+Item_Name = HER REG KIT KAT DUOS MINT 1.5z
+---Prediction---
+2020-09-06    0.27
+2020-09-07    0.38
+2020-09-08    0.01
+2020-09-09    0.59
+2020-09-10   -0.04
+2020-09-11    0.54
+2020-09-12    0.11
+2020-09-13    0.42
+2020-09-14    0.14
+2020-09-15    0.43
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 3
+Expected Sum of Quantity last 10 Days = 3
+OOS Total Error = 0
+Best OOS Config = (7, 1, 2)
+Best OOS RMSE = 0.56
+
+"
+"(-46720, 516)","Item_ID = -46720 | Site = 516
+Item_Name = HER REG KIT KAT DUOS MINT 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 1
+OOS Total Error = -1
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.32
+
+"
+"(-46720, 399)","Item_ID = -46720 | Site = 399
+Item_Name = HER REG KIT KAT DUOS MINT 1.5z
+---Prediction---
+2020-09-06    0.46
+2020-09-07    0.64
+2020-09-08    0.85
+2020-09-09    0.74
+2020-09-10    0.67
+2020-09-11    0.85
+2020-09-12    0.81
+2020-09-13    0.82
+2020-09-14    0.72
+2020-09-15    0.74
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 8
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = -1
+Best OOS Config = (7, 1, 0)
+Best OOS RMSE = 0.79
+
+"
+"(-46720, 459)","Item_ID = -46720 | Site = 459
+Item_Name = HER REG KIT KAT DUOS MINT 1.5z
+---Prediction---
+2020-09-06    0.31
+2020-09-07    0.41
+2020-09-08    0.41
+2020-09-09    0.41
+2020-09-10    0.41
+2020-09-11    0.41
+2020-09-12    0.41
+2020-09-13    0.41
+2020-09-14    0.41
+2020-09-15    0.41
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 4
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 8
+Best OOS Config = (0, 1, 2)
+Best OOS RMSE = 0.9
+
+"
+"(-46720, 517)","Item_ID = -46720 | Site = 517
+Item_Name = HER REG KIT KAT DUOS MINT 1.5z
+---Prediction---
+2020-09-06    0.05
+2020-09-07    0.61
+2020-09-08    0.29
+2020-09-09    0.08
+2020-09-10    0.45
+2020-09-11    0.31
+2020-09-12    0.43
+2020-09-13    0.20
+2020-09-14    0.29
+2020-09-15    0.27
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 3
+Expected Sum of Quantity last 10 Days = 8
+OOS Total Error = 4
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 0.77
+
+"
+"(-46720, 580)","Item_ID = -46720 | Site = 580
+Item_Name = HER REG KIT KAT DUOS MINT 1.5z
+---Prediction---
+2020-09-06    0.61
+2020-09-07    0.25
+2020-09-08    0.42
+2020-09-09    0.05
+2020-09-10    0.26
+2020-09-11    0.02
+2020-09-12    0.20
+2020-09-13    0.06
+2020-09-14    0.21
+2020-09-15    0.08
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 3
+Expected Sum of Quantity last 10 Days = 5
+OOS Total Error = -1
+Best OOS Config = (7, 2, 2)
+Best OOS RMSE = 0.9
+
+"
+"(-46720, 589)","Item_ID = -46720 | Site = 589
+Item_Name = HER REG KIT KAT DUOS MINT 1.5z
+---Prediction---
+2020-09-06    1.00
+2020-09-07    0.99
+2020-09-08    0.99
+2020-09-09    0.98
+2020-09-10    0.98
+2020-09-11    0.98
+2020-09-12    0.97
+2020-09-13    0.97
+2020-09-14    0.96
+2020-09-15    0.96
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 10
+Expected Sum of Quantity last 10 Days = 8
+OOS Total Error = 2
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 0.89
+
+"
+"(-46720, 601)","Item_ID = -46720 | Site = 601
+Item_Name = HER REG KIT KAT DUOS MINT 1.5z
+---Prediction---
+2020-09-06    0.29
+2020-09-07    0.36
+2020-09-08    0.36
+2020-09-09    0.36
+2020-09-10    0.36
+2020-09-11    0.36
+2020-09-12    0.36
+2020-09-13    0.36
+2020-09-14    0.36
+2020-09-15    0.36
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 4
+Expected Sum of Quantity last 10 Days = 4
+OOS Total Error = 0
+Best OOS Config = (0, 1, 2)
+Best OOS RMSE = 0.5
+
+"
+"(-11963, 280)","Item_ID = -11963 | Site = 280
+Item_Name = AM LIC RED VINES 1LB JMB BAG
+---Prediction---
+2020-09-06    0.15
+2020-09-07    0.15
+2020-09-08    0.22
+2020-09-09    0.15
+2020-09-10    0.20
+2020-09-11    0.19
+2020-09-12    0.19
+2020-09-13    0.18
+2020-09-14    0.19
+2020-09-15    0.19
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 0
+Best OOS Config = (7, 1, 1)
+Best OOS RMSE = 0.4
+
+"
+"(-11963, 380)","Item_ID = -11963 | Site = 380
+Item_Name = AM LIC RED VINES 1LB JMB BAG
+---Prediction---
+2020-09-06    0.55
+2020-09-07    0.45
+2020-09-08    0.45
+2020-09-09    0.62
+2020-09-10    0.98
+2020-09-11    1.01
+2020-09-12    0.82
+2020-09-13    0.71
+2020-09-14    0.56
+2020-09-15    0.69
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 7
+Expected Sum of Quantity last 10 Days = 9
+OOS Total Error = -1
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 0.71
+
+"
+"(-11963, 554)","Item_ID = -11963 | Site = 554
+Item_Name = AM LIC RED VINES 1LB JMB BAG
+---Prediction---
+2020-09-06    0.41
+2020-09-07    0.41
+2020-09-08    0.41
+2020-09-09    0.41
+2020-09-10    0.41
+2020-09-11    0.41
+2020-09-12    0.41
+2020-09-13    0.41
+2020-09-14    0.41
+2020-09-15    0.41
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 5
+Expected Sum of Quantity last 10 Days = 5
+OOS Total Error = -1
+Best OOS Config = (0, 1, 1)
+Best OOS RMSE = 0.81
+
+"
+"(-11963, 516)","Item_ID = -11963 | Site = 516
+Item_Name = AM LIC RED VINES 1LB JMB BAG
+---Prediction---
+2020-09-06    0.11
+2020-09-07    0.25
+2020-09-08    0.17
+2020-09-09    0.20
+2020-09-10    0.03
+2020-09-11    0.06
+2020-09-12    0.03
+2020-09-13    0.07
+2020-09-14    0.05
+2020-09-15    0.10
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 3
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 0.26
+
+"
+"(-11963, 399)","Item_ID = -11963 | Site = 399
+Item_Name = AM LIC RED VINES 1LB JMB BAG
+---Prediction---
+2020-09-06   -0.00
+2020-09-07    0.09
+2020-09-08    0.12
+2020-09-09    0.06
+2020-09-10    0.09
+2020-09-11    0.09
+2020-09-12   -0.04
+2020-09-13   -0.08
+2020-09-14   -0.08
+2020-09-15   -0.10
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 1
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 1
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 0.41
+
+"
+"(-11963, 459)","Item_ID = -11963 | Site = 459
+Item_Name = AM LIC RED VINES 1LB JMB BAG
+---Prediction---
+2020-09-06    0.37
+2020-09-07    0.38
+2020-09-08    0.40
+2020-09-09    0.38
+2020-09-10    0.37
+2020-09-11    0.39
+2020-09-12    0.37
+2020-09-13    0.38
+2020-09-14    0.38
+2020-09-15    0.38
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 4
+Expected Sum of Quantity last 10 Days = 3
+OOS Total Error = 2
+Best OOS Config = (7, 2, 2)
+Best OOS RMSE = 0.47
+
+"
+"(-11963, 517)","Item_ID = -11963 | Site = 517
+Item_Name = AM LIC RED VINES 1LB JMB BAG
+---Prediction---
+2020-09-06    0.52
+2020-09-07    0.41
+2020-09-08    0.58
+2020-09-09    0.77
+2020-09-10    0.69
+2020-09-11    0.79
+2020-09-12    0.67
+2020-09-13    0.65
+2020-09-14    0.59
+2020-09-15    0.61
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 7
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = 0
+Best OOS Config = (14, 1, 2)
+Best OOS RMSE = 0.66
+
+"
+"(-11963, 580)","Item_ID = -11963 | Site = 580
+Item_Name = AM LIC RED VINES 1LB JMB BAG
+---Prediction---
+2020-09-06    0.81
+2020-09-07    0.81
+2020-09-08    0.81
+2020-09-09    0.81
+2020-09-10    0.81
+2020-09-11    0.81
+2020-09-12    0.81
+2020-09-13    0.81
+2020-09-14    0.81
+2020-09-15    0.81
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 9
+Expected Sum of Quantity last 10 Days = 9
+OOS Total Error = -1
+Best OOS Config = (0, 1, 1)
+Best OOS RMSE = 1.23
+
+"
+"(-11963, 589)","Item_ID = -11963 | Site = 589
+Item_Name = AM LIC RED VINES 1LB JMB BAG
+---Prediction---
+2020-09-06    1.93
+2020-09-07    1.81
+2020-09-08    1.22
+2020-09-09    1.16
+2020-09-10    1.60
+2020-09-11    1.56
+2020-09-12    2.01
+2020-09-13    2.24
+2020-09-14    1.26
+2020-09-15    1.50
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 17
+Expected Sum of Quantity last 10 Days = 16
+OOS Total Error = -1
+Best OOS Config = (14, 2, 1)
+Best OOS RMSE = 1.5
+
+"
+"(-11963, 601)","Item_ID = -11963 | Site = 601
+Item_Name = AM LIC RED VINES 1LB JMB BAG
+---Prediction---
+2020-09-06    2.0
+2020-09-07    2.0
+2020-09-08    2.0
+2020-09-09    2.0
+2020-09-10    2.0
+2020-09-11    2.0
+2020-09-12    2.0
+2020-09-13    2.0
+2020-09-14    2.0
+2020-09-15    2.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 20
+Expected Sum of Quantity last 10 Days = 10
+OOS Total Error = 0
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 0.77
+
+"
+"(-44540, 280)","Item_ID = -44540 | Site = 280
+Item_Name = D*MAR KG 2.8z SNICK SLTY SWT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44540, 380)","Item_ID = -44540 | Site = 380
+Item_Name = D*MAR KG 2.8z SNICK SLTY SWT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44540, 554)","Item_ID = -44540 | Site = 554
+Item_Name = D*MAR KG 2.8z SNICK SLTY SWT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44540, 516)","Item_ID = -44540 | Site = 516
+Item_Name = D*MAR KG 2.8z SNICK SLTY SWT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44540, 399)","Item_ID = -44540 | Site = 399
+Item_Name = D*MAR KG 2.8z SNICK SLTY SWT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44540, 459)","Item_ID = -44540 | Site = 459
+Item_Name = D*MAR KG 2.8z SNICK SLTY SWT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44540, 517)","Item_ID = -44540 | Site = 517
+Item_Name = D*MAR KG 2.8z SNICK SLTY SWT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44540, 580)","Item_ID = -44540 | Site = 580
+Item_Name = D*MAR KG 2.8z SNICK SLTY SWT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44540, 589)","Item_ID = -44540 | Site = 589
+Item_Name = D*MAR KG 2.8z SNICK SLTY SWT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 1
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44540, 601)","Item_ID = -44540 | Site = 601
+Item_Name = D*MAR KG 2.8z SNICK SLTY SWT
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41259, 280)","Item_ID = -41259 | Site = 280
+Item_Name = D*KDSM SOUR FLUSH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41259, 380)","Item_ID = -41259 | Site = 380
+Item_Name = D*KDSM SOUR FLUSH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41259, 554)","Item_ID = -41259 | Site = 554
+Item_Name = D*KDSM SOUR FLUSH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41259, 516)","Item_ID = -41259 | Site = 516
+Item_Name = D*KDSM SOUR FLUSH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41259, 399)","Item_ID = -41259 | Site = 399
+Item_Name = D*KDSM SOUR FLUSH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41259, 459)","Item_ID = -41259 | Site = 459
+Item_Name = D*KDSM SOUR FLUSH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41259, 517)","Item_ID = -41259 | Site = 517
+Item_Name = D*KDSM SOUR FLUSH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41259, 580)","Item_ID = -41259 | Site = 580
+Item_Name = D*KDSM SOUR FLUSH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41259, 589)","Item_ID = -41259 | Site = 589
+Item_Name = D*KDSM SOUR FLUSH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41259, 601)","Item_ID = -41259 | Site = 601
+Item_Name = D*KDSM SOUR FLUSH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-21206, 280)","Item_ID = -21206 | Site = 280
+Item_Name = D* LAFFY TAFFY BANANA 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-21206, 380)","Item_ID = -21206 | Site = 380
+Item_Name = D* LAFFY TAFFY BANANA 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 1
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-21206, 554)","Item_ID = -21206 | Site = 554
+Item_Name = D* LAFFY TAFFY BANANA 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-21206, 516)","Item_ID = -21206 | Site = 516
+Item_Name = D* LAFFY TAFFY BANANA 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-21206, 399)","Item_ID = -21206 | Site = 399
+Item_Name = D* LAFFY TAFFY BANANA 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-21206, 459)","Item_ID = -21206 | Site = 459
+Item_Name = D* LAFFY TAFFY BANANA 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-21206, 517)","Item_ID = -21206 | Site = 517
+Item_Name = D* LAFFY TAFFY BANANA 1.5z
+---Prediction---
+2020-09-06   -0.0
+2020-09-07   -0.0
+2020-09-08   -0.0
+2020-09-09   -0.0
+2020-09-10   -0.0
+2020-09-11   -0.0
+2020-09-12   -0.0
+2020-09-13   -0.0
+2020-09-14   -0.0
+2020-09-15   -0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-21206, 580)","Item_ID = -21206 | Site = 580
+Item_Name = D* LAFFY TAFFY BANANA 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-21206, 589)","Item_ID = -21206 | Site = 589
+Item_Name = D* LAFFY TAFFY BANANA 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-21206, 601)","Item_ID = -21206 | Site = 601
+Item_Name = D* LAFFY TAFFY BANANA 1.5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11968, 280)","Item_ID = -11968 | Site = 280
+Item_Name = HER TWZ 16z STRWB TWIST BAG
+---Prediction---
+2020-09-06    0.18
+2020-09-07    0.08
+2020-09-08    0.15
+2020-09-09    0.17
+2020-09-10    0.19
+2020-09-11    0.22
+2020-09-12    0.27
+2020-09-13    0.28
+2020-09-14    0.19
+2020-09-15    0.19
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 1
+OOS Total Error = 1
+Best OOS Config = (7, 2, 1)
+Best OOS RMSE = 0.31
+
+"
+"(-11968, 380)","Item_ID = -11968 | Site = 380
+Item_Name = HER TWZ 16z STRWB TWIST BAG
+---Prediction---
+2020-09-06    1.41
+2020-09-07    1.18
+2020-09-08    1.35
+2020-09-09    1.17
+2020-09-10    1.43
+2020-09-11    1.58
+2020-09-12    1.73
+2020-09-13    1.60
+2020-09-14    1.22
+2020-09-15    1.43
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 15
+Expected Sum of Quantity last 10 Days = 12
+OOS Total Error = 1
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 1.31
+
+"
+"(-11968, 554)","Item_ID = -11968 | Site = 554
+Item_Name = HER TWZ 16z STRWB TWIST BAG
+---Prediction---
+2020-09-06    0.45
+2020-09-07    0.39
+2020-09-08    0.49
+2020-09-09    0.57
+2020-09-10    0.46
+2020-09-11    0.48
+2020-09-12    0.48
+2020-09-13    0.50
+2020-09-14    0.57
+2020-09-15    0.62
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 6
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = -3
+Best OOS Config = (14, 2, 1)
+Best OOS RMSE = 0.7
+
+"
+"(-11968, 516)","Item_ID = -11968 | Site = 516
+Item_Name = HER TWZ 16z STRWB TWIST BAG
+---Prediction---
+2020-09-06    0.83
+2020-09-07    0.58
+2020-09-08    0.68
+2020-09-09    0.99
+2020-09-10    0.76
+2020-09-11    0.89
+2020-09-12    0.97
+2020-09-13    0.87
+2020-09-14    0.76
+2020-09-15    0.96
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 9
+Expected Sum of Quantity last 10 Days = 9
+OOS Total Error = 0
+Best OOS Config = (14, 1, 1)
+Best OOS RMSE = 1.13
+
+"
+"(-11968, 399)","Item_ID = -11968 | Site = 399
+Item_Name = HER TWZ 16z STRWB TWIST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11968, 459)","Item_ID = -11968 | Site = 459
+Item_Name = HER TWZ 16z STRWB TWIST BAG
+---Prediction---
+2020-09-06    0.55
+2020-09-07    0.65
+2020-09-08    0.44
+2020-09-09    0.35
+2020-09-10    0.42
+2020-09-11    0.39
+2020-09-12    0.45
+2020-09-13    0.45
+2020-09-14    0.36
+2020-09-15    0.25
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 5
+Expected Sum of Quantity last 10 Days = 3
+OOS Total Error = 1
+Best OOS Config = (14, 1, 0)
+Best OOS RMSE = 0.59
+
+"
+"(-11968, 517)","Item_ID = -11968 | Site = 517
+Item_Name = HER TWZ 16z STRWB TWIST BAG
+---Prediction---
+2020-09-06    0.91
+2020-09-07    0.91
+2020-09-08    0.91
+2020-09-09    0.91
+2020-09-10    0.91
+2020-09-11    0.91
+2020-09-12    0.91
+2020-09-13    0.91
+2020-09-14    0.91
+2020-09-15    0.91
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 10
+Expected Sum of Quantity last 10 Days = 9
+OOS Total Error = 1
+Best OOS Config = (0, 1, 1)
+Best OOS RMSE = 1.22
+
+"
+"(-11968, 580)","Item_ID = -11968 | Site = 580
+Item_Name = HER TWZ 16z STRWB TWIST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11968, 589)","Item_ID = -11968 | Site = 589
+Item_Name = HER TWZ 16z STRWB TWIST BAG
+---Prediction---
+2020-09-06    1.51
+2020-09-07    1.11
+2020-09-08    1.10
+2020-09-09    1.46
+2020-09-10    1.30
+2020-09-11    1.62
+2020-09-12    1.57
+2020-09-13    1.86
+2020-09-14    1.42
+2020-09-15    1.36
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 15
+Expected Sum of Quantity last 10 Days = 14
+OOS Total Error = -2
+Best OOS Config = (7, 2, 1)
+Best OOS RMSE = 1.37
+
+"
+"(-11968, 601)","Item_ID = -11968 | Site = 601
+Item_Name = HER TWZ 16z STRWB TWIST BAG
+---Prediction---
+2020-09-06    0.46
+2020-09-07    0.36
+2020-09-08    0.12
+2020-09-09    0.25
+2020-09-10    0.63
+2020-09-11    0.67
+2020-09-12    0.42
+2020-09-13    0.42
+2020-09-14    0.37
+2020-09-15    0.26
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 4
+Expected Sum of Quantity last 10 Days = 6
+OOS Total Error = -1
+Best OOS Config = (14, 0, 0)
+Best OOS RMSE = 0.72
+
+"
+"(-11997, 280)","Item_ID = -11997 | Site = 280
+Item_Name = D*WRI STARBURST 6z GMIBRST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11997, 380)","Item_ID = -11997 | Site = 380
+Item_Name = D*WRI STARBURST 6z GMIBRST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11997, 554)","Item_ID = -11997 | Site = 554
+Item_Name = D*WRI STARBURST 6z GMIBRST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11997, 516)","Item_ID = -11997 | Site = 516
+Item_Name = D*WRI STARBURST 6z GMIBRST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11997, 399)","Item_ID = -11997 | Site = 399
+Item_Name = D*WRI STARBURST 6z GMIBRST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11997, 459)","Item_ID = -11997 | Site = 459
+Item_Name = D*WRI STARBURST 6z GMIBRST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11997, 517)","Item_ID = -11997 | Site = 517
+Item_Name = D*WRI STARBURST 6z GMIBRST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11997, 580)","Item_ID = -11997 | Site = 580
+Item_Name = D*WRI STARBURST 6z GMIBRST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11997, 589)","Item_ID = -11997 | Site = 589
+Item_Name = D*WRI STARBURST 6z GMIBRST BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41488, 280)","Item_ID = -41488 | Site = 280
+Item_Name = D*HER CKIE LYR CRNCH MINT 1.4z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41488, 380)","Item_ID = -41488 | Site = 380
+Item_Name = D*HER CKIE LYR CRNCH MINT 1.4z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41488, 554)","Item_ID = -41488 | Site = 554
+Item_Name = D*HER CKIE LYR CRNCH MINT 1.4z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41488, 516)","Item_ID = -41488 | Site = 516
+Item_Name = D*HER CKIE LYR CRNCH MINT 1.4z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41488, 399)","Item_ID = -41488 | Site = 399
+Item_Name = D*HER CKIE LYR CRNCH MINT 1.4z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41488, 459)","Item_ID = -41488 | Site = 459
+Item_Name = D*HER CKIE LYR CRNCH MINT 1.4z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41488, 517)","Item_ID = -41488 | Site = 517
+Item_Name = D*HER CKIE LYR CRNCH MINT 1.4z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41488, 580)","Item_ID = -41488 | Site = 580
+Item_Name = D*HER CKIE LYR CRNCH MINT 1.4z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41488, 589)","Item_ID = -41488 | Site = 589
+Item_Name = D*HER CKIE LYR CRNCH MINT 1.4z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-31811, 280)","Item_ID = -31811 | Site = 280
+Item_Name = D*HER ICE BRKR DUO WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-31811, 380)","Item_ID = -31811 | Site = 380
+Item_Name = D*HER ICE BRKR DUO WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-31811, 554)","Item_ID = -31811 | Site = 554
+Item_Name = D*HER ICE BRKR DUO WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-31811, 516)","Item_ID = -31811 | Site = 516
+Item_Name = D*HER ICE BRKR DUO WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-31811, 399)","Item_ID = -31811 | Site = 399
+Item_Name = D*HER ICE BRKR DUO WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-31811, 459)","Item_ID = -31811 | Site = 459
+Item_Name = D*HER ICE BRKR DUO WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-31811, 517)","Item_ID = -31811 | Site = 517
+Item_Name = D*HER ICE BRKR DUO WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-31811, 580)","Item_ID = -31811 | Site = 580
+Item_Name = D*HER ICE BRKR DUO WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-31811, 589)","Item_ID = -31811 | Site = 589
+Item_Name = D*HER ICE BRKR DUO WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-31811, 601)","Item_ID = -31811 | Site = 601
+Item_Name = D*HER ICE BRKR DUO WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41228, 280)","Item_ID = -41228 | Site = 280
+Item_Name = D*MON TRIDENT BLK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41228, 380)","Item_ID = -41228 | Site = 380
+Item_Name = D*MON TRIDENT BLK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41228, 554)","Item_ID = -41228 | Site = 554
+Item_Name = D*MON TRIDENT BLK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41228, 516)","Item_ID = -41228 | Site = 516
+Item_Name = D*MON TRIDENT BLK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41228, 399)","Item_ID = -41228 | Site = 399
+Item_Name = D*MON TRIDENT BLK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41228, 459)","Item_ID = -41228 | Site = 459
+Item_Name = D*MON TRIDENT BLK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41228, 517)","Item_ID = -41228 | Site = 517
+Item_Name = D*MON TRIDENT BLK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41228, 580)","Item_ID = -41228 | Site = 580
+Item_Name = D*MON TRIDENT BLK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41228, 589)","Item_ID = -41228 | Site = 589
+Item_Name = D*MON TRIDENT BLK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41228, 601)","Item_ID = -41228 | Site = 601
+Item_Name = D*MON TRIDENT BLK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-38394, 280)","Item_ID = -38394 | Site = 280
+Item_Name = D*BAZOOKA WALLET PK
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-38394, 380)","Item_ID = -38394 | Site = 380
+Item_Name = D*BAZOOKA WALLET PK
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-38394, 554)","Item_ID = -38394 | Site = 554
+Item_Name = D*BAZOOKA WALLET PK
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-38394, 516)","Item_ID = -38394 | Site = 516
+Item_Name = D*BAZOOKA WALLET PK
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-38394, 399)","Item_ID = -38394 | Site = 399
+Item_Name = D*BAZOOKA WALLET PK
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-38394, 459)","Item_ID = -38394 | Site = 459
+Item_Name = D*BAZOOKA WALLET PK
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-38394, 517)","Item_ID = -38394 | Site = 517
+Item_Name = D*BAZOOKA WALLET PK
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-38394, 580)","Item_ID = -38394 | Site = 580
+Item_Name = D*BAZOOKA WALLET PK
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-38394, 589)","Item_ID = -38394 | Site = 589
+Item_Name = D*BAZOOKA WALLET PK
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44510, 280)","Item_ID = -44510 | Site = 280
+Item_Name = D*WRI KG STARBURST FV REDS
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44510, 380)","Item_ID = -44510 | Site = 380
+Item_Name = D*WRI KG STARBURST FV REDS
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44510, 554)","Item_ID = -44510 | Site = 554
+Item_Name = D*WRI KG STARBURST FV REDS
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44510, 516)","Item_ID = -44510 | Site = 516
+Item_Name = D*WRI KG STARBURST FV REDS
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44510, 399)","Item_ID = -44510 | Site = 399
+Item_Name = D*WRI KG STARBURST FV REDS
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44510, 459)","Item_ID = -44510 | Site = 459
+Item_Name = D*WRI KG STARBURST FV REDS
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44510, 517)","Item_ID = -44510 | Site = 517
+Item_Name = D*WRI KG STARBURST FV REDS
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44510, 580)","Item_ID = -44510 | Site = 580
+Item_Name = D*WRI KG STARBURST FV REDS
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44510, 589)","Item_ID = -44510 | Site = 589
+Item_Name = D*WRI KG STARBURST FV REDS
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44510, 601)","Item_ID = -44510 | Site = 601
+Item_Name = D*WRI KG STARBURST FV REDS
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12309, 280)","Item_ID = -12309 | Site = 280
+Item_Name = D*SPREE 1.77z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12309, 380)","Item_ID = -12309 | Site = 380
+Item_Name = D*SPREE 1.77z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12309, 554)","Item_ID = -12309 | Site = 554
+Item_Name = D*SPREE 1.77z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12309, 516)","Item_ID = -12309 | Site = 516
+Item_Name = D*SPREE 1.77z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12309, 399)","Item_ID = -12309 | Site = 399
+Item_Name = D*SPREE 1.77z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12309, 459)","Item_ID = -12309 | Site = 459
+Item_Name = D*SPREE 1.77z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12309, 517)","Item_ID = -12309 | Site = 517
+Item_Name = D*SPREE 1.77z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12309, 580)","Item_ID = -12309 | Site = 580
+Item_Name = D*SPREE 1.77z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-12309, 589)","Item_ID = -12309 | Site = 589
+Item_Name = D*SPREE 1.77z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-46738, 280)","Item_ID = -46738 | Site = 280
+Item_Name = I*PERF AIRHEADS BLU RASP BITES 6z
+---Prediction---
+2020-09-06    0.12
+2020-09-07    0.14
+2020-09-08    0.14
+2020-09-09    0.14
+2020-09-10    0.14
+2020-09-11    0.14
+2020-09-12    0.14
+2020-09-13    0.14
+2020-09-14    0.14
+2020-09-15    0.14
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 0
+Best OOS Config = (0, 0, 1)
+Best OOS RMSE = 0.6
+
+"
+"(-46738, 380)","Item_ID = -46738 | Site = 380
+Item_Name = I*PERF AIRHEADS BLU RASP BITES 6z
+---Prediction---
+2020-09-06   -0.00
+2020-09-07   -0.01
+2020-09-08   -0.01
+2020-09-09   -0.02
+2020-09-10   -0.02
+2020-09-11   -0.03
+2020-09-12   -0.03
+2020-09-13   -0.03
+2020-09-14   -0.04
+2020-09-15   -0.04
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 14
+OOS Total Error = -3
+Best OOS Config = (0, 2, 1)
+Best OOS RMSE = 1.0
+
+"
+"(-46738, 554)","Item_ID = -46738 | Site = 554
+Item_Name = I*PERF AIRHEADS BLU RASP BITES 6z
+---Prediction---
+2020-09-06    0.17
+2020-09-07    0.40
+2020-09-08    0.32
+2020-09-09    0.10
+2020-09-10    0.18
+2020-09-11    0.16
+2020-09-12    0.41
+2020-09-13    0.19
+2020-09-14    0.08
+2020-09-15    0.23
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 3
+Expected Sum of Quantity last 10 Days = 5
+OOS Total Error = -3
+Best OOS Config = (7, 0, 2)
+Best OOS RMSE = 0.74
+
+"
+"(-46738, 516)","Item_ID = -46738 | Site = 516
+Item_Name = I*PERF AIRHEADS BLU RASP BITES 6z
+---Prediction---
+2020-09-06    0.44
+2020-09-07    0.79
+2020-09-08    0.66
+2020-09-09    0.36
+2020-09-10    0.61
+2020-09-11    0.49
+2020-09-12    0.41
+2020-09-13    0.62
+2020-09-14    0.69
+2020-09-15    0.49
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 6
+Expected Sum of Quantity last 10 Days = 3
+OOS Total Error = 4
+Best OOS Config = (14, 1, 2)
+Best OOS RMSE = 0.66
+
+"
+"(-46738, 399)","Item_ID = -46738 | Site = 399
+Item_Name = I*PERF AIRHEADS BLU RASP BITES 6z
+---Prediction---
+2020-09-06    0.53
+2020-09-07    0.53
+2020-09-08    0.53
+2020-09-09    0.53
+2020-09-10    0.53
+2020-09-11    0.53
+2020-09-12    0.53
+2020-09-13    0.53
+2020-09-14    0.53
+2020-09-15    0.53
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 6
+Expected Sum of Quantity last 10 Days = 5
+OOS Total Error = 1
+Best OOS Config = (0, 1, 1)
+Best OOS RMSE = 0.92
+
+"
+"(-46738, 459)","Item_ID = -46738 | Site = 459
+Item_Name = I*PERF AIRHEADS BLU RASP BITES 6z
+---Prediction---
+2020-09-06    0.90
+2020-09-07    1.24
+2020-09-08    1.08
+2020-09-09    1.05
+2020-09-10    1.03
+2020-09-11    1.24
+2020-09-12    0.96
+2020-09-13    1.09
+2020-09-14    1.13
+2020-09-15    1.30
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 12
+Expected Sum of Quantity last 10 Days = 11
+OOS Total Error = -4
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 0.81
+
+"
+"(-46738, 517)","Item_ID = -46738 | Site = 517
+Item_Name = I*PERF AIRHEADS BLU RASP BITES 6z
+---Prediction---
+2020-09-06    2.34
+2020-09-07    2.61
+2020-09-08    2.25
+2020-09-09    2.40
+2020-09-10    2.85
+2020-09-11    3.07
+2020-09-12    3.24
+2020-09-13    3.17
+2020-09-14    3.63
+2020-09-15    3.31
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 29
+Expected Sum of Quantity last 10 Days = 14
+OOS Total Error = -4
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 0.88
+
+"
+"(-46738, 580)","Item_ID = -46738 | Site = 580
+Item_Name = I*PERF AIRHEADS BLU RASP BITES 6z
+---Prediction---
+2020-09-06    0.76
+2020-09-07    0.67
+2020-09-08    0.57
+2020-09-09    0.59
+2020-09-10    0.57
+2020-09-11    0.43
+2020-09-12    0.43
+2020-09-13    0.55
+2020-09-14    0.59
+2020-09-15    0.54
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 6
+Expected Sum of Quantity last 10 Days = 4
+OOS Total Error = 0
+Best OOS Config = (7, 1, 0)
+Best OOS RMSE = 0.64
+
+"
+"(-46738, 589)","Item_ID = -46738 | Site = 589
+Item_Name = I*PERF AIRHEADS BLU RASP BITES 6z
+---Prediction---
+2020-09-06    1.30
+2020-09-07    0.78
+2020-09-08    0.70
+2020-09-09    0.71
+2020-09-10    1.29
+2020-09-11    1.59
+2020-09-12    1.13
+2020-09-13    1.38
+2020-09-14    1.12
+2020-09-15    1.01
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 12
+Expected Sum of Quantity last 10 Days = 13
+OOS Total Error = -1
+Best OOS Config = (14, 1, 0)
+Best OOS RMSE = 1.07
+
+"
+"(-46738, 601)","Item_ID = -46738 | Site = 601
+Item_Name = I*PERF AIRHEADS BLU RASP BITES 6z
+---Prediction---
+2020-09-06    0.36
+2020-09-07    0.06
+2020-09-08    0.36
+2020-09-09    0.34
+2020-09-10    0.19
+2020-09-11   -0.05
+2020-09-12   -0.11
+2020-09-13    0.12
+2020-09-14    0.30
+2020-09-15    0.06
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 4
+OOS Total Error = -1
+Best OOS Config = (14, 2, 0)
+Best OOS RMSE = 0.48
+
+"
+"(-40290, 280)","Item_ID = -40290 | Site = 280
+Item_Name = I*HI CHEW 3.17z SOURS CIT MIX BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40290, 380)","Item_ID = -40290 | Site = 380
+Item_Name = I*HI CHEW 3.17z SOURS CIT MIX BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40290, 554)","Item_ID = -40290 | Site = 554
+Item_Name = I*HI CHEW 3.17z SOURS CIT MIX BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40290, 516)","Item_ID = -40290 | Site = 516
+Item_Name = I*HI CHEW 3.17z SOURS CIT MIX BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40290, 399)","Item_ID = -40290 | Site = 399
+Item_Name = I*HI CHEW 3.17z SOURS CIT MIX BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40290, 459)","Item_ID = -40290 | Site = 459
+Item_Name = I*HI CHEW 3.17z SOURS CIT MIX BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40290, 517)","Item_ID = -40290 | Site = 517
+Item_Name = I*HI CHEW 3.17z SOURS CIT MIX BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40290, 580)","Item_ID = -40290 | Site = 580
+Item_Name = I*HI CHEW 3.17z SOURS CIT MIX BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40290, 589)","Item_ID = -40290 | Site = 589
+Item_Name = I*HI CHEW 3.17z SOURS CIT MIX BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11999, 280)","Item_ID = -11999 | Site = 280
+Item_Name = D*WRI STARBURST 7.2z TROP BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11999, 380)","Item_ID = -11999 | Site = 380
+Item_Name = D*WRI STARBURST 7.2z TROP BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11999, 554)","Item_ID = -11999 | Site = 554
+Item_Name = D*WRI STARBURST 7.2z TROP BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11999, 516)","Item_ID = -11999 | Site = 516
+Item_Name = D*WRI STARBURST 7.2z TROP BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11999, 399)","Item_ID = -11999 | Site = 399
+Item_Name = D*WRI STARBURST 7.2z TROP BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11999, 459)","Item_ID = -11999 | Site = 459
+Item_Name = D*WRI STARBURST 7.2z TROP BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11999, 517)","Item_ID = -11999 | Site = 517
+Item_Name = D*WRI STARBURST 7.2z TROP BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11999, 580)","Item_ID = -11999 | Site = 580
+Item_Name = D*WRI STARBURST 7.2z TROP BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-11999, 589)","Item_ID = -11999 | Site = 589
+Item_Name = D*WRI STARBURST 7.2z TROP BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40739, 280)","Item_ID = -40739 | Site = 280
+Item_Name = D*WRI STARBURST SMMR SPLSH 2.07z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40739, 380)","Item_ID = -40739 | Site = 380
+Item_Name = D*WRI STARBURST SMMR SPLSH 2.07z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40739, 554)","Item_ID = -40739 | Site = 554
+Item_Name = D*WRI STARBURST SMMR SPLSH 2.07z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40739, 516)","Item_ID = -40739 | Site = 516
+Item_Name = D*WRI STARBURST SMMR SPLSH 2.07z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40739, 399)","Item_ID = -40739 | Site = 399
+Item_Name = D*WRI STARBURST SMMR SPLSH 2.07z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40739, 459)","Item_ID = -40739 | Site = 459
+Item_Name = D*WRI STARBURST SMMR SPLSH 2.07z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40739, 517)","Item_ID = -40739 | Site = 517
+Item_Name = D*WRI STARBURST SMMR SPLSH 2.07z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40739, 580)","Item_ID = -40739 | Site = 580
+Item_Name = D*WRI STARBURST SMMR SPLSH 2.07z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41541, 380)","Item_ID = -41541 | Site = 380
+Item_Name = D*MON SOUR PATCH TROP BAG 5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41541, 554)","Item_ID = -41541 | Site = 554
+Item_Name = D*MON SOUR PATCH TROP BAG 5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41541, 516)","Item_ID = -41541 | Site = 516
+Item_Name = D*MON SOUR PATCH TROP BAG 5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41541, 399)","Item_ID = -41541 | Site = 399
+Item_Name = D*MON SOUR PATCH TROP BAG 5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41541, 459)","Item_ID = -41541 | Site = 459
+Item_Name = D*MON SOUR PATCH TROP BAG 5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41541, 517)","Item_ID = -41541 | Site = 517
+Item_Name = D*MON SOUR PATCH TROP BAG 5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-41541, 580)","Item_ID = -41541 | Site = 580
+Item_Name = D*MON SOUR PATCH TROP BAG 5z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-42557, 280)","Item_ID = -42557 | Site = 280
+Item_Name = D*WRI EXTRA MINT CHWY POLAR
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-42557, 380)","Item_ID = -42557 | Site = 380
+Item_Name = D*WRI EXTRA MINT CHWY POLAR
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-42557, 554)","Item_ID = -42557 | Site = 554
+Item_Name = D*WRI EXTRA MINT CHWY POLAR
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-42557, 516)","Item_ID = -42557 | Site = 516
+Item_Name = D*WRI EXTRA MINT CHWY POLAR
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-42557, 399)","Item_ID = -42557 | Site = 399
+Item_Name = D*WRI EXTRA MINT CHWY POLAR
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-42557, 459)","Item_ID = -42557 | Site = 459
+Item_Name = D*WRI EXTRA MINT CHWY POLAR
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-42557, 517)","Item_ID = -42557 | Site = 517
+Item_Name = D*WRI EXTRA MINT CHWY POLAR
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-42557, 580)","Item_ID = -42557 | Site = 580
+Item_Name = D*WRI EXTRA MINT CHWY POLAR
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-42557, 589)","Item_ID = -42557 | Site = 589
+Item_Name = D*WRI EXTRA MINT CHWY POLAR
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-32862, 280)","Item_ID = -32862 | Site = 280
+Item_Name = D*HER REESES HEARTS 1.2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-32862, 380)","Item_ID = -32862 | Site = 380
+Item_Name = D*HER REESES HEARTS 1.2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-32862, 554)","Item_ID = -32862 | Site = 554
+Item_Name = D*HER REESES HEARTS 1.2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-32862, 516)","Item_ID = -32862 | Site = 516
+Item_Name = D*HER REESES HEARTS 1.2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-32862, 399)","Item_ID = -32862 | Site = 399
+Item_Name = D*HER REESES HEARTS 1.2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-32862, 459)","Item_ID = -32862 | Site = 459
+Item_Name = D*HER REESES HEARTS 1.2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-32862, 517)","Item_ID = -32862 | Site = 517
+Item_Name = D*HER REESES HEARTS 1.2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-32862, 580)","Item_ID = -32862 | Site = 580
+Item_Name = D*HER REESES HEARTS 1.2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45905, 280)","Item_ID = -45905 | Site = 280
+Item_Name = MENTOS GUM CRVY BTL TROPICAL
+---Prediction---
+2020-09-06    0.00
+2020-09-07    0.01
+2020-09-08    0.03
+2020-09-09    0.03
+2020-09-10    0.03
+2020-09-11    0.03
+2020-09-12    0.03
+2020-09-13    0.03
+2020-09-14    0.03
+2020-09-15    0.03
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 1
+Expected Sum of Quantity last 10 Days = 1
+OOS Total Error = 0
+Best OOS Config = (7, 0, 1)
+Best OOS RMSE = 0.31
+
+"
+"(-45905, 380)","Item_ID = -45905 | Site = 380
+Item_Name = MENTOS GUM CRVY BTL TROPICAL
+---Prediction---
+2020-09-06    0.10
+2020-09-07    0.17
+2020-09-08    0.09
+2020-09-09    0.26
+2020-09-10    0.09
+2020-09-11    0.10
+2020-09-12    0.14
+2020-09-13    0.11
+2020-09-14    0.14
+2020-09-15    0.12
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 1
+OOS Total Error = 1
+Best OOS Config = (7, 0, 1)
+Best OOS RMSE = 0.3
+
+"
+"(-45905, 554)","Item_ID = -45905 | Site = 554
+Item_Name = MENTOS GUM CRVY BTL TROPICAL
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45905, 516)","Item_ID = -45905 | Site = 516
+Item_Name = MENTOS GUM CRVY BTL TROPICAL
+---Prediction---
+2020-09-06    0.12
+2020-09-07    0.05
+2020-09-08    0.09
+2020-09-09    0.01
+2020-09-10    0.12
+2020-09-11    0.09
+2020-09-12    0.16
+2020-09-13    0.12
+2020-09-14    0.17
+2020-09-15    0.07
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 1
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 0
+Best OOS Config = (14, 1, 2)
+Best OOS RMSE = 0.39
+
+"
+"(-45905, 399)","Item_ID = -45905 | Site = 399
+Item_Name = MENTOS GUM CRVY BTL TROPICAL
+---Prediction---
+2020-09-06    0.19
+2020-09-07    0.17
+2020-09-08    0.27
+2020-09-09    0.16
+2020-09-10    0.09
+2020-09-11    0.15
+2020-09-12    0.01
+2020-09-13    0.15
+2020-09-14   -0.01
+2020-09-15    0.16
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 1
+OOS Total Error = 1
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 0.3
+
+"
+"(-45905, 459)","Item_ID = -45905 | Site = 459
+Item_Name = MENTOS GUM CRVY BTL TROPICAL
+---Prediction---
+2020-09-06    0.05
+2020-09-07    0.17
+2020-09-08   -0.08
+2020-09-09    0.07
+2020-09-10    0.10
+2020-09-11    0.01
+2020-09-12    0.06
+2020-09-13    0.05
+2020-09-14    0.08
+2020-09-15    0.04
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 1
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = -1
+Best OOS Config = (14, 0, 1)
+Best OOS RMSE = 0.42
+
+"
+"(-45905, 517)","Item_ID = -45905 | Site = 517
+Item_Name = MENTOS GUM CRVY BTL TROPICAL
+---Prediction---
+2020-09-06    0.06
+2020-09-07    0.09
+2020-09-08    0.13
+2020-09-09    0.03
+2020-09-10    0.39
+2020-09-11    0.27
+2020-09-12   -0.00
+2020-09-13    0.12
+2020-09-14    0.10
+2020-09-15    0.08
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 0
+Best OOS Config = (14, 0, 2)
+Best OOS RMSE = 0.33
+
+"
+"(-45905, 580)","Item_ID = -45905 | Site = 580
+Item_Name = MENTOS GUM CRVY BTL TROPICAL
+---Prediction---
+2020-09-06    0.45
+2020-09-07    0.70
+2020-09-08    0.60
+2020-09-09    0.41
+2020-09-10    0.34
+2020-09-11    0.55
+2020-09-12    0.59
+2020-09-13    0.51
+2020-09-14    0.32
+2020-09-15    0.55
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 6
+Expected Sum of Quantity last 10 Days = 4
+OOS Total Error = 0
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 0.44
+
+"
+"(-45905, 589)","Item_ID = -45905 | Site = 589
+Item_Name = MENTOS GUM CRVY BTL TROPICAL
+---Prediction---
+2020-09-06    0.25
+2020-09-07    0.16
+2020-09-08    0.18
+2020-09-09    0.18
+2020-09-10    0.18
+2020-09-11    0.18
+2020-09-12    0.18
+2020-09-13    0.18
+2020-09-14    0.18
+2020-09-15    0.18
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 0
+Best OOS Config = (0, 0, 2)
+Best OOS RMSE = 0.39
+
+"
+"(-45905, 601)","Item_ID = -45905 | Site = 601
+Item_Name = MENTOS GUM CRVY BTL TROPICAL
+---Prediction---
+2020-09-06    0.18
+2020-09-07    0.10
+2020-09-08    0.19
+2020-09-09    0.15
+2020-09-10    0.26
+2020-09-11    0.06
+2020-09-12    0.22
+2020-09-13    0.16
+2020-09-14    0.13
+2020-09-15    0.05
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = -1
+Best OOS Config = (14, 2, 2)
+Best OOS RMSE = 0.39
+
+"
+"(-46737, 380)","Item_ID = -46737 | Site = 380
+Item_Name = I*PEARSON 7.5z NUT ROLL THINS BAG
+---Prediction---
+2020-09-06    0.25
+2020-09-07    0.24
+2020-09-08    0.24
+2020-09-09    0.24
+2020-09-10    0.24
+2020-09-11    0.24
+2020-09-12    0.24
+2020-09-13    0.24
+2020-09-14    0.24
+2020-09-15    0.24
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 3
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 3
+Best OOS Config = (0, 0, 1)
+Best OOS RMSE = 0.25
+
+"
+"(-46737, 554)","Item_ID = -46737 | Site = 554
+Item_Name = I*PEARSON 7.5z NUT ROLL THINS BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-46737, 516)","Item_ID = -46737 | Site = 516
+Item_Name = I*PEARSON 7.5z NUT ROLL THINS BAG
+---Prediction---
+2020-09-06    0.11
+2020-09-07    0.12
+2020-09-08    0.12
+2020-09-09    0.12
+2020-09-10    0.10
+2020-09-11    0.09
+2020-09-12    0.09
+2020-09-13    0.09
+2020-09-14    0.09
+2020-09-15    0.09
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 1
+OOS Total Error = 1
+Best OOS Config = (7, 2, 2)
+Best OOS RMSE = 0.3
+
+"
+"(-46737, 399)","Item_ID = -46737 | Site = 399
+Item_Name = I*PEARSON 7.5z NUT ROLL THINS BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-46737, 459)","Item_ID = -46737 | Site = 459
+Item_Name = I*PEARSON 7.5z NUT ROLL THINS BAG
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 1
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-46737, 517)","Item_ID = -46737 | Site = 517
+Item_Name = I*PEARSON 7.5z NUT ROLL THINS BAG
+---Prediction---
+2020-09-06    0.10
+2020-09-07    0.26
+2020-09-08    0.24
+2020-09-09    0.25
+2020-09-10    0.23
+2020-09-11    0.29
+2020-09-12    0.20
+2020-09-13    0.19
+2020-09-14    0.19
+2020-09-15    0.21
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 3
+Expected Sum of Quantity last 10 Days = 3
+OOS Total Error = -1
+Best OOS Config = (7, 0, 2)
+Best OOS RMSE = 0.45
+
+"
+"(-46737, 580)","Item_ID = -46737 | Site = 580
+Item_Name = I*PEARSON 7.5z NUT ROLL THINS BAG
+---Prediction---
+2020-09-06    0.16
+2020-09-07    0.19
+2020-09-08    0.19
+2020-09-09    0.19
+2020-09-10    0.19
+2020-09-11    0.19
+2020-09-12    0.19
+2020-09-13    0.19
+2020-09-14    0.19
+2020-09-15    0.19
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 2
+Expected Sum of Quantity last 10 Days = 2
+OOS Total Error = 0
+Best OOS Config = (0, 1, 2)
+Best OOS RMSE = 0.6
+
+"
+"(-46737, 589)","Item_ID = -46737 | Site = 589
+Item_Name = I*PEARSON 7.5z NUT ROLL THINS BAG
+---Prediction---
+2020-09-06    0.23
+2020-09-07    0.22
+2020-09-08    0.22
+2020-09-09    0.22
+2020-09-10    0.22
+2020-09-11    0.22
+2020-09-12    0.22
+2020-09-13    0.22
+2020-09-14    0.22
+2020-09-15    0.22
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 3
+Expected Sum of Quantity last 10 Days = 3
+OOS Total Error = 0
+Best OOS Config = (0, 0, 1)
+Best OOS RMSE = 0.47
+
+"
+"(-44225, 280)","Item_ID = -44225 | Site = 280
+Item_Name = D*C RIFIC AVNGR SIPPER CUP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44225, 380)","Item_ID = -44225 | Site = 380
+Item_Name = D*C RIFIC AVNGR SIPPER CUP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44225, 554)","Item_ID = -44225 | Site = 554
+Item_Name = D*C RIFIC AVNGR SIPPER CUP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44225, 516)","Item_ID = -44225 | Site = 516
+Item_Name = D*C RIFIC AVNGR SIPPER CUP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44225, 399)","Item_ID = -44225 | Site = 399
+Item_Name = D*C RIFIC AVNGR SIPPER CUP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44225, 459)","Item_ID = -44225 | Site = 459
+Item_Name = D*C RIFIC AVNGR SIPPER CUP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44225, 517)","Item_ID = -44225 | Site = 517
+Item_Name = D*C RIFIC AVNGR SIPPER CUP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44225, 580)","Item_ID = -44225 | Site = 580
+Item_Name = D*C RIFIC AVNGR SIPPER CUP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44225, 589)","Item_ID = -44225 | Site = 589
+Item_Name = D*C RIFIC AVNGR SIPPER CUP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-37287, 280)","Item_ID = -37287 | Site = 280
+Item_Name = I*HER CANDY CORN BAR REG 1.2z LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-37287, 380)","Item_ID = -37287 | Site = 380
+Item_Name = I*HER CANDY CORN BAR REG 1.2z LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-37287, 554)","Item_ID = -37287 | Site = 554
+Item_Name = I*HER CANDY CORN BAR REG 1.2z LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-37287, 516)","Item_ID = -37287 | Site = 516
+Item_Name = I*HER CANDY CORN BAR REG 1.2z LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-37287, 399)","Item_ID = -37287 | Site = 399
+Item_Name = I*HER CANDY CORN BAR REG 1.2z LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-37287, 459)","Item_ID = -37287 | Site = 459
+Item_Name = I*HER CANDY CORN BAR REG 1.2z LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-37287, 517)","Item_ID = -37287 | Site = 517
+Item_Name = I*HER CANDY CORN BAR REG 1.2z LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-37287, 580)","Item_ID = -37287 | Site = 580
+Item_Name = I*HER CANDY CORN BAR REG 1.2z LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-37287, 589)","Item_ID = -37287 | Site = 589
+Item_Name = I*HER CANDY CORN BAR REG 1.2z LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45169, 280)","Item_ID = -45169 | Site = 280
+Item_Name = D*AIRHEADS BITES 6z ASST FRUIT LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45169, 380)","Item_ID = -45169 | Site = 380
+Item_Name = D*AIRHEADS BITES 6z ASST FRUIT LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45169, 516)","Item_ID = -45169 | Site = 516
+Item_Name = D*AIRHEADS BITES 6z ASST FRUIT LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45169, 399)","Item_ID = -45169 | Site = 399
+Item_Name = D*AIRHEADS BITES 6z ASST FRUIT LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45169, 459)","Item_ID = -45169 | Site = 459
+Item_Name = D*AIRHEADS BITES 6z ASST FRUIT LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45169, 517)","Item_ID = -45169 | Site = 517
+Item_Name = D*AIRHEADS BITES 6z ASST FRUIT LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45169, 580)","Item_ID = -45169 | Site = 580
+Item_Name = D*AIRHEADS BITES 6z ASST FRUIT LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-45169, 589)","Item_ID = -45169 | Site = 589
+Item_Name = D*AIRHEADS BITES 6z ASST FRUIT LTO
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-35459, 280)","Item_ID = -35459 | Site = 280
+Item_Name = D*PERF AIRHEADS BERRY BITES 2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-35459, 380)","Item_ID = -35459 | Site = 380
+Item_Name = D*PERF AIRHEADS BERRY BITES 2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-35459, 554)","Item_ID = -35459 | Site = 554
+Item_Name = D*PERF AIRHEADS BERRY BITES 2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-35459, 516)","Item_ID = -35459 | Site = 516
+Item_Name = D*PERF AIRHEADS BERRY BITES 2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-35459, 399)","Item_ID = -35459 | Site = 399
+Item_Name = D*PERF AIRHEADS BERRY BITES 2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-35459, 459)","Item_ID = -35459 | Site = 459
+Item_Name = D*PERF AIRHEADS BERRY BITES 2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-35459, 517)","Item_ID = -35459 | Site = 517
+Item_Name = D*PERF AIRHEADS BERRY BITES 2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-35459, 580)","Item_ID = -35459 | Site = 580
+Item_Name = D*PERF AIRHEADS BERRY BITES 2z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-44763, 459)","Item_ID = -44763 | Site = 459
+Item_Name = D*REESES PB CUP WHITE CHOC
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-30755, 516)","Item_ID = -30755 | Site = 516
+Item_Name = D*HI CHEW GRAPE 1.76z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-30764, 280)","Item_ID = -30764 | Site = 280
+Item_Name = D*MON TRIDENT MINTY SWEET TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40507, 459)","Item_ID = -40507 | Site = 459
+Item_Name = D*TROLLI 4z SR BR BLUE RASP
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40562, 280)","Item_ID = -40562 | Site = 280
+Item_Name = D*MAR SNICKERS 4.7z BITES PCH
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-40508, 459)","Item_ID = -40508 | Site = 459
+Item_Name = D*TROLLI 4z SR BR WTRMLN
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-34071, 459)","Item_ID = -34071 | Site = 459
+Item_Name = D*TTS CHILDS PLAY BAG 26z
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
+"(-35452, 280)","Item_ID = -35452 | Site = 280
+Item_Name = D*MON TRIDENT BLACK RASP TWIST
+---Prediction---
+2020-09-06    0.0
+2020-09-07    0.0
+2020-09-08    0.0
+2020-09-09    0.0
+2020-09-10    0.0
+2020-09-11    0.0
+2020-09-12    0.0
+2020-09-13    0.0
+2020-09-14    0.0
+2020-09-15    0.0
+Freq: D
+----------------
+Predicted Sum of Quantity 10 Days = 0
+Expected Sum of Quantity last 10 Days = 0
+OOS Total Error = 0
+Best OOS Config = (0, 1, 0)
+Best OOS RMSE = 0.0
+
+"
