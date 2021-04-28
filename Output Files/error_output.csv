@@ -1,9 +1,13 @@
 ,0
+"(399, -12165)","LU decomposition error with (7, 0, 8) | Model failed to fit"
+"(459, -12066)","LU decomposition error with (7, 2, 8) | Model failed to fit"
+"(589, -12066)","LU decomposition error with (14, 1, 8) | Model failed to fit"
 "(-11997, 601)",Combination Does not Exist
 "(-41488, 601)",Combination Does not Exist
 "(-38394, 601)",Combination Does not Exist
 "(554, -44510)","LU decomposition error with (7, 0, 2) | Model failed to fit"
 "(-12309, 601)",Combination Does not Exist
+"(580, -40290)","LU decomposition error with (14, 0, 8) | Model failed to fit"
 "(-40290, 601)",Combination Does not Exist
 "(-11999, 601)",Combination Does not Exist
 "(-40739, 589)",Combination Does not Exist
@@ -19,7 +23,6 @@
 "(-44225, 601)",Combination Does not Exist
 "(-37287, 601)",Combination Does not Exist
 "(-45169, 554)",Combination Does not Exist
-"(589, -45169)","LU decomposition error with (7, 1, 1) | Model failed to fit"
 "(-45169, 601)",Combination Does not Exist
 "(-35459, 589)",Combination Does not Exist
 "(-35459, 601)",Combination Does not Exist
